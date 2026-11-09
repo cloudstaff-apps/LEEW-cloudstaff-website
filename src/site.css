@@ -144,6 +144,11 @@
 .site-logo-word sup { font-size: 0.5em; font-weight: var(--font-weight-semibold, 600); }
 .site-logo-light .site-logo-word { color: #ffffff; }
 
+/* Official logo lockup (image asset) */
+.site-logo-img { height: 2.1rem; width: auto; display: block; }
+@media (max-width: 860px) { .site-logo-img { height: 1.75rem; } }
+.site-logo-img-light { height: 2.3rem; }
+
 /* --- Inline SVG icons ------------------------------------------------------ */
 .icon {
   width: 1.2em;

@@ -1,7 +1,7 @@
 <footer class="site-footer">
   <div class="site-footer-main">
     <div class="site-footer-brand">
-      <span class="site-logo site-logo-light"><svg class="site-logo-emblem" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="24" class="site-logo-disc"/><path class="site-logo-cloud-shape" d="M12.2 30.2c-2.3-.6-3.4-3.2-2.1-5.2.8-1.2 2.2-1.8 3.6-1.5.2-2.4 2.2-4.3 4.7-4.3 1.5 0 2.9.7 3.8 1.9 1.3-2.9 4.2-4.8 7.5-4.8 4.6 0 8.3 3.7 8.3 8.3 0 1.5-.4 3-1.2 4.2-.3.4-.8.7-1.3.7-3.6.3-7.2-.7-10.8-1-4.2-.4-8.4 2.6-12.5 1.7z"/></svg><span class="site-logo-word">Cloudstaff<sup>&reg;</sup></span></span>
+      <img class="site-logo-img site-logo-img-light" src="<?php echo esc_url( get_template_directory_uri() . '/cloudstaff-logo-light.png' ); ?>" alt="Cloudstaff" width="1329" height="372" decoding="async">
       <p>Since 2005, Cloudstaff has helped more than 1,200 businesses worldwide build reliable, high-performing offshore teams that operate as a true extension of their organization.</p>
     </div>
     <div>

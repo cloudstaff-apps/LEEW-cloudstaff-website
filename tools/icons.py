@@ -171,11 +171,12 @@ _CLOUD_EMBLEM = (
 
 
 def logo(variant="default"):
-    cls = "site-logo site-logo-light" if variant == "light" else "site-logo"
-    return (f'<span class="{cls}">'
-            f'<svg class="site-logo-emblem" viewBox="0 0 48 48" aria-hidden="true" '
-            f'focusable="false">{_CLOUD_EMBLEM}</svg>'
-            f'<span class="site-logo-word">Cloudstaff<sup>&reg;</sup></span></span>')
+    """Official Cloudstaff lockup as an image asset. Dark wordmark for the
+    light header; white-wordmark version for the dark footer."""
+    f = "cloudstaff-logo-light.png" if variant == "light" else "cloudstaff-logo.png"
+    cls = "site-logo-img site-logo-img-light" if variant == "light" else "site-logo-img"
+    return (f'<img class="{cls}" src="{{{{ASSET:{f}}}}}" alt="Cloudstaff" '
+            f'width="1329" height="372" decoding="async">')
 
 
 # --- Certification seals (recreated from the CFO Kit's stylised marks) ------
