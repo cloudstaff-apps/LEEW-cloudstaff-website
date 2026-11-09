@@ -2,8 +2,16 @@
 <header class="site-header">
   <a href="{{URL:index}}" class="site-header-brand" aria-label="Cloudstaff — home">{{LOGO}}</a>
   <nav class="site-nav" aria-label="Main navigation">
-    <a href="{{URL:what-is-remote-staffing}}" {{ACTIVE:what-is-remote-staffing}}>What Is Remote Staffing?</a>
-    <a href="{{URL:how-it-works}}" {{ACTIVE:how-it-works}}>How It Works</a>
+    <div class="site-nav-item">
+      <a href="{{URL:what-is-remote-staffing}}" {{ACTIVE:what-is-remote-staffing}} class="site-nav-parent">About<span class="site-nav-caret" aria-hidden="true"></span></a>
+      <div class="site-nav-dropdown">
+        <a href="{{URL:what-is-remote-staffing}}" {{ACTIVE:what-is-remote-staffing}}>What Is Remote Staffing?</a>
+        <a href="{{URL:how-it-works}}" {{ACTIVE:how-it-works}}>How It Works</a>
+        <a href="{{URL:why-cloudstaff}}" {{ACTIVE:why-cloudstaff}}>Why Cloudstaff</a>
+        <a href="{{URL:security}}" {{ACTIVE:security}}>Security</a>
+        <a href="{{URL:customers}}" {{ACTIVE:customers}}>Customers</a>
+      </div>
+    </div>
     <div class="site-nav-item">
       <a href="{{URL:roles}}" {{ACTIVE:roles}} class="site-nav-parent">Roles &amp; Industries<span class="site-nav-caret" aria-hidden="true"></span></a>
       <div class="site-nav-dropdown">
@@ -12,9 +20,6 @@
         <a href="{{URL:pricing}}" {{ACTIVE:pricing}}>Pricing &amp; Savings</a>
       </div>
     </div>
-    <a href="{{URL:security}}" {{ACTIVE:security}}>Security</a>
-    <a href="{{URL:why-cloudstaff}}" {{ACTIVE:why-cloudstaff}}>Why Cloudstaff</a>
-    <a href="{{URL:customers}}" {{ACTIVE:customers}}>Customers</a>
     <a href="{{URL:international}}" {{ACTIVE:international}}>International</a>
     <a href="{{URL:cfo-guide}}" {{ACTIVE:cfo-guide}}>CFO Guide</a>
   </nav>
