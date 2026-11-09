@@ -37,6 +37,7 @@
     </div>
     <a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" <?php if ( is_page( 'international' ) ) echo 'aria-current="page"'; ?>>International</a>
     <a href="<?php echo esc_url( home_url( '/cfo-guide/' ) ); ?>" <?php if ( is_page( 'cfo-guide' ) ) echo 'aria-current="page"'; ?>>CFO Guide</a>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" <?php if ( is_page( 'contact' ) ) echo 'aria-current="page"'; ?>>Contact Us</a>
   </nav>
   <div class="site-header-cta">
     <a href="https://www.cloudstaff.com/careers/" class="button button-quiet" target="_blank" rel="noopener">Jobs at Cloudstaff</a>

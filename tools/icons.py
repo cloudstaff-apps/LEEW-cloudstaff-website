@@ -219,6 +219,7 @@ FLAG_NAMES = {
     "za": "South Africa", "ni": "Nicaragua", "my": "Malaysia", "sg": "Singapore",
     "vn": "Vietnam", "jp": "Japan", "lk": "Sri Lanka",
     "us": "United States", "au": "Australia", "gb": "United Kingdom",
+    "nz": "New Zealand", "sg": "Singapore",
 }
 
 

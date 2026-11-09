@@ -88,7 +88,7 @@ get_header();
           <p class="intl-tagline">Where Cloudstaff's story began, and home to our largest workforce and world-class secure campuses.</p>
           <p>Deep BPO experience, high English proficiency with neutral accents, and a famously strong service culture. US-aligned night shifts are standard practice, supported by full facilities, transport, and staff-care programs.</p>
           <p><strong>Specialisms:</strong> accounting &amp; finance, customer &amp; technical support, executive assistance, data entry, shared services, and 600+ roles across every function.</p>
-          <p><a href="<?php echo esc_url( home_url( '/center-philippines/' ) ); ?>" class="button-link">Explore Philippines &rarr;</a></p>
+          <p><a href="<?php echo esc_url( home_url( '/center-philippines/' ) ); ?>" class="button button-sm">Explore Philippines &rarr;</a></p>
         </div>
         <div class="card intl-card">
           <div class="intl-flag"><img class="flag" src="https://flagcdn.com/co.svg" width="24" height="18" alt="Colombia" loading="lazy" decoding="async"></div>
@@ -96,7 +96,7 @@ get_header();
           <p class="intl-tagline">Work in real time, not overtime: EST/CST overlap for seamless same-day collaboration.</p>
           <p>University-educated, genuinely bilingual professionals whose Spanish-English fluency connects and converts across the Americas &mdash; with strong cultural alignment to North American business.</p>
           <p><strong>Specialisms:</strong> bilingual customer support &amp; contact center, finance &amp; accounting, sales &amp; lead generation, legal, back-office operations, digital marketing, IT &amp; software.</p>
-          <p><a href="<?php echo esc_url( home_url( '/center-colombia/' ) ); ?>" class="button-link">Explore Colombia &rarr;</a></p>
+          <p><a href="<?php echo esc_url( home_url( '/center-colombia/' ) ); ?>" class="button button-sm">Explore Colombia &rarr;</a></p>
         </div>
         <div class="card intl-card">
           <div class="intl-flag"><img class="flag" src="https://flagcdn.com/in.svg" width="24" height="18" alt="India" loading="lazy" decoding="async"></div>
@@ -104,7 +104,7 @@ get_header();
           <p class="intl-tagline">One of the world's largest technically skilled talent pools, backed by a deep STEM ecosystem.</p>
           <p>The center of gravity for complex technical delivery: software engineering at scale, AI/ML capability, and sophisticated finance and back-office operations for global clients.</p>
           <p><strong>Specialisms:</strong> software development, AI &amp; machine learning engineering, complex back office, accounting, data &amp; analytics.</p>
-          <p><a href="<?php echo esc_url( home_url( '/center-india/' ) ); ?>" class="button-link">Explore India &rarr;</a></p>
+          <p><a href="<?php echo esc_url( home_url( '/center-india/' ) ); ?>" class="button button-sm">Explore India &rarr;</a></p>
         </div>
         <div class="card intl-card">
           <div class="intl-flag"><img class="flag" src="https://flagcdn.com/ke.svg" width="24" height="18" alt="Kenya" loading="lazy" decoding="async"></div>
@@ -112,7 +112,7 @@ get_header();
           <p class="intl-tagline">Young, tech-savvy, English-fluent talent &mdash; 50,000+ STEM graduates every year.</p>
           <p>On GMT+3, Kenya delivers natural UK and European business-hours coverage and strong US-morning overlap, with professionals deeply attuned to Western business culture and savings of up to 70%.</p>
           <p><strong>Specialisms:</strong> IT &amp; software development, research, accounting &amp; finance, legal process &amp; compliance, e-commerce, digital marketing &amp; content, healthcare support.</p>
-          <p><a href="<?php echo esc_url( home_url( '/center-kenya/' ) ); ?>" class="button-link">Explore Kenya &rarr;</a></p>
+          <p><a href="<?php echo esc_url( home_url( '/center-kenya/' ) ); ?>" class="button button-sm">Explore Kenya &rarr;</a></p>
         </div>
       </div>
     </div>
@@ -145,6 +145,7 @@ get_header();
           <span class="badge badge-success"><img class="flag" src="https://flagcdn.com/au.svg" width="24" height="18" alt="Australia" loading="lazy" decoding="async"> Sydney &middot; Brisbane</span>
           <span class="badge badge-success"><img class="flag" src="https://flagcdn.com/gb.svg" width="24" height="18" alt="United Kingdom" loading="lazy" decoding="async"> London</span>
         </div>
+        <p class="intl-hubs-cta"><a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button">Contact us about global coverage &rarr;</a></p>
       </div>
     </div>
   </div>

@@ -107,20 +107,24 @@ get_header();
     <div class="site-visual">
       <div class="grid-2">
         <div class="card">
-          <h3>Philippines</h3>
+          <h3 class="flag-head"><img class="flag" src="https://flagcdn.com/ph.svg" width="24" height="18" alt="Philippines" loading="lazy" decoding="async"> Philippines</h3>
           <p>Accounting, customer &amp; technical support, executive assistance, shared services. High English proficiency and neutral accents, strong service culture, deep BPO experience.</p>
+          <p><a href="<?php echo esc_url( home_url( '/center-philippines/' ) ); ?>" class="button-link">Explore Philippines &rarr;</a></p>
         </div>
         <div class="card">
-          <h3>Colombia</h3>
+          <h3 class="flag-head"><img class="flag" src="https://flagcdn.com/co.svg" width="24" height="18" alt="Colombia" loading="lazy" decoding="async"> Colombia</h3>
           <p>Bilingual customer service, legal, sales, executive assistance, back-office ops. Near-shore time zones with EST/CST overlap and a strong Spanish-English talent pool.</p>
+          <p><a href="<?php echo esc_url( home_url( '/center-colombia/' ) ); ?>" class="button-link">Explore Colombia &rarr;</a></p>
         </div>
         <div class="card">
-          <h3>India</h3>
+          <h3 class="flag-head"><img class="flag" src="https://flagcdn.com/in.svg" width="24" height="18" alt="India" loading="lazy" decoding="async"> India</h3>
           <p>Software development, AI/ML engineering, complex back office, accounting. A large, technically skilled talent pool and strong STEM ecosystem.</p>
+          <p><a href="<?php echo esc_url( home_url( '/center-india/' ) ); ?>" class="button-link">Explore India &rarr;</a></p>
         </div>
         <div class="card">
-          <h3>Other locations</h3>
+          <h3 class="flag-head"><img class="flag" src="https://flagcdn.com/ke.svg" width="24" height="18" alt="Kenya" loading="lazy" decoding="async"> Other locations</h3>
           <p>Kenya, South Africa, Nicaragua, Malaysia, Singapore, Vietnam, Japan, Sri Lanka &mdash; broader time-zone coverage, multilingual talent, and flexible specialist pools.</p>
+          <p><a href="<?php echo esc_url( home_url( '/center-kenya/' ) ); ?>" class="button-link">Explore Kenya &rarr;</a> &nbsp; <a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="button-link">See all &rarr;</a></p>
         </div>
       </div>
     </div>
