@@ -31,7 +31,7 @@ get_header();
       <div class="stat-tile"><div class="stat-tile-label">Companies worldwide</div><div class="stat-tile-value">1,300+</div></div>
       <div class="stat-tile"><div class="stat-tile-label">Team retention</div><div class="stat-tile-value">99%</div></div>
       <div class="stat-tile"><div class="stat-tile-label">Cost savings vs. local</div><div class="stat-tile-value">up to 70%</div></div>
-      <div class="stat-tile"><div class="stat-tile-label">Delivery countries</div><div class="stat-tile-value stat-tile-value-text">PH &middot; CO &middot; IN &middot; KE</div></div>
+      <div class="stat-tile"><div class="stat-tile-label">Delivery countries</div><div class="stat-tile-value"><span class="flag-row"><img class="flag" src="https://flagcdn.com/ph.svg" width="24" height="18" alt="Philippines" loading="lazy" decoding="async"><img class="flag" src="https://flagcdn.com/co.svg" width="24" height="18" alt="Colombia" loading="lazy" decoding="async"><img class="flag" src="https://flagcdn.com/in.svg" width="24" height="18" alt="India" loading="lazy" decoding="async"><img class="flag" src="https://flagcdn.com/ke.svg" width="24" height="18" alt="Kenya" loading="lazy" decoding="async"></span></div></div>
     </div>
     <p class="cs-lead">Some stories are best heard in their own words. Press play below &mdash; or read the full written case studies underneath.</p>
   </div>

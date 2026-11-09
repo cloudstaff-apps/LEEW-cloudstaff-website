@@ -21,7 +21,7 @@ import json, os, re, shutil, html, sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
-from icons import FA_MAP, icon_svg, hero_art, logo, cert_seal  # noqa: E402
+from icons import FA_MAP, icon_svg, hero_art, logo, cert_seal, flag  # noqa: E402
 SRC = os.path.join(ROOT, "src")
 DOCS = os.path.join(ROOT, "docs")
 THEME = os.path.join(ROOT, "wordpress", "cloudstaff-theme")
@@ -45,6 +45,7 @@ def sub_common(text):
     text = re.sub(r'<i class="fa-light fa-([a-z0-9-]+)"[^>]*></i>', icon, text)
     text = re.sub(r"\{\{ART:([a-z0-9-]+)\}\}", lambda m: hero_art(m.group(1)), text)
     text = re.sub(r"\{\{SEAL:([a-z0-9]+)\}\}", lambda m: cert_seal(m.group(1)), text)
+    text = re.sub(r"\{\{FLAG:([a-z]{2})\}\}", lambda m: flag(m.group(1)), text)
     text = text.replace("{{LOGO:light}}", logo("light")).replace("{{LOGO}}", logo())
     return text
 

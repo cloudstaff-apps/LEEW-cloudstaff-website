@@ -209,3 +209,21 @@ def cert_seal(key):
   <text x="48" y="63" text-anchor="middle" class="seal-top" font-size="{top_size}">{s["top"]}</text>
   <text x="48" y="73" text-anchor="middle" class="seal-sub" font-size="7">{s["sub"]}</text>
 </svg>'''
+
+
+# --- Country flags ----------------------------------------------------------
+# Rendered as real flag images (not OS emoji, which fall back to plain letters
+# like "PH"/"CO" on Windows). ISO 3166-1 alpha-2 codes; served as SVG.
+FLAG_NAMES = {
+    "ph": "Philippines", "co": "Colombia", "in": "India", "ke": "Kenya",
+    "za": "South Africa", "ni": "Nicaragua", "my": "Malaysia", "sg": "Singapore",
+    "vn": "Vietnam", "jp": "Japan", "lk": "Sri Lanka",
+    "us": "United States", "au": "Australia", "gb": "United Kingdom",
+}
+
+
+def flag(code):
+    code = code.lower()
+    name = FLAG_NAMES.get(code, code.upper())
+    return (f'<img class="flag" src="https://flagcdn.com/{code}.svg" '
+            f'width="24" height="18" alt="{name}" loading="lazy" decoding="async">')
