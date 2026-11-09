@@ -50,34 +50,31 @@ get_header();
     <div>
       <span class="eyebrow">Follow the sun</span>
       <h2>Coverage that follows your working day</h2>
-      <p>Your US afternoon is Bogot&aacute;'s afternoon, Manila's morning, and Nairobi's evening. Combine centers and there is no hour of the day your business can't be working &mdash; real-time collaboration from Colombia, overnight throughput from the Philippines and India, and UK/European-hours coverage from Kenya.</p>
-      <div class="card tz-chart" role="img" aria-label="Business-hours coverage by center across a 24-hour UTC day">
-        <div class="tz-row tz-row-you">
-          <span class="tz-name">Your US business day <small>(9am&ndash;5pm ET)</small></span>
-          <div class="tz-track"><div class="tz-bar tz-bar-you" style="--start: 13; --len: 8"></div></div>
+      <p>Set your region and choose how you'd like your team to work &mdash; the chart shows exactly when each center is online relative to <em>your</em> working day, and what shift that means for them locally.</p>
+
+      <div class="coverage-tool" id="coverage-tool">
+        <div class="cov-controls card">
+          <div class="cov-control">
+            <span class="cov-label">Which hours should your team work?</span>
+            <div class="tb-seg" id="cov-mode" role="group" aria-label="Shift preference"></div>
+          </div>
+          <div class="cov-control">
+            <span class="cov-label">Your region</span>
+            <div class="tb-seg" id="cov-region" role="group" aria-label="Your region"></div>
+          </div>
+          <div class="cov-control">
+            <label class="cov-label" for="cov-zone">Your time zone</label>
+            <select class="select" id="cov-zone" aria-label="Your time zone"></select>
+          </div>
         </div>
-        <div class="tz-row">
-          <span class="tz-name">&#127464;&#127476; Colombia <small>UTC-5 &middot; nearshore, real-time</small></span>
-          <div class="tz-track"><div class="tz-bar" style="--start: 13; --len: 9"></div></div>
-        </div>
-        <div class="tz-row">
-          <span class="tz-name">&#127472;&#127466; Kenya <small>UTC+3 &middot; UK/EU day, US morning</small></span>
-          <div class="tz-track"><div class="tz-bar" style="--start: 5; --len: 9"></div></div>
-        </div>
-        <div class="tz-row">
-          <span class="tz-name">&#127470;&#127475; India <small>UTC+5:30 &middot; engineering day-shift</small></span>
-          <div class="tz-track"><div class="tz-bar" style="--start: 2.5; --len: 9"></div></div>
-        </div>
-        <div class="tz-row">
-          <span class="tz-name">&#127477;&#127469; Philippines <small>UTC+8 &middot; US-hours shifts standard</small></span>
-          <div class="tz-track"><div class="tz-bar" style="--start: 0; --len: 9"></div><div class="tz-bar tz-bar-alt" style="--start: 13; --len: 9"></div></div>
-        </div>
-        <div class="tz-scale"><span>0:00 UTC</span><span>6:00</span><span>12:00</span><span>18:00</span><span>24:00</span></div>
-        <p class="tz-note">Philippines teams routinely work US-aligned shifts (shown in green) &mdash; over 70% of Cloudstaff professionals already do. Local business hours shown in blue.</p>
+
+        <div class="card cov-chart" id="cov-chart" aria-live="polite"></div>
+        <p class="cov-note" id="cov-note"></p>
       </div>
     </div>
   </div>
 </section>
+<script src="<?php echo esc_url( get_template_directory_uri() . '/coverage.js' ); ?>" defer></script>
 
 <section class="site-band">
   <div class="site-band-inner">

@@ -104,6 +104,7 @@ def build_static():
     os.makedirs(os.path.join(DOCS, "assets"), exist_ok=True)
     shutil.copyfile(os.path.join(SRC, "site.css"), os.path.join(DOCS, "assets", "site.css"))
     shutil.copyfile(os.path.join(SRC, "teambuilder.js"), os.path.join(DOCS, "assets", "teambuilder.js"))
+    shutil.copyfile(os.path.join(SRC, "coverage.js"), os.path.join(DOCS, "assets", "coverage.js"))
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
     for slug, p in pages.items():
         body = read(SRC, "partials", f"{slug}.html")
@@ -178,6 +179,7 @@ def build_wp():
     # copy custom css into theme
     shutil.copyfile(os.path.join(SRC, "site.css"), os.path.join(THEME, "site.css"))
     shutil.copyfile(os.path.join(SRC, "teambuilder.js"), os.path.join(THEME, "teambuilder.js"))
+    shutil.copyfile(os.path.join(SRC, "coverage.js"), os.path.join(THEME, "coverage.js"))
     # slug -> meta description map used by functions.php
     descriptions = {slug: p["description"] for slug, p in pages.items()}
     with open(os.path.join(THEME, "page-meta.json"), "w", encoding="utf-8") as f:

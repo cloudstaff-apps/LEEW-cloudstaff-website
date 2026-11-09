@@ -10,6 +10,7 @@ PARTIALS = os.path.join(ROOT, "src", "partials")
 
 COUNTRIES = {
     "center-philippines": {
+        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=70",
         "flag": "&#127477;&#127469;",
         "name": "Philippines",
         "slug": "center-philippines",
@@ -40,6 +41,7 @@ COUNTRIES = {
         "coverage": "On UTC+8, Philippines teams run your overnight hours as a standard day shift &mdash; and routinely flip to full US-aligned schedules (EST/PST) for real-time coverage of your business day.",
     },
     "center-colombia": {
+        "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=2000&q=70",
         "flag": "&#127464;&#127476;",
         "name": "Colombia",
         "slug": "center-colombia",
@@ -70,6 +72,7 @@ COUNTRIES = {
         "coverage": "On UTC-5, Colombia sits inside your working day. Your morning stand-up is their morning stand-up &mdash; ideal for roles that need live back-and-forth rather than overnight handoffs.",
     },
     "center-india": {
+        "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2000&q=70",
         "flag": "&#127470;&#127475;",
         "name": "India",
         "slug": "center-india",
@@ -100,6 +103,7 @@ COUNTRIES = {
         "coverage": "On UTC+5:30, India's working day overlaps UK and European hours and reaches into the US morning &mdash; a strong fit for engineering teams that collaborate on a daily cadence rather than live chat.",
     },
     "center-kenya": {
+        "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2000&q=70",
         "flag": "&#127472;&#127466;",
         "name": "Kenya",
         "slug": "center-kenya",
@@ -158,11 +162,10 @@ def page(c):
     others = "\n".join(
         f'          <a href="{{{{URL:{s}}}}}" class="button button-secondary">{lbl}</a>'
         for s, lbl in OTHER_LINKS[c["slug"]])
-    return f'''<section class="site-hero site-hero-dark center-hero">
+    return f'''<section class="site-hero site-hero-photo center-hero" style="--hero-image: url('{c["image"]}')" title="{c["name"]}">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="{{{{URL:international}}}}" class="center-back">International Services Centers</a> &rarr; {c["name"]}</span>
-    <div class="center-flag" aria-hidden="true">{c["flag"]}</div>
     <h1>{c["name"]} &mdash; {c["tagline"]}</h1>
     <p>{c["lede"]}</p>
     <a href="{{{{URL:contact}}}}" class="button button-lg">Build a team in {c["name"]}</a>

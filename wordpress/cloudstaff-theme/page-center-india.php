@@ -12,11 +12,10 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero site-hero-dark center-hero">
+<section class="site-hero site-hero-photo center-hero" style="--hero-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2000&q=70')" title="India">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="center-back">International Services Centers</a> &rarr; India</span>
-    <div class="center-flag" aria-hidden="true">&#127470;&#127475;</div>
     <h1>India &mdash; The engineering powerhouse</h1>
     <p>One of the world's largest and deepest technical talent pools, backed by a mature STEM and IT ecosystem &mdash; the center of gravity for complex, build-heavy work.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Build a team in India</a>

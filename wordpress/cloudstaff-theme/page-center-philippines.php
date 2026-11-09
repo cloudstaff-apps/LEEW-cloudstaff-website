@@ -12,11 +12,10 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero site-hero-dark center-hero">
+<section class="site-hero site-hero-photo center-hero" style="--hero-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=70')" title="Philippines">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="center-back">International Services Centers</a> &rarr; Philippines</span>
-    <div class="center-flag" aria-hidden="true">&#127477;&#127469;</div>
     <h1>Philippines &mdash; The flagship center</h1>
     <p>Where Cloudstaff's story began in 2005 &mdash; today our largest workforce, our world-class secure campuses, and the deepest bench of outsourcing talent anywhere in our network.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Build a team in Philippines</a>
