@@ -79,6 +79,14 @@
       "description": "Real client success stories from Wipfli, Built, McConnell Dowell, TM Strata and more — with video testimonials and the results of building dedicated remote teams with Cloudstaff."
     },
     {
+      "slug": "timezones",
+      "wp_template": "page-timezones",
+      "nav_label": "Time Zones",
+      "in_nav": false,
+      "title": "Time Zones & Coverage: Follow the Sun | Cloudstaff",
+      "description": "See exactly when Cloudstaff's International Services Centers are online for your working day. Cover your business hours, run work overnight, or keep critical functions moving 24/7."
+    },
+    {
       "slug": "international",
       "wp_template": "page-international",
       "nav_label": "International",

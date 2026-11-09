@@ -22,6 +22,7 @@
       <div class="site-nav-dropdown">
         <a href="<?php echo esc_url( home_url( '/what-is-remote-staffing/' ) ); ?>" <?php if ( is_page( 'what-is-remote-staffing' ) ) echo 'aria-current="page"'; ?>>What Is Remote Staffing?</a>
         <a href="<?php echo esc_url( home_url( '/how-it-works/' ) ); ?>" <?php if ( is_page( 'how-it-works' ) ) echo 'aria-current="page"'; ?>>How It Works</a>
+        <a href="<?php echo esc_url( home_url( '/timezones/' ) ); ?>" <?php if ( is_page( 'timezones' ) ) echo 'aria-current="page"'; ?>>Time Zones</a>
         <a href="<?php echo esc_url( home_url( '/why-cloudstaff/' ) ); ?>" <?php if ( is_page( 'why-cloudstaff' ) ) echo 'aria-current="page"'; ?>>Why Cloudstaff</a>
         <a href="<?php echo esc_url( home_url( '/security/' ) ); ?>" <?php if ( is_page( 'security' ) ) echo 'aria-current="page"'; ?>>Security</a>
         <a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" <?php if ( is_page( 'customers' ) ) echo 'aria-current="page"'; ?>>Customers</a>
