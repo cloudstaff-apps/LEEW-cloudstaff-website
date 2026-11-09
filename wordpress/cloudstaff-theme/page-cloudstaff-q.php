@@ -12,7 +12,7 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero site-hero-photo" style="--hero-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2000&q=70')" title="Secure platform infrastructure">
+<section class="site-hero site-hero-photo" style="--hero-image: url('https://cloudstaff.ai/hubfs/Backgrounds/background-hero-tech.jpg')" title="Secure platform infrastructure">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/ai-enabled-staff/' ) ); ?>" class="center-back">Cloudstaff AI</a> &rarr; Cloudstaff Q</span>

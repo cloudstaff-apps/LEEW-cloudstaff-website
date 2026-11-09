@@ -12,7 +12,7 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero site-hero-photo" style="--hero-image: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=2000&q=70')" title="AI and automation">
+<section class="site-hero site-hero-photo" style="--hero-image: url('https://cloudstaff.ai/hubfs/Backgrounds/background-hero-tech.jpg')" title="AI and automation">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow">Cloudstaff AI</span>
@@ -57,19 +57,22 @@ get_header();
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
           <h3>People who can do more</h3>
           <p>Cloudstaffers are trained and equipped to use AI in their daily work &mdash; so the dedicated team you already rely on becomes faster, sharper, and more productive.</p>
-          <p class="cs-tag">AI-enabled staffing</p>
+          <p class="ai-evidence-label">Evidence today</p>
+          <p class="ai-evidence">AI training and certification program, internal AI tooling, and a growing set of use cases.</p>
         </div>
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 4v4"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M2 14h2"/><path d="M20 14h2"/></svg></div>
           <h3>AI with a defined job</h3>
           <p>Supervised Coworkers do specific work within defined responsibilities, rules, and review. AI needs a job description &mdash; and a human it reports to.</p>
-          <p class="cs-tag">Human + AI solutions</p>
+          <p class="ai-evidence-label">Evidence today</p>
+          <p class="ai-evidence">Live Coworker units, early client engagements, and in-production client workflows.</p>
         </div>
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
           <h3>Built for business control</h3>
-          <p>The same workforce infrastructure, security capabilities, and governance model that protects your human teams extends to AI work &mdash; one standard for both.</p>
-          <p class="cs-tag">Trust &amp; control</p>
+          <p>The same workforce infrastructure, security capabilities, and developing governance model that protects your human teams extends to AI work &mdash; one standard for both.</p>
+          <p class="ai-evidence-label">Evidence today</p>
+          <p class="ai-evidence">Existing security infrastructure and client-facing security work.</p>
         </div>
       </div>
     </div>
@@ -77,6 +80,27 @@ get_header();
 </section>
 
 <section class="site-band">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">Two ways to put it to work</span>
+      <h2>Strengthen your team, or add a new kind of capacity</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>AI-enabled staffing</h3>
+          <p>Apply AI to improve the competitiveness, productivity, and long-term value of the dedicated staffing model you already trust &mdash; your team, now equipped to do more.</p>
+        </div>
+        <div class="card">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 4v4"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M2 14h2"/><path d="M20 14h2"/></svg></div>
+          <h3>Human + AI solutions</h3>
+          <p>Introduce supervised AI Coworkers alongside your existing teams to address defined workflows and new capacity needs &mdash; without adding headcount or losing control.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted">
   <div class="site-band-inner">
     <div>
       <span class="eyebrow">Proactive, not prompted</span>

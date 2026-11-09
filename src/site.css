@@ -1090,6 +1090,16 @@ ul.tb-disclaimer {
 .contact-phone:hover .contact-phone-num { text-decoration: underline; }
 .contact-office p { margin-block: 0.15rem; }
 .contact-social { display: flex; flex-wrap: wrap; gap: var(--space-lg, 1rem); margin-block-start: var(--space-md, 0.75rem); }
+
+/* --- AI Enabled Staff: evidence-today proof lines -------------------------- */
+.ai-evidence-label {
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+  font-weight: 700; font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase;
+  margin-block: var(--space-md, 0.75rem) 0.15rem;
+}
+.ai-evidence { font-size: 0.85rem; color: var(--color-foreground-muted, #5b6576); margin: 0; }
+.coworker-avatar { display: block; width: 100%; max-width: 160px; height: auto; border-radius: var(--radius-md, 0.75rem); margin-block-end: var(--space-sm, 0.5rem); }
+.ai-collage { display: block; width: 100%; max-width: 440px; height: auto; margin-inline: auto; }
 .intl-card .intl-tagline {
   font-weight: var(--font-weight-semibold, 600);
   color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
