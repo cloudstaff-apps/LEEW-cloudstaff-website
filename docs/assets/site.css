@@ -1014,3 +1014,62 @@ ul.tb-disclaimer {
   letter-spacing: 0.06em;
 }
 .cert-item-feature .seal-mono { fill: var(--color-feedback-success, #00ab9c); }
+
+
+/* --- International Services Centers ---------------------------------------- */
+.intl-card .intl-flag { font-size: 2.4rem; line-height: 1; margin-block-end: var(--space-sm, 0.5rem); }
+.intl-card .intl-tagline {
+  font-weight: var(--font-weight-semibold, 600);
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+}
+.intl-hubs { margin-block: var(--space-sm, 0.5rem) var(--space-lg, 1rem); }
+.intl-offices-h { margin-block-start: var(--space-lg, 1rem); font-size: 1.05rem; }
+
+/* Follow-the-sun coverage chart */
+.tz-chart { margin-block-start: var(--space-xl, 1.5rem); }
+.tz-row {
+  display: grid;
+  grid-template-columns: minmax(10rem, 14rem) 1fr;
+  align-items: center;
+  gap: var(--space-lg, 1rem);
+  margin-block: var(--space-xs, 0.25rem);
+}
+.tz-name { font-size: var(--font-size-sm, 0.875rem); font-weight: var(--font-weight-semibold, 600); }
+.tz-name small { display: block; font-weight: var(--font-weight-regular, 400); color: var(--color-foreground-muted, #5b6576); font-size: 0.72rem; }
+.tz-track {
+  position: relative;
+  height: 1.4rem;
+  background: var(--color-surface-canvas, #f0f4f9);
+  border-radius: var(--radius-sm, 0.5rem);
+  overflow: hidden;
+}
+.tz-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(var(--start) / 24 * 100%);
+  width: calc(var(--len) / 24 * 100%);
+  background: var(--color-brand-primary, #007aff);
+  opacity: 0.85;
+  border-radius: var(--radius-sm, 0.5rem);
+}
+.tz-bar-alt { background: var(--color-feedback-success, #00ab9c); }
+.tz-row-you .tz-track { background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 90%); }
+.tz-bar-you { background: var(--color-foreground-primary, #16233b); opacity: 1; }
+.tz-scale {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-block-start: var(--space-sm, 0.5rem);
+  margin-inline-start: calc(minmax(10rem, 14rem));
+  padding-inline-start: 0;
+  font-size: var(--font-size-xs, 0.7rem);
+  color: var(--color-foreground-muted, #5b6576);
+}
+.tz-scale { grid-column: 1 / -1; padding-inline-start: clamp(10rem, 14rem, 14rem); }
+.tz-scale span { text-align: left; }
+.tz-scale span:last-child { text-align: right; }
+.tz-note { font-size: var(--font-size-xs, 0.72rem); color: var(--color-foreground-muted, #5b6576); margin-block-start: var(--space-md, 0.75rem); }
+@media (max-width: 640px) {
+  .tz-row { grid-template-columns: minmax(0, 1fr); gap: var(--space-2xs, 0.125rem); }
+  .tz-scale { padding-inline-start: 0; }
+}

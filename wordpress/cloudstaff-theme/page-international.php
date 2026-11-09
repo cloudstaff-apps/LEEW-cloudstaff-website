@@ -1,0 +1,188 @@
+<?php
+/**
+ * Template Name: International
+ * Template Post Type: page
+ *
+ * Generated from src/partials/international.html by build.py — edit the partial,
+ * not this file, then re-run `python3 build.py`.
+ *
+ * @package Cloudstaff
+ */
+
+get_header();
+?>
+<main class="site-main" id="main-content">
+<section class="site-hero site-hero-photo" style="--hero-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2000&q=70')" title="Earth at night from space">
+  <div class="site-band-inner">
+    <div class="site-hero-copy">
+    <span class="eyebrow">International Services Centers</span>
+    <h1>Global reach, local teams</h1>
+    <p>Cloudstaff operates International Services Centers across four continents &mdash; the Philippines, Colombia, India, and Kenya &mdash; backed by specialist hubs worldwide. One partner, one standard of security and service, with the right talent in the right time zone for your business.</p>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Plan your global team</a>
+    </div>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <div class="grid-3">
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Follow the sun</h3>
+        <p>With centers spanning UTC-5 to UTC+8, work hands off across time zones &mdash; cover your business hours, run night shifts without night work, or keep critical functions moving 24 hours a day.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Global reach, local teams</h3>
+        <p>Every center is a genuine local operation &mdash; local recruiters, local HR, local culture &mdash; operating to one global Cloudstaff standard of security, infrastructure, and staff care.</p>
+      </div>
+      <div class="feature-tile">
+        <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v18"/><path d="M8 21h8"/><path d="M4 7h16"/><path d="m5 7-3 6a3.3 3.3 0 0 0 6 0z"/><path d="m19 7-3 6a3.3 3.3 0 0 0 6 0z"/></svg></div>
+        <h3>Balance cost and capability</h3>
+        <p>A diversified footprint lets you match each role to the best market for skills, cost, language, and coverage &mdash; while reducing single-country operational risk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">Follow the sun</span>
+      <h2>Coverage that follows your working day</h2>
+      <p>Your US afternoon is Bogot&aacute;'s afternoon, Manila's morning, and Nairobi's evening. Combine centers and there is no hour of the day your business can't be working &mdash; real-time collaboration from Colombia, overnight throughput from the Philippines and India, and UK/European-hours coverage from Kenya.</p>
+      <div class="card tz-chart" role="img" aria-label="Business-hours coverage by center across a 24-hour UTC day">
+        <div class="tz-row tz-row-you">
+          <span class="tz-name">Your US business day <small>(9am&ndash;5pm ET)</small></span>
+          <div class="tz-track"><div class="tz-bar tz-bar-you" style="--start: 13; --len: 8"></div></div>
+        </div>
+        <div class="tz-row">
+          <span class="tz-name">&#127464;&#127476; Colombia <small>UTC-5 &middot; nearshore, real-time</small></span>
+          <div class="tz-track"><div class="tz-bar" style="--start: 13; --len: 9"></div></div>
+        </div>
+        <div class="tz-row">
+          <span class="tz-name">&#127472;&#127466; Kenya <small>UTC+3 &middot; UK/EU day, US morning</small></span>
+          <div class="tz-track"><div class="tz-bar" style="--start: 5; --len: 9"></div></div>
+        </div>
+        <div class="tz-row">
+          <span class="tz-name">&#127470;&#127475; India <small>UTC+5:30 &middot; engineering day-shift</small></span>
+          <div class="tz-track"><div class="tz-bar" style="--start: 2.5; --len: 9"></div></div>
+        </div>
+        <div class="tz-row">
+          <span class="tz-name">&#127477;&#127469; Philippines <small>UTC+8 &middot; US-hours shifts standard</small></span>
+          <div class="tz-track"><div class="tz-bar" style="--start: 0; --len: 9"></div><div class="tz-bar tz-bar-alt" style="--start: 13; --len: 9"></div></div>
+        </div>
+        <div class="tz-scale"><span>0:00 UTC</span><span>6:00</span><span>12:00</span><span>18:00</span><span>24:00</span></div>
+        <p class="tz-note">Philippines teams routinely work US-aligned shifts (shown in green) &mdash; over 70% of Cloudstaff professionals already do. Local business hours shown in blue.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">Our International Services Centers</span>
+      <h2>Four centers, one standard</h2>
+      <div class="grid-2">
+        <div class="card intl-card">
+          <div class="intl-flag" aria-hidden="true">&#127477;&#127469;</div>
+          <h3>Philippines &mdash; the flagship</h3>
+          <p class="intl-tagline">Where Cloudstaff's story began, and home to our largest workforce and world-class secure campuses.</p>
+          <p>Deep BPO experience, high English proficiency with neutral accents, and a famously strong service culture. US-aligned night shifts are standard practice, supported by full facilities, transport, and staff-care programs.</p>
+          <p><strong>Specialisms:</strong> accounting &amp; finance, customer &amp; technical support, executive assistance, data entry, shared services, and 600+ roles across every function.</p>
+        </div>
+        <div class="card intl-card">
+          <div class="intl-flag" aria-hidden="true">&#127464;&#127476;</div>
+          <h3>Colombia &mdash; nearshore, real time</h3>
+          <p class="intl-tagline">Work in real time, not overtime: EST/CST overlap for seamless same-day collaboration.</p>
+          <p>University-educated, genuinely bilingual professionals whose Spanish-English fluency connects and converts across the Americas &mdash; with strong cultural alignment to North American business.</p>
+          <p><strong>Specialisms:</strong> bilingual customer support &amp; contact center, finance &amp; accounting, sales &amp; lead generation, legal, back-office operations, digital marketing, IT &amp; software.</p>
+        </div>
+        <div class="card intl-card">
+          <div class="intl-flag" aria-hidden="true">&#127470;&#127475;</div>
+          <h3>India &mdash; the engineering powerhouse</h3>
+          <p class="intl-tagline">One of the world's largest technically skilled talent pools, backed by a deep STEM ecosystem.</p>
+          <p>The center of gravity for complex technical delivery: software engineering at scale, AI/ML capability, and sophisticated finance and back-office operations for global clients.</p>
+          <p><strong>Specialisms:</strong> software development, AI &amp; machine learning engineering, complex back office, accounting, data &amp; analytics.</p>
+        </div>
+        <div class="card intl-card">
+          <div class="intl-flag" aria-hidden="true">&#127472;&#127466;</div>
+          <h3>Kenya &mdash; the rising talent hub</h3>
+          <p class="intl-tagline">Young, tech-savvy, English-fluent talent &mdash; 50,000+ STEM graduates every year.</p>
+          <p>On GMT+3, Kenya delivers natural UK and European business-hours coverage and strong US-morning overlap, with professionals deeply attuned to Western business culture and savings of up to 70%.</p>
+          <p><strong>Specialisms:</strong> IT &amp; software development, research, accounting &amp; finance, legal process &amp; compliance, e-commerce, digital marketing &amp; content, healthcare support.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted site-band-reverse">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">Local presence, international reach</span>
+      <h2>Client teams where you are, delivery teams where the talent is</h2>
+      <p>Your relationship with Cloudstaff is local: client-facing teams in Charlotte, Houston, and Dallas in the US, Sydney and Brisbane in Australia, and London in the UK. Behind them stands the international delivery network &mdash; so you get local accountability with global capability.</p>
+      <p>Beyond the four International Services Centers, specialist hubs extend coverage, languages, and niche skills across the globe.</p>
+    </div>
+    <div class="site-visual">
+      <div class="card">
+        <h3>Specialist hubs</h3>
+        <div class="cluster intl-hubs">
+          <span class="badge">&#127487;&#127462; South Africa</span>
+          <span class="badge">&#127475;&#127470; Nicaragua</span>
+          <span class="badge">&#127474;&#127486; Malaysia</span>
+          <span class="badge">&#127480;&#127468; Singapore</span>
+          <span class="badge">&#127483;&#127475; Vietnam</span>
+          <span class="badge">&#127471;&#127477; Japan</span>
+          <span class="badge">&#127473;&#127472; Sri Lanka</span>
+        </div>
+        <h3 class="intl-offices-h">Client offices</h3>
+        <div class="cluster intl-hubs">
+          <span class="badge badge-success">&#127482;&#127480; Charlotte &middot; Houston &middot; Dallas</span>
+          <span class="badge badge-success">&#127462;&#127482; Sydney &middot; Brisbane</span>
+          <span class="badge badge-success">&#127468;&#127463; London</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">Why it matters</span>
+      <h2>A diversified footprint is a risk strategy</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="step-number"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3.5 3 14.5 0 18"/><path d="M12 3c-3 3.5-3 14.5 0 18"/></svg></div>
+          <h3>Continuity by design</h3>
+          <p>Multiple centers mean weather, power, or regional events in one country never take your operation offline &mdash; work can shift across the network.</p>
+        </div>
+        <div class="card">
+          <div class="step-number"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m17 11 4-4-4-4"/><path d="M21 7H9"/><path d="m7 13-4 4 4 4"/><path d="M3 17h12"/></svg></div>
+          <h3>The right market per role</h3>
+          <p>Bilingual sales in Bogot&aacute;, engineering in Bangalore, accounting in Clark, UK-hours support in Nairobi &mdash; each role goes where the talent is deepest.</p>
+        </div>
+        <div class="card">
+          <div class="step-number"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>One security standard</h3>
+          <p>Every center runs the same managed devices, ISO-certified controls, monitored facilities, and business continuity plans &mdash; audited centrally.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-cta">
+  <div class="site-band-inner">
+    <h2>Build a team the sun never sets on</h2>
+    <p>Tell us your hours, your roles, and your growth plans &mdash; we'll map them to the right centers.</p>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Plan your global team</a>
+  </div>
+</section>
+
+</main>
+<?php
+get_footer();

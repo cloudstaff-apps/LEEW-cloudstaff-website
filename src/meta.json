@@ -71,6 +71,14 @@
       "description": "Since 2005, Cloudstaff has built offshore teams for 1,200+ businesses worldwide. Meet the people-first culture, in-house infrastructure, and technology behind the numbers."
     },
     {
+      "slug": "international",
+      "wp_template": "page-international",
+      "nav_label": "International",
+      "in_nav": true,
+      "title": "International Services Centers: Global Reach, Local Teams | Cloudstaff",
+      "description": "Cloudstaff's International Services Centers span the Philippines, Colombia, India, and Kenya. Follow the sun with global reach and local teams, one security standard worldwide."
+    },
+    {
       "slug": "cfo-guide",
       "wp_template": "page-cfo-guide",
       "nav_label": "The CFO Guide",

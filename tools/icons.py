@@ -113,6 +113,8 @@ FA_MAP = {
     "fa-layer-group": "layers",
     "fa-grid-2": "grid",
     "fa-chess": "compass",
+    "fa-globe": "globe",
+    "fa-compass": "compass",
     "fa-bullseye-arrow": "target",
     "fa-calculator": "calculator",
     "fa-file": "file",
