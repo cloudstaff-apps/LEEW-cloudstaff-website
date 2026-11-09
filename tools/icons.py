@@ -52,6 +52,7 @@ GLYPHS = {
     "calculator": '<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8"/><path d="M8 11h.01"/><path d="M12 11h.01"/><path d="M16 11h.01"/><path d="M8 15h.01"/><path d="M12 15h.01"/><path d="M16 15h.01"/><path d="M8 19h8"/>',
     "globe": '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3.5 3 14.5 0 18"/><path d="M12 3c-3 3.5-3 14.5 0 18"/>',
     "compass": '<circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>',
+    "comment": '<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/>',
 }
 
 # --- fa-name -> glyph mapping ------------------------------------------------
@@ -114,6 +115,7 @@ FA_MAP = {
     "fa-grid-2": "grid",
     "fa-chess": "compass",
     "fa-globe": "globe",
+    "fa-comment": "comment",
     "fa-compass": "compass",
     "fa-bullseye-arrow": "target",
     "fa-calculator": "calculator",

@@ -79,6 +79,38 @@
       "description": "Cloudstaff's International Services Centers span the Philippines, Colombia, India, and Kenya. Follow the sun with global reach and local teams, one security standard worldwide."
     },
     {
+      "slug": "center-philippines",
+      "wp_template": "page-center-philippines",
+      "nav_label": "Philippines",
+      "in_nav": false,
+      "title": "Philippines Services Center: Flagship Offshore Teams | Cloudstaff",
+      "description": "Cloudstaff's flagship Philippines center: 20+ years of BPO depth, top-of-Asia English, US-aligned shifts, and secure campuses. See the benefits and the roles it does best."
+    },
+    {
+      "slug": "center-colombia",
+      "wp_template": "page-center-colombia",
+      "nav_label": "Colombia",
+      "in_nav": false,
+      "title": "Colombia Nearshore Services Center: Real-Time Bilingual Teams | Cloudstaff",
+      "description": "Cloudstaff's Colombia nearshore center: real-time EST/CST overlap and bilingual Spanish-English talent. See the benefits and the roles it does best."
+    },
+    {
+      "slug": "center-india",
+      "wp_template": "page-center-india",
+      "nav_label": "India",
+      "in_nav": false,
+      "title": "India Services Center: Software & AI Engineering Teams | Cloudstaff",
+      "description": "Cloudstaff's India center: one of the world's largest technical talent pools for software, AI/ML, and complex back office. See the benefits and the roles it does best."
+    },
+    {
+      "slug": "center-kenya",
+      "wp_template": "page-center-kenya",
+      "nav_label": "Kenya",
+      "in_nav": false,
+      "title": "Kenya Services Center: UK-Hours Teams & STEM Talent | Cloudstaff",
+      "description": "Cloudstaff's Kenya center: 50,000+ STEM graduates a year and GMT+3 UK/EU-hours coverage. See the benefits and the roles it does best."
+    },
+    {
       "slug": "cfo-guide",
       "wp_template": "page-cfo-guide",
       "nav_label": "The CFO Guide",
