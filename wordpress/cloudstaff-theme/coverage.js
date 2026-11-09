@@ -123,13 +123,16 @@
       var dayLocal = "their 9am–5pm";
       var alignLocal = fmt(alignLocalStart) + "–" + fmt(alignLocalStart + 8) + " local";
 
+      /* Draw the ACTIVE bar last so it sits on top when the day shift and the
+         aligned shift coincide (e.g. nearshore Colombia on US-Eastern). */
+      var dayBar = barHtml(dayStart, 8, "cov-bar-day" + (dayActive ? " is-active" : ""));
+      var alignBar = barHtml(9, 8, "cov-bar-align" + (!dayActive ? " is-active" : ""));
+      var bars = dayActive ? (alignBar + dayBar) : (dayBar + alignBar);
+
       rows += '<div class="cov-row">' +
-        '<span class="cov-name">' + c.flag + ' ' + c.name +
+        '<span class="cov-name">' + c.name +
         ' <small>UTC' + (c.off >= 0 ? "+" : "") + c.off + '</small></span>' +
-        '<div class="cov-track">' +
-          barHtml(dayStart, 8, "cov-bar-day" + (dayActive ? " is-active" : "")) +
-          barHtml(9, 8, "cov-bar-align" + (!dayActive ? " is-active" : "")) +
-        '</div></div>' +
+        '<div class="cov-track">' + bars + '</div></div>' +
         '<div class="cov-sub">' +
           (dayActive
             ? '<span class="cov-dot cov-dot-day"></span> Works ' + dayLocal +
