@@ -1,10 +1,10 @@
 /* ==========================================================================
-   Cloudstaff marketing site — custom layer on top of the design system.
+   Cloudstaff marketing site, custom layer on top of the design system.
 
    The design system provides tokens + components (buttons, cards, tiles,
    tables, badges, forms, topbar). This file OWNS the page scaffolding
    (hero bands, sections, splits, grids, footer) so layout is deterministic.
-   Tokens only — no raw hex.
+   Tokens only, no raw hex.
    ========================================================================== */
 
 /* --- Accessibility ----------------------------------------------------- */
@@ -320,7 +320,7 @@ h3 > .icon {
   max-width: 52rem;
 }
 
-/* Split (text + visual) — only activates when a .site-visual is present */
+/* Split (text + visual), only activates when a .site-visual is present */
 .site-band-inner:has(> .site-visual) {
   display: grid;
   grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
@@ -1122,6 +1122,18 @@ ul.tb-disclaimer {
 .cw-desc { margin: 0; font-size: 0.9rem; line-height: 1.5; }
 .cw-card .cs-results { margin-block-start: auto; }
 .cw-cat-tag { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700; color: var(--color-foreground-muted, #5b6576); }
+.cw-search {
+  font: inherit; font-size: 0.85rem; line-height: 1; margin-inline-start: auto;
+  padding: 0.5rem 0.95rem; border-radius: var(--radius-pill, 999px);
+  border: 1px solid color-mix(in oklch, var(--color-foreground-primary, #16233b), white 82%);
+  background: #fff; color: var(--color-foreground-primary, #16233b); min-width: min(15rem, 100%);
+}
+.cw-search:focus-visible { outline: 2px solid var(--color-brand-primary, #007aff); outline-offset: 1px; }
+@media (max-width: 640px) { .cw-search { margin-inline-start: 0; width: 100%; } }
+.cw-status { color: var(--color-foreground-muted, #5b6576); font-weight: 600; }
+.cw-planned-av { background: color-mix(in oklch, var(--color-foreground-muted, #5b6576), white 80%); color: var(--color-foreground-muted, #5b6576); }
+.cw-card-planned { border: 1px dashed color-mix(in oklch, var(--color-foreground-primary, #16233b), white 72%); }
+.cw-empty { grid-column: 1 / -1; color: var(--color-foreground-muted, #5b6576); margin: 0; padding-block: var(--space-md, 0.75rem); }
 .intl-card .intl-tagline {
   font-weight: var(--font-weight-semibold, 600);
   color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));

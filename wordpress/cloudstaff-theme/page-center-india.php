@@ -16,8 +16,8 @@ get_header();
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="center-back">International Services Centers</a> &rarr; India</span>
-    <h1>India &mdash; The engineering powerhouse</h1>
-    <p>One of the world's largest and deepest technical talent pools, backed by a mature STEM and IT ecosystem &mdash; the center of gravity for complex, build-heavy work.</p>
+    <h1>India, The engineering powerhouse</h1>
+    <p>One of the world's largest and deepest technical talent pools, backed by a mature STEM and IT ecosystem, the center of gravity for complex, build-heavy work.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Build a team in India</a>
     </div>
   </div>
@@ -44,7 +44,7 @@ get_header();
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></div>
           <h3>Software engineering at scale</h3>
-          <p>Front-end, back-end, full-stack, mobile, and 70+ specialist stacks &mdash; the depth to staff whole engineering functions, not just single seats.</p>
+          <p>Front-end, back-end, full-stack, mobile, and 70+ specialist stacks, the depth to staff whole engineering functions, not just single seats.</p>
         </div>
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4"/><path d="M15 2v4"/><path d="M9 18v4"/><path d="M15 18v4"/><path d="M2 9h4"/><path d="M2 15h4"/><path d="M18 9h4"/><path d="M18 15h4"/></svg></div>
@@ -79,7 +79,7 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">Good for</span>
     <h2>Roles this center does best</h2>
-    <p>Every center can staff across our full range of 600+ roles. These are the functions India is especially strong in &mdash; where its talent pool, skills, and time zone line up best.</p>
+    <p>Every center can staff across our full range of 600+ roles. These are the functions India is especially strong in, where its talent pool, skills, and time zone line up best.</p>
     <div class="grid-3">
         <div class="card">
           <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg> Software Development</h3>
@@ -115,7 +115,7 @@ get_header();
     <div>
       <span class="eyebrow">Follow the sun</span>
       <h2>How India fits your day</h2>
-      <p>On UTC+5:30, India's working day overlaps UK and European hours and reaches into the US morning &mdash; a strong fit for engineering teams that collaborate on a daily cadence rather than live chat.</p>
+      <p>On UTC+5:30, India's working day overlaps UK and European hours and reaches into the US morning, a strong fit for engineering teams that collaborate on a daily cadence rather than live chat.</p>
       <p><a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="button-link">See the full coverage chart &rarr;</a></p>
     </div>
   </div>
@@ -126,9 +126,9 @@ get_header();
     <span class="eyebrow">Explore the network</span>
     <h2>Our other International Services Centers</h2>
     <div class="cluster center-others">
-          <a href="<?php echo esc_url( home_url( '/center-philippines/' ) ); ?>" class="button button-secondary">&#127477;&#127469; Philippines</a>
-          <a href="<?php echo esc_url( home_url( '/center-colombia/' ) ); ?>" class="button button-secondary">&#127464;&#127476; Colombia</a>
-          <a href="<?php echo esc_url( home_url( '/center-kenya/' ) ); ?>" class="button button-secondary">&#127472;&#127466; Kenya</a>
+          <a href="<?php echo esc_url( home_url( '/center-philippines/' ) ); ?>" class="button button-secondary"><img class="flag" src="https://flagcdn.com/ph.svg" width="24" height="18" alt="Philippines" loading="lazy" decoding="async"> Philippines</a>
+          <a href="<?php echo esc_url( home_url( '/center-colombia/' ) ); ?>" class="button button-secondary"><img class="flag" src="https://flagcdn.com/co.svg" width="24" height="18" alt="Colombia" loading="lazy" decoding="async"> Colombia</a>
+          <a href="<?php echo esc_url( home_url( '/center-kenya/' ) ); ?>" class="button button-secondary"><img class="flag" src="https://flagcdn.com/ke.svg" width="24" height="18" alt="Kenya" loading="lazy" decoding="async"> Kenya</a>
     </div>
   </div>
 </section>
@@ -136,7 +136,7 @@ get_header();
 <section class="site-cta">
   <div class="site-band-inner">
     <h2>Ready to build your India team?</h2>
-    <p>Tell us the roles and hours you need &mdash; we'll show you how a India team fits.</p>
+    <p>Tell us the roles and hours you need, and we'll show you how a India team fits.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Talk to an Expert</a>
   </div>
 </section>

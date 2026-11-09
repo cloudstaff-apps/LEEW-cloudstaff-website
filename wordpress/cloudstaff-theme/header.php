@@ -15,7 +15,7 @@
 <?php wp_body_open(); ?>
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
-  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-header-brand" aria-label="Cloudstaff — home"><img class="site-logo-img" src="<?php echo esc_url( get_template_directory_uri() . '/cloudstaff-logo.png' ); ?>" alt="Cloudstaff" width="1329" height="372" decoding="async"></a>
+  <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-header-brand" aria-label="Cloudstaff, home"><img class="site-logo-img" src="<?php echo esc_url( get_template_directory_uri() . '/cloudstaff-logo.png' ); ?>" alt="Cloudstaff" width="1329" height="372" decoding="async"></a>
   <nav class="site-nav" aria-label="Main navigation">
     <div class="site-nav-item">
       <a href="<?php echo esc_url( home_url( '/what-is-remote-staffing/' ) ); ?>" <?php if ( is_page( 'what-is-remote-staffing' ) ) echo 'aria-current="page"'; ?> class="site-nav-parent">About<span class="site-nav-caret" aria-hidden="true"></span></a>

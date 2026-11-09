@@ -17,7 +17,7 @@ get_header();
     <div class="site-hero-copy">
     <span class="eyebrow">No hidden fees. No surprises.</span>
     <h1>Transparent pricing, real savings</h1>
-    <p>Cloudstaff's pricing separates your workforce costs into three clear components, giving you greater visibility, more predictable budgeting, and clearer control over your workforce investment. Here's exactly what remote staffing costs &mdash; and what it saves.</p>
+    <p>Cloudstaff's pricing separates your workforce costs into three clear components, giving you greater visibility, more predictable budgeting, and clearer control over your workforce investment. Here's exactly what remote staffing costs, and what it saves.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Get a tailored quote</a>
 </div>
   </div>
@@ -34,7 +34,7 @@ get_header();
       <div class="feature-tile">
         <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/><path d="M6 12h.01"/><path d="M18 12h.01"/></svg></div>
         <h3>2. Employee Direct Cost</h3>
-        <p>Salary, taxes, statutory contributions, medical insurance, and other direct employment costs for each team member &mdash; passed through transparently, including retention programs.</p>
+        <p>Salary, taxes, statutory contributions, medical insurance, and other direct employment costs for each team member, passed through transparently, including retention programs.</p>
       </div>
       <div class="feature-tile">
         <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19h18"/><rect x="4" y="5" width="16" height="11" rx="2"/><path d="m10 9-1.5 1.5L10 12"/><path d="m14 9 1.5 1.5L14 12"/></svg></div>
@@ -50,8 +50,8 @@ get_header();
     <div>
       <span class="eyebrow">A worked example</span>
       <h2>Senior Accountant: US hire vs. Cloudstaff hire</h2>
-      <p>Depending on the role and location, businesses may reduce fully loaded employment costs by up to 80%. The value extends beyond salary differences &mdash; benefits, technology, infrastructure, and overheads are all substantially reduced through a global staffing model. Even a single role can create meaningful savings and improve EBITDA without disrupting day-to-day operations.</p>
-      <p class="cost-bar-savings">Hiring a Senior Accountant through Cloudstaff can save up to 80% compared with hiring onshore &mdash; up to US$157,536 per staff member per year, without sacrificing quality.</p>
+      <p>Depending on the role and location, businesses may reduce fully loaded employment costs by up to 80%. The value extends beyond salary differences, benefits, technology, infrastructure, and overheads are all substantially reduced through a global staffing model. Even a single role can create meaningful savings and improve EBITDA without disrupting day-to-day operations.</p>
+      <p class="cost-bar-savings">Hiring a Senior Accountant through Cloudstaff can save up to 80% compared with hiring onshore, up to US$157,536 per staff member per year, without sacrificing quality.</p>
     </div>
     <div class="site-visual">
       <div class="grid-2">
@@ -115,7 +115,7 @@ get_header();
           </tbody>
         </table>
       </div>
-      <p><small>US salary estimates based on available market data including Deel and Glassdoor. Cloudstaff costs include applicable technology and service fees; one-time activation fees excluded. Figures current as of July 2026 and indicative only &mdash; your quote is tailored to role, seniority, and location.</small></p>
+      <p><small>US salary estimates based on available market data including Deel and Glassdoor. Cloudstaff costs include applicable technology and service fees; one-time activation fees excluded. Figures current as of July 2026 and indicative only, your quote is tailored to role, seniority, and location.</small></p>
     </div>
   </div>
 </section>

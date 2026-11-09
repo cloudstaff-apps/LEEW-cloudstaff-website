@@ -15,7 +15,7 @@ get_header();
 <section class="site-hero site-hero-photo" style="--hero-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=2000&q=70')" title="Team joining hands">
   <div class="site-band-inner">
     <div class="site-hero-copy">
-    <span class="eyebrow">One partner &mdash; hundreds of roles</span>
+    <span class="eyebrow">One partner, hundreds of roles</span>
     <h1>600+ roles across every function that matters</h1>
     <p>From specialist support to complex, business-critical expertise, Cloudstaff helps you find high-quality talent across customer service, accounting, finance, technology, sales, marketing, real estate, administration, and professional services. Every position is tailored to your required skills, experience level, and business needs.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Find your first role</a>
@@ -39,7 +39,7 @@ get_header();
       <div class="feature-tile">
         <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4"/><path d="M15 2v4"/><path d="M9 18v4"/><path d="M15 18v4"/><path d="M2 9h4"/><path d="M2 15h4"/><path d="M18 9h4"/><path d="M18 15h4"/></svg></div>
         <h3>AI-ready workforce</h3>
-        <p>Teams trained to use approved AI tools to improve productivity, quality, and consistency &mdash; and future-proof your capability.</p>
+        <p>Teams trained to use approved AI tools to improve productivity, quality, and consistency, and future-proof your capability.</p>
       </div>
     </div>
   </div>
@@ -50,7 +50,7 @@ get_header();
     <div>
       <span class="eyebrow">Example high-value roles</span>
       <h2>These aren't just support roles</h2>
-      <p>Modern remote staffing is much broader than the outdated view of offshore work. Cloudstaff supports both operational and high-value professional roles &mdash; experienced professionals who contribute to core business operations, improve delivery capacity, and help teams scale without adding unnecessary fixed overhead.</p>
+      <p>Modern remote staffing is much broader than the outdated view of offshore work. Cloudstaff supports both operational and high-value professional roles, experienced professionals who contribute to core business operations, improve delivery capacity, and help teams scale without adding unnecessary fixed overhead.</p>
       <div class="grid-2">
         <div class="card">
           <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg> Technology &amp; Engineering</h3>
@@ -123,7 +123,7 @@ get_header();
         </div>
         <div class="card">
           <h3 class="flag-head"><img class="flag" src="https://flagcdn.com/ke.svg" width="24" height="18" alt="Kenya" loading="lazy" decoding="async"> Other locations</h3>
-          <p>Kenya, South Africa, Nicaragua, Malaysia, Singapore, Vietnam, Japan, Sri Lanka &mdash; broader time-zone coverage, multilingual talent, and flexible specialist pools.</p>
+          <p>Kenya, South Africa, Nicaragua, Malaysia, Singapore, Vietnam, Japan, Sri Lanka, broader time-zone coverage, multilingual talent, and flexible specialist pools.</p>
           <p><a href="<?php echo esc_url( home_url( '/center-kenya/' ) ); ?>" class="button-link">Explore Kenya &rarr;</a> &nbsp; <a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="button-link">See all &rarr;</a></p>
         </div>
       </div>
@@ -137,14 +137,14 @@ get_header();
       <span class="eyebrow">People + intelligent technology</span>
       <h2>The AI-ready workforce</h2>
       <p>Technology alone doesn't create business outcomes, and people alone can't deliver unlimited scale. The businesses that will lead the next decade combine skilled talent with intelligent systems. Cloudstaff delivers the people; Cloudstaff.ai delivers the technology.</p>
-      <p><strong>You don't need to become an AI expert. But the people you hire should be AI-ready.</strong> Cloudstaff AI is not about replacing people &mdash; it's about helping great people do their best work.</p>
+      <p><strong>You don't need to become an AI expert. But the people you hire should be AI-ready.</strong> Cloudstaff AI is not about replacing people, it's about helping great people do their best work.</p>
     </div>
     <div class="site-visual">
       <div class="stack-lg">
         <div class="stat-tile stat-tile-illustrated is-brand">
           <div class="stat-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
           <div class="stat-tile-body">
-            <div class="stat-tile-label">Cloudstaffer &mdash; experience, training, domain knowledge</div>
+            <div class="stat-tile-label">Cloudstaffer, experience, training, domain knowledge</div>
             <div class="stat-tile-value">1x productivity</div>
           </div>
         </div>
@@ -158,7 +158,7 @@ get_header();
         <div class="stat-tile stat-tile-illustrated is-success">
           <div class="stat-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 4v4"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M2 14h2"/><path d="M20 14h2"/></svg></div>
           <div class="stat-tile-body">
-            <div class="stat-tile-label">Digital twins &mdash; AI performs defined tasks under supervision</div>
+            <div class="stat-tile-label">Digital twins, AI performs defined tasks under supervision</div>
             <div class="stat-tile-value">2&ndash;5x productivity</div>
           </div>
         </div>

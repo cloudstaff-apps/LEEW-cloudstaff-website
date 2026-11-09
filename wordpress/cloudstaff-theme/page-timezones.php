@@ -28,7 +28,7 @@ get_header();
     <div>
       <span class="eyebrow">Interactive tool</span>
       <h2>Coverage that follows your working day</h2>
-      <p>Set your region and choose how you'd like your team to work &mdash; the chart shows exactly when each center is online relative to <em>your</em> working day, and what shift that means for them locally.</p>
+      <p>Set your region and choose how you'd like your team to work. The chart shows exactly when each center is online relative to <em>your</em> working day, and what shift that means for them locally.</p>
 
       <div class="coverage-tool" id="coverage-tool">
         <div class="cov-controls card">
@@ -68,12 +68,12 @@ get_header();
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg></div>
           <h3>Run work overnight</h3>
-          <p>Hand off at the end of your day and pick it up finished. Offshore day shifts land in your overnight hours &mdash; so routine processing happens while your local team sleeps.</p>
+          <p>Hand off at the end of your day and pick it up finished. Offshore day shifts land in your overnight hours, so routine processing happens while your local team sleeps.</p>
         </div>
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3.5 3 14.5 0 18"/><path d="M12 3c-3 3.5-3 14.5 0 18"/></svg></div>
           <h3>Keep going 24 hours</h3>
-          <p>Combine centers across UTC-5 to UTC+8 to keep critical functions &mdash; support, monitoring, operations &mdash; moving around the clock, with one security standard worldwide.</p>
+          <p>Combine centers across UTC-5 to UTC+8 to keep critical functions like support, monitoring, and operations moving around the clock, with one security standard worldwide.</p>
         </div>
       </div>
     </div>
@@ -83,7 +83,7 @@ get_header();
 <section class="site-cta">
   <div class="site-band-inner">
     <h2>Build a team the sun never sets on</h2>
-    <p>Tell us your hours, your roles, and your growth plans &mdash; we'll map them to the right centers and the right shifts.</p>
+    <p>Tell us your hours, your roles, and your growth plans, and we'll map them to the right centers and the right shifts.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Plan your coverage</a>
   </div>
 </section>

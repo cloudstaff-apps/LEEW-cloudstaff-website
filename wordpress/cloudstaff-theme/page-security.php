@@ -17,7 +17,7 @@ get_header();
     <div class="site-hero-copy">
     <span class="eyebrow">Secure by design</span>
     <h1>Enterprise-grade security and compliance</h1>
-    <p>Remote staffing must meet the same security and governance standards as any internal operation. Cloudstaff has built security into every layer of its operating model &mdash; from recruitment and background screening through hardware, network infrastructure, and physical site controls. Oversight remains with you; infrastructure and safeguards are managed by us.</p>
+    <p>Remote staffing must meet the same security and governance standards as any internal operation. Cloudstaff has built security into every layer of its operating model, from recruitment and background screening through hardware, network infrastructure, and physical site controls. Oversight remains with you; infrastructure and safeguards are managed by us.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Talk security with our team</a>
 </div>
   </div>
@@ -34,7 +34,7 @@ get_header();
       <div class="feature-tile">
         <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
         <h3>99.9 SecurityScorecard</h3>
-        <p>Near-perfect security performance, independently rated &mdash; a SecurityScorecard score of 99.9 and an &ldquo;A&rdquo; rating.</p>
+        <p>Near-perfect security performance, independently rated, a SecurityScorecard score of 99.9 and an &ldquo;A&rdquo; rating.</p>
       </div>
       <div class="feature-tile">
         <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg></div>
@@ -57,10 +57,10 @@ get_header();
         </div>
         <div class="card">
           <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg> &ldquo;Will this create compliance or audit exposure?&rdquo;</h3>
-          <p>Cloudstaff operates under a documented security and compliance program aligned with recognized international standards, regulatory requirements, and industry best practices &mdash; and supports client audits with documentation as needed.</p>
+          <p>Cloudstaff operates under a documented security and compliance program aligned with recognized international standards, regulatory requirements, and industry best practices, and supports client audits with documentation as needed.</p>
         </div>
         <div class="card">
-          <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg> &ldquo;What if something fails &mdash; power, network, vendor?&rdquo;</h3>
+          <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg> &ldquo;What if something fails, power, network, vendor?&rdquo;</h3>
           <p>Facilities include redundant connectivity, backup power, and onsite IT support. Business continuity and disaster recovery plans are tested monthly, with replacement equipment on hand and the ability to relocate staff if needed.</p>
         </div>
         <div class="card">
@@ -76,7 +76,7 @@ get_header();
   <div class="site-band-inner">
     <div>
       <span class="eyebrow">Above industry standard, everywhere your team works</span>
-      <h2>Home or office &mdash; the same security bar</h2>
+      <h2>Home or office, the same security bar</h2>
       <div class="table-scroll">
         <table class="table">
           <thead>
@@ -88,16 +88,16 @@ get_header();
             </tr>
           </thead>
           <tbody>
-            <tr><td>Fully managed Cloudstaff-issued PCs</td><td>&mdash;</td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
-            <tr><td>Enforced encryption (BitLocker/FileVault/LUKS)</td><td>&mdash;</td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
-            <tr><td>Mandatory MFA and federated login</td><td>&mdash;</td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
-            <tr><td>Unified threat management &amp; auto-patching</td><td>&mdash;</td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
-            <tr><td>Enterprise-grade firewall routing</td><td>&mdash;</td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
-            <tr><td>Corporate-grade ISPs &amp; prioritized restoration</td><td>&mdash;</td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
-            <tr><td>Hardware insurance with immediate replacement</td><td>&mdash;</td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
-            <tr><td>24x7 IT support</td><td>&mdash;</td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
-            <tr><td>Physical access controls (biometrics, CCTV, redundancy)</td><td>&mdash;</td><td>&mdash;</td><td><span class="badge badge-success">Included</span></td></tr>
-            <tr><td>On-site supervision &amp; controlled environment</td><td>&mdash;</td><td>&mdash;</td><td><span class="badge badge-success">Included</span></td></tr>
+            <tr><td>Fully managed Cloudstaff-issued PCs</td><td>, </td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
+            <tr><td>Enforced encryption (BitLocker/FileVault/LUKS)</td><td>, </td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
+            <tr><td>Mandatory MFA and federated login</td><td>, </td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
+            <tr><td>Unified threat management &amp; auto-patching</td><td>, </td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
+            <tr><td>Enterprise-grade firewall routing</td><td>, </td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
+            <tr><td>Corporate-grade ISPs &amp; prioritized restoration</td><td>, </td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
+            <tr><td>Hardware insurance with immediate replacement</td><td>, </td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
+            <tr><td>24x7 IT support</td><td>, </td><td><span class="badge badge-success">Included</span></td><td><span class="badge badge-success">Included</span></td></tr>
+            <tr><td>Physical access controls (biometrics, CCTV, redundancy)</td><td>, </td><td>, </td><td><span class="badge badge-success">Included</span></td></tr>
+            <tr><td>On-site supervision &amp; controlled environment</td><td>, </td><td>, </td><td><span class="badge badge-success">Included</span></td></tr>
           </tbody>
         </table>
       </div>
@@ -111,7 +111,7 @@ get_header();
       <span class="eyebrow">Managed PCs and 24x7 support</span>
       <h2>Purpose-built devices, always-on support</h2>
       <p>Cloudstaff's Managed PCs are purpose-built, enterprise-grade systems designed specifically for remote and hybrid work. Every device arrives pre-configured to your operational and security standards, fully loaded with approved software, productivity tools, and monitoring utilities. Automatic updates, advanced encryption, and strict access controls protect sensitive data from day one.</p>
-      <p>With 24x7 assistance across our delivery locations, dedicated engineers troubleshoot issues remotely or on site and arrange prompt hardware replacement when required &mdash; minimizing downtime so your team stays focused on delivering results.</p>
+      <p>With 24x7 assistance across our delivery locations, dedicated engineers troubleshoot issues remotely or on site and arrange prompt hardware replacement when required, minimizing downtime so your team stays focused on delivering results.</p>
     </div>
     <div class="site-visual">
       <div class="stack-lg">
@@ -233,7 +233,7 @@ get_header();
   <text x="48" y="51" text-anchor="middle" class="seal-mono" font-size="30">A</text>
   <text x="48" y="63" text-anchor="middle" class="seal-top" font-size="6">SECURITYSCORECARD</text>
   <text x="48" y="73" text-anchor="middle" class="seal-sub" font-size="7">99.9</text>
-</svg><figcaption>SecurityScorecard 99.9 &mdash; &ldquo;A&rdquo;</figcaption></figure>
+</svg><figcaption>SecurityScorecard 99.9, &ldquo;A&rdquo;</figcaption></figure>
           <figure class="cert-item"><svg class="cert-seal-svg" viewBox="0 0 96 96" aria-hidden="true" focusable="false">
   <circle cx="48" cy="48" r="45" class="seal-face"/>
   <circle cx="48" cy="48" r="45" class="seal-ring" fill="none" stroke-width="2.5"/>
@@ -252,7 +252,7 @@ get_header();
 <section class="site-cta">
   <div class="site-band-inner">
     <h2>Put our security team in front of yours</h2>
-    <p>We support client audits and due diligence &mdash; bring your IT and compliance stakeholders to the conversation.</p>
+    <p>We support client audits and due diligence, bring your IT and compliance stakeholders to the conversation.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Book a security review</a>
   </div>
 </section>

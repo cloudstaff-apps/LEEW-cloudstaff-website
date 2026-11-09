@@ -11,8 +11,8 @@
       "wp_template": "front-page",
       "nav_label": "Home",
       "in_nav": false,
-      "title": "Cloudstaff | Remote Staffing for US Businesses \u2014 Build Your Offshore Team",
-      "description": "Cloudstaff helps US businesses build dedicated offshore teams that cut fully loaded labor costs by up to 80% \u2014 with enterprise-grade security, 98% staff retention, and 20+ years of experience."
+      "title": "Cloudstaff | Remote Staffing for US Businesses, Build Your Offshore Team",
+      "description": "Cloudstaff helps US businesses build dedicated offshore teams that cut fully loaded labor costs by up to 80%, with enterprise-grade security, 98% staff retention, and 20+ years of experience."
     },
     {
       "slug": "what-is-remote-staffing",
@@ -20,7 +20,7 @@
       "nav_label": "What Is Remote Staffing?",
       "in_nav": true,
       "title": "What Is Remote Staffing? A Plain-English Guide | Cloudstaff",
-      "description": "New to outsourcing? Learn what remote staffing is, how it compares to freelancers, PEOs, and BPO, and why US companies use it to scale \u2014 explained in plain English."
+      "description": "New to outsourcing? Learn what remote staffing is, how it compares to freelancers, PEOs, and BPO, and why US companies use it to scale, explained in plain English."
     },
     {
       "slug": "how-it-works",
@@ -44,7 +44,7 @@
       "nav_label": "Team Builder",
       "in_nav": true,
       "title": "Team Builder: Build Your Offshore Team & See the Savings | Cloudstaff",
-      "description": "Browse 600+ roles across 36 categories, build your dream offshore team, and see your all-in monthly price and savings vs. onshore hiring \u2014 instantly."
+      "description": "Browse 600+ roles across 36 categories, build your dream offshore team, and see your all-in monthly price and savings vs. onshore hiring, instantly."
     },
     {
       "slug": "roles",
@@ -52,7 +52,7 @@
       "nav_label": "Roles & Industries",
       "in_nav": true,
       "title": "600+ Roles Across Every Industry | Cloudstaff Remote Staffing",
-      "description": "From accountants and software engineers to customer service and virtual assistants \u2014 explore 600+ roles and the industries Cloudstaff serves from global capability hubs."
+      "description": "From accountants and software engineers to customer service and virtual assistants, explore 600+ roles and the industries Cloudstaff serves from global capability hubs."
     },
     {
       "slug": "security",
@@ -76,7 +76,7 @@
       "nav_label": "Customers",
       "in_nav": true,
       "title": "What Our Customers Say: Client Success Stories | Cloudstaff",
-      "description": "Real client success stories from Wipfli, Built, McConnell Dowell, TM Strata and more — with video testimonials and the results of building dedicated remote teams with Cloudstaff."
+      "description": "Real client success stories from Wipfli, Built, McConnell Dowell, TM Strata and more, with video testimonials and the results of building dedicated remote teams with Cloudstaff."
     },
     {
       "slug": "ai-enabled-staff",
@@ -92,7 +92,7 @@
       "nav_label": "AI Coworkers",
       "in_nav": false,
       "title": "AI Coworkers: AI With a Defined Job | Cloudstaff",
-      "description": "Supervised AI Coworkers with a job description, a human manager, and defined rules — proactive digital workers that run inside your workflows. Meet Mike, Tracy, and Nicola."
+      "description": "Supervised AI Coworkers with a job description, a human manager, and defined rules, proactive digital workers that run inside your workflows. Meet Mike, Tracy, and Nicola."
     },
     {
       "slug": "cloudstaff-q",
@@ -100,7 +100,7 @@
       "nav_label": "Cloudstaff Q",
       "in_nav": false,
       "title": "Cloudstaff Q: Secure Platform for AI Coworkers | Cloudstaff",
-      "description": "The platform to build, train, connect, and govern AI Coworkers — secure by design, with IP protection, flexible hosting, multi-model access, and full visibility."
+      "description": "The platform to build, train, connect, and govern AI Coworkers, secure by design, with IP protection, flexible hosting, multi-model access, and full visibility."
     },
     {
       "slug": "timezones",

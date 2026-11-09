@@ -1,4 +1,4 @@
-/* Cloudstaff AI Coworker directory — Cloudstaff's own live Coworkers, grouped
+/* Cloudstaff AI Coworker directory, Cloudstaff's own live Coworkers, grouped
    by business function with a category filter. Read-only; data embedded. */
 (function () {
   "use strict";
@@ -6,8 +6,8 @@
   if (!root) return;
 
   var ORDER = ["Sales", "Technology", "Facilities", "HR", "Operations",
-    "Communications", "Relationships", "Supply chain", "Finance",
-    "Marketing", "Reception"];
+    "Communications", "Relationships", "Supply chain", "Legal & compliance",
+    "Finance", "Marketing", "Reception", "Other"];
 
   var DATA = [
     { c: "Sales", n: "Emma Frost", u: "Crmboss", d: "Keeps sales managers on top of pipeline activity in HubSpot and flags when targets slip.", t: ["HubSpot", "KPIs"] },
@@ -58,10 +58,21 @@
     { c: "Marketing", n: "Josephine Allen", u: "Storyboss", d: "Collects employee stories and case studies for marketing.", t: ["Employee stories", "Case studies"] },
 
     { c: "Reception", n: "Claire West", u: "Visitorboss", d: "The visitor check-in system: pre-registration, QR passes, badges, and arrival alerts.", t: ["Visitor management", "Badges"] },
-    { c: "Reception", n: "Jane Doyle", u: "Front Desk", d: "The remote receptionist: visitors reach a live switchboard by audio, video and chat.", t: ["Remote receptionist", "Video calls"] }
+    { c: "Reception", n: "Jane Doyle", u: "Front Desk", d: "The remote receptionist: visitors reach a live switchboard by audio, video and chat.", t: ["Remote receptionist", "Video calls"] },
+
+    { c: "Legal & compliance", u: "Ipboss", planned: true, d: "The intellectual-property workspace: tracks every right, territory and deadline, with evidence of any misuse.", t: ["Intellectual property", "Deadlines"] },
+    { c: "Legal & compliance", u: "LegalAdviser", planned: true, d: "An AI legal assistant that answers staff legal questions and points to a lawyer when it matters.", t: ["Legal advice", "Contracts"] },
+    { c: "Legal & compliance", u: "PolicyBuilder", planned: true, d: "Helps a business write its AI usage policy: choose the rules, define them, and publish for staff.", t: ["AI policy", "Policy writing"] },
+
+    { c: "Other", n: "Isaac Preston", u: "Leaseboss", d: "Runs lease management across the business: terms, renewals and key dates.", t: ["Leases", "Renewals"] },
+    { c: "Other", n: "Keith Watts", u: "Amer Yoga", d: "Trust relationship management for the Americas team: records, promises and morning briefs.", t: ["Trust management", "Americas"] },
+    { c: "Other", n: "Kirsty Doyle", u: "EMEA Yoga", d: "Trust relationship management for the EMEA team: records, promises and morning briefs.", t: ["Trust management", "EMEA"] },
+    { c: "Other", n: "Nina Shaw", u: "BackgroundBoss", d: "Runs background screening for new hires, with every check tracked to completion.", t: ["Background checks", "Screening"] },
+    { c: "Other", n: "Paul Mann", u: "Onboardingboss", d: "Guides new starters through onboarding, keeping every step on track.", t: ["Onboarding", "New starters"] },
+    { c: "Other", n: "Sophie Bennett", u: "KYC Boss", d: "Runs know-your-customer checks, collecting and verifying the required documents.", t: ["KYC", "Compliance"] }
   ];
 
-  var state = { cat: "All" };
+  var state = { cat: "All", q: "" };
 
   function initials(name) {
     return name.replace(/[^A-Za-z ]/g, "").split(/\s+/).filter(Boolean)
@@ -69,18 +80,32 @@
   }
 
   function card(x) {
-    return '<article class="card cw-card">' +
-      '<div class="cw-head"><span class="avatar-initials">' + initials(x.n) + '</span>' +
-      '<span class="cw-id"><strong class="cw-name">' + x.n + '</strong>' +
-      '<span class="cw-unit">' + x.u + '</span></span></div>' +
+    var planned = !!x.planned;
+    var title = planned ? x.u : x.n;
+    var sub = planned
+      ? '<span class="cw-unit cw-status">In development</span>'
+      : '<span class="cw-unit">' + x.u + '</span>';
+    return '<article class="card cw-card' + (planned ? ' cw-card-planned' : '') + '">' +
+      '<div class="cw-head"><span class="avatar-initials' + (planned ? ' cw-planned-av' : '') + '">' +
+      initials(planned ? x.u : x.n) + '</span>' +
+      '<span class="cw-id"><strong class="cw-name">' + title + '</strong>' + sub + '</span></div>' +
       '<p class="cw-desc">' + x.d + '</p>' +
       '<ul class="cs-results">' + x.t.map(function (t) { return '<li>' + t + '</li>'; }).join("") + '</ul>' +
       '<span class="cw-cat-tag">' + x.c + '</span></article>';
   }
 
+  function matches(x) {
+    if (state.cat !== "All" && x.c !== state.cat) return false;
+    if (!state.q) return true;
+    var hay = ((x.n || "") + " " + x.u + " " + x.d + " " + x.t.join(" ") + " " + x.c).toLowerCase();
+    return hay.indexOf(state.q) !== -1;
+  }
+
   function render() {
-    var list = DATA.filter(function (x) { return state.cat === "All" || x.c === state.cat; });
-    root.querySelector(".cw-grid").innerHTML = list.map(card).join("");
+    var list = DATA.filter(matches);
+    root.querySelector(".cw-grid").innerHTML = list.length
+      ? list.map(card).join("")
+      : '<p class="cw-empty">No Coworkers match, try another function or search term.</p>';
   }
 
   var chips = ["All"].concat(ORDER);
@@ -91,6 +116,7 @@
       return '<button type="button" class="cw-chip' + (c === "All" ? " is-active" : "") +
         '" data-cat="' + c + '">' + c + ' <span class="cw-count">' + count + '</span></button>';
     }).join("") +
+    '<input type="search" class="cw-search" placeholder="Search Coworkers…" aria-label="Search Coworkers">' +
     '</div><div class="cw-grid grid-3"></div>';
 
   root.querySelectorAll(".cw-chip").forEach(function (b) {
@@ -100,6 +126,11 @@
       b.classList.add("is-active");
       render();
     });
+  });
+
+  root.querySelector(".cw-search").addEventListener("input", function () {
+    state.q = this.value.trim().toLowerCase();
+    render();
   });
 
   render();

@@ -16,8 +16,8 @@ get_header();
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="center-back">International Services Centers</a> &rarr; Kenya</span>
-    <h1>Kenya &mdash; The rising talent hub</h1>
-    <p>Young, tech-savvy, English-fluent professionals &mdash; more than 50,000 STEM graduates a year &mdash; positioned on GMT+3 for natural UK and European coverage.</p>
+    <h1>Kenya, The rising talent hub</h1>
+    <p>Young, tech-savvy, English-fluent professionals, more than 50,000 STEM graduates a year, positioned on GMT+3 for natural UK and European coverage.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Build a team in Kenya</a>
     </div>
   </div>
@@ -69,7 +69,7 @@ get_header();
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg></div>
           <h3>Emerging, high-growth market</h3>
-          <p>An ambitious, rapidly developing outsourcing hub &mdash; an early-mover advantage for forward-looking teams.</p>
+          <p>An ambitious, rapidly developing outsourcing hub, an early-mover advantage for forward-looking teams.</p>
         </div>
     </div>
   </div>
@@ -79,7 +79,7 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">Good for</span>
     <h2>Roles this center does best</h2>
-    <p>Every center can staff across our full range of 600+ roles. These are the functions Kenya is especially strong in &mdash; where its talent pool, skills, and time zone line up best.</p>
+    <p>Every center can staff across our full range of 600+ roles. These are the functions Kenya is especially strong in, where its talent pool, skills, and time zone line up best.</p>
     <div class="grid-3">
         <div class="card">
           <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 19h18"/><rect x="4" y="5" width="16" height="11" rx="2"/><path d="m10 9-1.5 1.5L10 12"/><path d="m14 9 1.5 1.5L14 12"/></svg> IT &amp; Software Development</h3>
@@ -115,7 +115,7 @@ get_header();
     <div>
       <span class="eyebrow">Follow the sun</span>
       <h2>How Kenya fits your day</h2>
-      <p>On UTC+3, Kenya covers the full UK and European working day and opens strong overlap with the US East Coast morning &mdash; ideal for European-hours support and research.</p>
+      <p>On UTC+3, Kenya covers the full UK and European working day and opens strong overlap with the US East Coast morning, ideal for European-hours support and research.</p>
       <p><a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="button-link">See the full coverage chart &rarr;</a></p>
     </div>
   </div>
@@ -126,9 +126,9 @@ get_header();
     <span class="eyebrow">Explore the network</span>
     <h2>Our other International Services Centers</h2>
     <div class="cluster center-others">
-          <a href="<?php echo esc_url( home_url( '/center-philippines/' ) ); ?>" class="button button-secondary">&#127477;&#127469; Philippines</a>
-          <a href="<?php echo esc_url( home_url( '/center-colombia/' ) ); ?>" class="button button-secondary">&#127464;&#127476; Colombia</a>
-          <a href="<?php echo esc_url( home_url( '/center-india/' ) ); ?>" class="button button-secondary">&#127470;&#127475; India</a>
+          <a href="<?php echo esc_url( home_url( '/center-philippines/' ) ); ?>" class="button button-secondary"><img class="flag" src="https://flagcdn.com/ph.svg" width="24" height="18" alt="Philippines" loading="lazy" decoding="async"> Philippines</a>
+          <a href="<?php echo esc_url( home_url( '/center-colombia/' ) ); ?>" class="button button-secondary"><img class="flag" src="https://flagcdn.com/co.svg" width="24" height="18" alt="Colombia" loading="lazy" decoding="async"> Colombia</a>
+          <a href="<?php echo esc_url( home_url( '/center-india/' ) ); ?>" class="button button-secondary"><img class="flag" src="https://flagcdn.com/in.svg" width="24" height="18" alt="India" loading="lazy" decoding="async"> India</a>
     </div>
   </div>
 </section>
@@ -136,7 +136,7 @@ get_header();
 <section class="site-cta">
   <div class="site-band-inner">
     <h2>Ready to build your Kenya team?</h2>
-    <p>Tell us the roles and hours you need &mdash; we'll show you how a Kenya team fits.</p>
+    <p>Tell us the roles and hours you need, and we'll show you how a Kenya team fits.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Talk to an Expert</a>
   </div>
 </section>

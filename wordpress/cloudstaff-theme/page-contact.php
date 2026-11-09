@@ -17,7 +17,7 @@ get_header();
     <div class="site-hero-copy">
     <span class="eyebrow">We're here to help</span>
     <h1>Talk to a remote staffing expert</h1>
-    <p>Whether you're exploring outsourcing for the first time or scaling an existing program, we'll give you straight answers on roles, costs, security, and timelines. No pressure, no jargon.</p>
+    <p>Whether you're exploring outsourcing for the first time or scaling an existing program, and we'll give you straight answers on roles, costs, security, and timelines. No pressure, no jargon.</p>
     <a href="tel:+18007308615" class="button button-lg">Call US +1 800 730 8615</a>
 </div>
   </div>
@@ -69,7 +69,7 @@ get_header();
               <option>2&ndash;4 roles</option>
               <option>5&ndash;10 roles (a team)</option>
               <option>10+ roles / a department</option>
-              <option>Not sure yet &mdash; exploring</option>
+              <option>Not sure yet, exploring</option>
             </select>
           </div>
         </div>
@@ -110,7 +110,7 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">Where we are</span>
     <h2>Local offices, global delivery</h2>
-    <p class="cs-lead">Client-facing teams across the US, Australia, the UK, India, and Colombia &mdash; backed by delivery operations in the Philippines and beyond.</p>
+    <p class="cs-lead">Client-facing teams across the US, Australia, the UK, India, and Colombia, backed by delivery operations in the Philippines and beyond.</p>
     <div class="grid-3 collapse-2">
       <div class="card contact-office">
         <h3 class="flag-head"><img class="flag" src="https://flagcdn.com/us.svg" width="24" height="18" alt="United States" loading="lazy" decoding="async"> Charlotte, NC</h3>
@@ -165,7 +165,7 @@ get_header();
       <div class="card contact-office">
         <h3 class="flag-head">Delivery network</h3>
         <p><span class="flag-row"><img class="flag" src="https://flagcdn.com/ph.svg" width="24" height="18" alt="Philippines" loading="lazy" decoding="async"><img class="flag" src="https://flagcdn.com/co.svg" width="24" height="18" alt="Colombia" loading="lazy" decoding="async"><img class="flag" src="https://flagcdn.com/in.svg" width="24" height="18" alt="India" loading="lazy" decoding="async"><img class="flag" src="https://flagcdn.com/ke.svg" width="24" height="18" alt="Kenya" loading="lazy" decoding="async"></span></p>
-        <p>Philippines, Colombia, India &amp; Kenya &mdash; plus specialist hubs across Asia, Africa, and Latin America.</p>
+        <p>Philippines, Colombia, India &amp; Kenya, plus specialist hubs across Asia, Africa, and Latin America.</p>
         <p><a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="button-link">Explore our centers &rarr;</a></p>
       </div>
     </div>
@@ -175,7 +175,7 @@ get_header();
 <section class="site-cta">
   <div class="site-band-inner">
     <h2>Prefer to start by reading?</h2>
-    <p>Our plain-English guide walks you through the model, the costs, and the controls &mdash; at your own pace.</p>
+    <p>Our plain-English guide walks you through the model, the costs, and the controls, at your own pace.</p>
     <a href="<?php echo esc_url( home_url( '/what-is-remote-staffing/' ) ); ?>" class="button button-inverse button-lg">Read: What is remote staffing?</a>
   </div>
 </section>

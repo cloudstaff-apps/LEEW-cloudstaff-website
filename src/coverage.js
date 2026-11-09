@@ -1,6 +1,6 @@
 /* Cloudstaff "Follow the sun" coverage tool.
    Shows, on the CLIENT's local 24-hour clock, when each International Services
-   Center is online — given the client's region/time zone and whether the team
+   Center is online, given the client's region/time zone and whether the team
    works its own local day shift or the client's business day. Each center shows
    BOTH its day shift and the evening/night shift that aligns to the client. */
 (function () {
@@ -130,12 +130,12 @@
     CENTERS.forEach(function (c) {
       var start, kind, label, sub;
       if (state.mode === "local") {
-        /* Team works its own 9–5 local — always a day shift for them,
+        /* Team works its own 9–5 local, always a day shift for them,
            mapped onto your clock. */
         start = mod24(9 + (co - c.off));
         kind = "day";
         label = "Day Shift";
-        sub = "Works their 9am–5pm local &mdash; online for you " +
+        sub = "Works their 9am–5pm local, online for you " +
           fmt(start) + "–" + fmt(start + 8);
       } else {
         /* Team covers YOUR 9–5. Work out their local window and whether that
@@ -145,7 +145,7 @@
         var mid = mod24(localStart + 4);
         kind = (mid >= 6 && mid < 18) ? "day" : "night";
         label = kind === "day" ? "Day Shift" : "Night Shift";
-        sub = "Works your 9am–5pm &mdash; that’s " + fmt(localStart) + "–" +
+        sub = "Works your 9am–5pm, that’s " + fmt(localStart) + "–" +
           fmt(localStart + 8) + " local for them (" +
           (kind === "day" ? "a day shift" : "a night shift") + ")";
       }
@@ -170,7 +170,7 @@
     } else {
       note.innerHTML = "<strong>Your business day:</strong> each center staffs your 9am–5pm " +
         "directly. For Colombia that’s a day shift; for the Philippines, India and Kenya it’s a " +
-        "night shift locally &mdash; which Cloudstaff runs as standard, fully supported.";
+        "night shift locally, which Cloudstaff runs as standard, fully supported.";
     }
   }
 

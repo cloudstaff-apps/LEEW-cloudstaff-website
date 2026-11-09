@@ -17,7 +17,7 @@ get_header();
     <div class="site-hero-copy">
     <span class="eyebrow">A structured program, not a leap of faith</span>
     <h1>How it works: from first call to high-performing team</h1>
-    <p>Bringing offshore professionals into your team should feel controlled, not complicated. Define the roles. Clarify expectations. Assign an owner. We take care of everything else &mdash; and your dedicated Success Manager partners with you at every stage.</p>
+    <p>Bringing offshore professionals into your team should feel controlled, not complicated. Define the roles. Clarify expectations. Assign an owner. We take care of everything else, and your dedicated Success Manager partners with you at every stage.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Start with a kickoff call</a>
 </div>
   </div>
@@ -34,7 +34,7 @@ get_header();
       <div class="feature-tile">
         <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10" cy="7" r="4"/><path d="M10.3 15H7a4 4 0 0 0-4 4v2"/><circle cx="17" cy="17" r="3"/><path d="m21 21-1.9-1.9"/></svg></div>
         <h3>White-glove recruitment</h3>
-        <p>Five deliberate steps from kickoff to day one &mdash; typically 15&ndash;25 days, with you making every hiring decision.</p>
+        <p>Five deliberate steps from kickoff to day one, typically 15&ndash;25 days, with you making every hiring decision.</p>
       </div>
       <div class="feature-tile">
         <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h6.5a3.5 3.5 0 0 0 0-7h-5a3.5 3.5 0 0 1 0-7H16"/></svg></div>
@@ -50,7 +50,7 @@ get_header();
     <div>
       <span class="eyebrow">Clear division of responsibilities</span>
       <h2>You focus on outcomes. We handle operations.</h2>
-      <p>Successful remote staffing depends on clarity. When responsibilities are clearly defined, performance improves, risk is reduced, and accountability remains intact. Your remote team members operate as part of your organization, aligned to your culture, standards, and KPIs &mdash; while we manage the employment, infrastructure, and support framework behind them.</p>
+      <p>Successful remote staffing depends on clarity. When responsibilities are clearly defined, performance improves, risk is reduced, and accountability remains intact. Your remote team members operate as part of your organization, aligned to your culture, standards, and KPIs, while we manage the employment, infrastructure, and support framework behind them.</p>
       <div class="grid-2">
         <div class="card card-brand">
           <h3>Your role</h3>
@@ -142,7 +142,7 @@ get_header();
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
           <h3>Define success criteria <span class="badge">~30 min</span></h3>
-          <p>What &ldquo;good&rdquo; looks like at 30, 60, and 90 days &mdash; accuracy, throughput, quality &mdash; and documented workload expectations.</p>
+          <p>What &ldquo;good&rdquo; looks like at 30, 60, and 90 days, accuracy, throughput, quality, and documented workload expectations.</p>
         </div>
       </div>
     </div>
@@ -154,7 +154,7 @@ get_header();
     <div>
       <span class="eyebrow">Deployment timeline</span>
       <h2>A phased approach designed for controlled growth</h2>
-      <p>Successful offshore scaling is not a single hiring decision &mdash; it's a structured program. Each phase builds on the last: launch deliberately, validate performance, optimize execution, then scale with confidence.</p>
+      <p>Successful offshore scaling is not a single hiring decision, it's a structured program. Each phase builds on the last: launch deliberately, validate performance, optimize execution, then scale with confidence.</p>
       <div class="table-scroll">
         <table class="table">
           <thead>
@@ -202,8 +202,8 @@ get_header();
     <div>
       <span class="eyebrow">Full visibility and control</span>
       <h2>Manage your team from a single dashboard</h2>
-      <p>Instead of scattered emails, spreadsheets, and manual updates, the Cloudstaff platform gives you real-time visibility into productivity and attendance, structured governance and KPI tracking, and predictable cost structures with transparent reporting. Cloudstaff Mobile keeps your team close wherever you are &mdash; approvals, team status, and updates from your phone.</p>
-      <p>The first 30&ndash;60 days determine long-term success. Your Success Manager helps you establish clear ownership, disciplined communication routines, measurable KPIs, and structured feedback &mdash; the practices that build stable, accountable, high-performing remote teams.</p>
+      <p>Instead of scattered emails, spreadsheets, and manual updates, the Cloudstaff platform gives you real-time visibility into productivity and attendance, structured governance and KPI tracking, and predictable cost structures with transparent reporting. Cloudstaff Mobile keeps your team close wherever you are, approvals, team status, and updates from your phone.</p>
+      <p>The first 30&ndash;60 days determine long-term success. Your Success Manager helps you establish clear ownership, disciplined communication routines, measurable KPIs, and structured feedback, the practices that build stable, accountable, high-performing remote teams.</p>
     </div>
     <div class="site-visual">
       <div class="grid-2">

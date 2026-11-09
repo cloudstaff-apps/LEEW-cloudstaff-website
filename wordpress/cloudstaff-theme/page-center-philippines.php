@@ -16,8 +16,8 @@ get_header();
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="center-back">International Services Centers</a> &rarr; Philippines</span>
-    <h1>Philippines &mdash; The flagship center</h1>
-    <p>Where Cloudstaff's story began in 2005 &mdash; today our largest workforce, our world-class secure campuses, and the deepest bench of outsourcing talent anywhere in our network.</p>
+    <h1>Philippines, The flagship center</h1>
+    <p>Where Cloudstaff's story began in 2005, today our largest workforce, our world-class secure campuses, and the deepest bench of outsourcing talent anywhere in our network.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Build a team in Philippines</a>
     </div>
   </div>
@@ -59,7 +59,7 @@ get_header();
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
           <h3>US hours as standard</h3>
-          <p>Over 70% of Cloudstaff professionals already work US-aligned shifts &mdash; night-shift operations here are routine, not an exception.</p>
+          <p>Over 70% of Cloudstaff professionals already work US-aligned shifts, night-shift operations here are routine, not an exception.</p>
         </div>
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M12 6h.01"/><path d="M16 6h.01"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/></svg></div>
@@ -69,7 +69,7 @@ get_header();
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
           <h3>The deepest talent pool</h3>
-          <p>The widest range of roles and the largest candidate network in our footprint &mdash; from entry-level support to senior specialists.</p>
+          <p>The widest range of roles and the largest candidate network in our footprint, from entry-level support to senior specialists.</p>
         </div>
     </div>
   </div>
@@ -79,7 +79,7 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">Good for</span>
     <h2>Roles this center does best</h2>
-    <p>Every center can staff across our full range of 600+ roles. These are the functions Philippines is especially strong in &mdash; where its talent pool, skills, and time zone line up best.</p>
+    <p>Every center can staff across our full range of 600+ roles. These are the functions Philippines is especially strong in, where its talent pool, skills, and time zone line up best.</p>
     <div class="grid-3">
         <div class="card">
           <h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg> Accounting &amp; Finance</h3>
@@ -115,7 +115,7 @@ get_header();
     <div>
       <span class="eyebrow">Follow the sun</span>
       <h2>How Philippines fits your day</h2>
-      <p>On UTC+8, Philippines teams run your overnight hours as a standard day shift &mdash; and routinely flip to full US-aligned schedules (EST/PST) for real-time coverage of your business day.</p>
+      <p>On UTC+8, Philippines teams run your overnight hours as a standard day shift, and routinely flip to full US-aligned schedules (EST/PST) for real-time coverage of your business day.</p>
       <p><a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="button-link">See the full coverage chart &rarr;</a></p>
     </div>
   </div>
@@ -126,9 +126,9 @@ get_header();
     <span class="eyebrow">Explore the network</span>
     <h2>Our other International Services Centers</h2>
     <div class="cluster center-others">
-          <a href="<?php echo esc_url( home_url( '/center-colombia/' ) ); ?>" class="button button-secondary">&#127464;&#127476; Colombia</a>
-          <a href="<?php echo esc_url( home_url( '/center-india/' ) ); ?>" class="button button-secondary">&#127470;&#127475; India</a>
-          <a href="<?php echo esc_url( home_url( '/center-kenya/' ) ); ?>" class="button button-secondary">&#127472;&#127466; Kenya</a>
+          <a href="<?php echo esc_url( home_url( '/center-colombia/' ) ); ?>" class="button button-secondary"><img class="flag" src="https://flagcdn.com/co.svg" width="24" height="18" alt="Colombia" loading="lazy" decoding="async"> Colombia</a>
+          <a href="<?php echo esc_url( home_url( '/center-india/' ) ); ?>" class="button button-secondary"><img class="flag" src="https://flagcdn.com/in.svg" width="24" height="18" alt="India" loading="lazy" decoding="async"> India</a>
+          <a href="<?php echo esc_url( home_url( '/center-kenya/' ) ); ?>" class="button button-secondary"><img class="flag" src="https://flagcdn.com/ke.svg" width="24" height="18" alt="Kenya" loading="lazy" decoding="async"> Kenya</a>
     </div>
   </div>
 </section>
@@ -136,7 +136,7 @@ get_header();
 <section class="site-cta">
   <div class="site-band-inner">
     <h2>Ready to build your Philippines team?</h2>
-    <p>Tell us the roles and hours you need &mdash; we'll show you how a Philippines team fits.</p>
+    <p>Tell us the roles and hours you need, and we'll show you how a Philippines team fits.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Talk to an Expert</a>
   </div>
 </section>
