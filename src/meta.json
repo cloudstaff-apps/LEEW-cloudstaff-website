@@ -79,6 +79,30 @@
       "description": "Real client success stories from Wipfli, Built, McConnell Dowell, TM Strata and more — with video testimonials and the results of building dedicated remote teams with Cloudstaff."
     },
     {
+      "slug": "ai-enabled-staff",
+      "wp_template": "page-ai-enabled-staff",
+      "nav_label": "AI Enabled Staff",
+      "in_nav": false,
+      "title": "AI Enabled Staff: Supervised AI Coworkers for Business | Cloudstaff",
+      "description": "More capacity, same control. Cloudstaff pairs AI-enabled people with supervised AI Coworkers that work inside your systems, standards, and security requirements."
+    },
+    {
+      "slug": "ai-coworkers",
+      "wp_template": "page-ai-coworkers",
+      "nav_label": "AI Coworkers",
+      "in_nav": false,
+      "title": "AI Coworkers: AI With a Defined Job | Cloudstaff",
+      "description": "Supervised AI Coworkers with a job description, a human manager, and defined rules — proactive digital workers that run inside your workflows. Meet Mike, Tracy, and Nicola."
+    },
+    {
+      "slug": "cloudstaff-q",
+      "wp_template": "page-cloudstaff-q",
+      "nav_label": "Cloudstaff Q",
+      "in_nav": false,
+      "title": "Cloudstaff Q: Secure Platform for AI Coworkers | Cloudstaff",
+      "description": "The platform to build, train, connect, and govern AI Coworkers — secure by design, with IP protection, flexible hosting, multi-model access, and full visibility."
+    },
+    {
       "slug": "timezones",
       "wp_template": "page-timezones",
       "nav_label": "Time Zones",

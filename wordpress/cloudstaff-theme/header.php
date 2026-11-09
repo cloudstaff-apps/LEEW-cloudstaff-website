@@ -36,6 +36,14 @@
         <a href="<?php echo esc_url( home_url( '/pricing/' ) ); ?>" <?php if ( is_page( 'pricing' ) ) echo 'aria-current="page"'; ?>>Pricing &amp; Savings</a>
       </div>
     </div>
+    <div class="site-nav-item">
+      <a href="<?php echo esc_url( home_url( '/ai-enabled-staff/' ) ); ?>" <?php if ( is_page( 'ai-enabled-staff' ) ) echo 'aria-current="page"'; ?> class="site-nav-parent">AI Enabled Staff<span class="site-nav-caret" aria-hidden="true"></span></a>
+      <div class="site-nav-dropdown">
+        <a href="<?php echo esc_url( home_url( '/ai-enabled-staff/' ) ); ?>" <?php if ( is_page( 'ai-enabled-staff' ) ) echo 'aria-current="page"'; ?>>Overview</a>
+        <a href="<?php echo esc_url( home_url( '/ai-coworkers/' ) ); ?>" <?php if ( is_page( 'ai-coworkers' ) ) echo 'aria-current="page"'; ?>>AI Coworkers</a>
+        <a href="<?php echo esc_url( home_url( '/cloudstaff-q/' ) ); ?>" <?php if ( is_page( 'cloudstaff-q' ) ) echo 'aria-current="page"'; ?>>Cloudstaff Q</a>
+      </div>
+    </div>
     <a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" <?php if ( is_page( 'international' ) ) echo 'aria-current="page"'; ?>>International</a>
     <a href="<?php echo esc_url( home_url( '/cfo-guide/' ) ); ?>" <?php if ( is_page( 'cfo-guide' ) ) echo 'aria-current="page"'; ?>>CFO Guide</a>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" <?php if ( is_page( 'contact' ) ) echo 'aria-current="page"'; ?>>Contact Us</a>
