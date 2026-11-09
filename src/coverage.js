@@ -54,10 +54,23 @@
     return [{ start: start, len: 24 - start }, { start: 0, len: len - (24 - start) }];
   }
 
-  function barHtml(start, len, cls) {
-    return segs(start, len).map(function (s) {
-      return '<div class="cov-bar ' + cls + '" style="--start:' + s.start +
-        ';--len:' + s.len + '"></div>';
+  var SUN = '<svg class="cov-ico" viewBox="0 0 24 24" aria-hidden="true">' +
+    '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4' +
+    'M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  var MOON = '<svg class="cov-ico cov-ico--fill" viewBox="0 0 24 24" aria-hidden="true">' +
+    '<path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>';
+
+  /* A labelled shift bar. kind = "day" | "night"; label text sits inside the
+     widest segment (so a bar that wraps past midnight still reads cleanly). */
+  function shiftBar(start, len, kind, label) {
+    var parts = segs(start, len), li = 0, i;
+    for (i = 1; i < parts.length; i++) if (parts[i].len > parts[li].len) li = i;
+    var icon = kind === "day" ? SUN : MOON;
+    return parts.map(function (s, idx) {
+      var inner = (idx === li && s.len >= 3.5)
+        ? '<span class="cov-bar-label">' + icon + '<span>' + label + '</span></span>' : '';
+      return '<div class="cov-bar cov-bar--' + kind + '" style="--start:' + s.start +
+        ';--len:' + s.len + '">' + inner + '</div>';
     }).join("");
   }
 
@@ -111,35 +124,38 @@
     rows += '<div class="cov-row cov-row-you">' +
       '<span class="cov-name">Your business day <small>9am–5pm ' +
       REGIONS[state.region].zones[state.zoneIdx][0] + '</small></span>' +
-      '<div class="cov-track">' + barHtml(9, 8, "cov-bar-you") + '</div></div>';
+      '<div class="cov-track"><div class="cov-bar cov-bar--you" style="--start:9;--len:8">' +
+      '<span class="cov-bar-label"><span>Your 9–5</span></span></div></div></div>';
 
     CENTERS.forEach(function (c) {
-      /* Day shift: center 9-17 local, shown on client clock */
-      var dayStart = mod24(9 + (co - c.off));
-      /* Aligned shift: center works client 9-17 -> on client clock that's 9-17;
-         compute the center's LOCAL window for the label */
-      var alignLocalStart = mod24(9 + (c.off - co));
-      var dayActive = state.mode === "local";
-      var dayLocal = "their 9am–5pm";
-      var alignLocal = fmt(alignLocalStart) + "–" + fmt(alignLocalStart + 8) + " local";
-
-      /* Draw the ACTIVE bar last so it sits on top when the day shift and the
-         aligned shift coincide (e.g. nearshore Colombia on US-Eastern). */
-      var dayBar = barHtml(dayStart, 8, "cov-bar-day" + (dayActive ? " is-active" : ""));
-      var alignBar = barHtml(9, 8, "cov-bar-align" + (!dayActive ? " is-active" : ""));
-      var bars = dayActive ? (alignBar + dayBar) : (dayBar + alignBar);
+      var start, kind, label, sub;
+      if (state.mode === "local") {
+        /* Team works its own 9–5 local — always a day shift for them,
+           mapped onto your clock. */
+        start = mod24(9 + (co - c.off));
+        kind = "day";
+        label = "Day Shift";
+        sub = "Works their 9am–5pm local &mdash; online for you " +
+          fmt(start) + "–" + fmt(start + 8);
+      } else {
+        /* Team covers YOUR 9–5. Work out their local window and whether that
+           lands in their day or night. */
+        start = 9;
+        var localStart = mod24(9 + (c.off - co));
+        var mid = mod24(localStart + 4);
+        kind = (mid >= 6 && mid < 18) ? "day" : "night";
+        label = kind === "day" ? "Day Shift" : "Night Shift";
+        sub = "Works your 9am–5pm &mdash; that’s " + fmt(localStart) + "–" +
+          fmt(localStart + 8) + " local for them (" +
+          (kind === "day" ? "a day shift" : "a night shift") + ")";
+      }
 
       rows += '<div class="cov-row">' +
         '<span class="cov-name">' + c.name +
         ' <small>UTC' + (c.off >= 0 ? "+" : "") + c.off + '</small></span>' +
-        '<div class="cov-track">' + bars + '</div></div>' +
-        '<div class="cov-sub">' +
-          (dayActive
-            ? '<span class="cov-dot cov-dot-day"></span> Works ' + dayLocal +
-              ' &mdash; online for you ' + fmt(dayStart) + '–' + fmt(dayStart + 8)
-            : '<span class="cov-dot cov-dot-align"></span> Works your 9am–5pm &mdash; that’s ' +
-              alignLocal + ' for them') +
-        '</div>';
+        '<div class="cov-track">' + shiftBar(start, 8, kind, label) + '</div></div>' +
+        '<div class="cov-sub"><span class="cov-dot cov-dot-' + kind + '"></span> ' +
+          sub + '</div>';
     });
 
     var scale = '<div class="cov-scale"><span>12am</span><span>6am</span><span>12pm</span><span>6pm</span><span>12am</span></div>';
@@ -148,13 +164,13 @@
 
     var note = document.getElementById("cov-note");
     if (state.mode === "local") {
-      note.innerHTML = "<strong>Their day shift:</strong> each center works its own 9–5. " +
-        "Nearshore Colombia overlaps your day in real time; the Philippines and India run your " +
-        "overnight hours; Kenya covers your morning. Hover the bars to read local times.";
+      note.innerHTML = "<strong>Their day shift:</strong> every center works a normal 9–5 " +
+        "day shift at home. Nearshore Colombia's day overlaps yours in real time; the others' " +
+        "daytime covers your evenings and overnight hours.";
     } else {
-      note.innerHTML = "<strong>Your business day:</strong> each center staffs your 9–5 directly. " +
-        "For Colombia that’s a normal day shift; for the Philippines, India and Kenya it means an " +
-        "evening or night shift locally &mdash; which Cloudstaff runs as standard, fully supported.";
+      note.innerHTML = "<strong>Your business day:</strong> each center staffs your 9am–5pm " +
+        "directly. For Colombia that’s a day shift; for the Philippines, India and Kenya it’s a " +
+        "night shift locally &mdash; which Cloudstaff runs as standard, fully supported.";
     }
   }
 
