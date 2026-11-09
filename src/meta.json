@@ -71,6 +71,14 @@
       "description": "Since 2005, Cloudstaff has built offshore teams for 1,200+ businesses worldwide. Meet the people-first culture, in-house infrastructure, and technology behind the numbers."
     },
     {
+      "slug": "customers",
+      "wp_template": "page-customers",
+      "nav_label": "Customers",
+      "in_nav": true,
+      "title": "What Our Customers Say: Client Success Stories | Cloudstaff",
+      "description": "Real client success stories from Wipfli, Built, McConnell Dowell, TM Strata and more — with video testimonials and the results of building dedicated remote teams with Cloudstaff."
+    },
+    {
       "slug": "international",
       "wp_template": "page-international",
       "nav_label": "International",

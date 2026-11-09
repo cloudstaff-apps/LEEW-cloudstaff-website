@@ -612,6 +612,43 @@ html[data-theme="dark"] .step-number {
   font-size: 0.95rem;
 }
 
+/* --- Customer stories ------------------------------------------------------ */
+.cs-lead { max-width: 54rem; color: var(--color-foreground-muted, #5b6576); margin-block-start: var(--space-md, 0.75rem); }
+.cs-grid { margin-block-start: var(--space-lg, 1rem); align-items: stretch; }
+.cs-tag {
+  display: inline-block; align-self: flex-start;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.02em; text-transform: uppercase;
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+  background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 88%);
+  border-radius: var(--radius-pill, 999px); padding: 0.3rem 0.7rem;
+}
+.cs-story, .cs-written { display: flex; flex-direction: column; gap: var(--space-md, 0.75rem); margin: 0; }
+.cs-story h3, .cs-written h3 { margin: 0; }
+.cs-story h3 small, .cs-written h3 small { font-weight: var(--font-weight-regular, 400); color: var(--color-foreground-muted, #5b6576); }
+.cs-story p, .cs-written p { margin: 0; }
+.cs-video { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius-md, 0.75rem); overflow: hidden; background: #0b1220; }
+.cs-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+.cs-results { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; margin: 0; padding: 0; }
+.cs-results li {
+  font-size: 0.76rem; font-weight: 600; line-height: 1.2;
+  color: var(--color-foreground-primary, #16233b);
+  background: var(--color-surface-canvas, #eef2f8);
+  border: 1px solid color-mix(in oklch, var(--color-foreground-primary, #16233b), white 88%);
+  border-radius: var(--radius-sm, 0.5rem); padding: 0.32rem 0.6rem;
+}
+.cs-story blockquote, .cs-written blockquote {
+  margin: 0; font-size: var(--font-size-md, 1rem); line-height: 1.5;
+  color: var(--color-foreground-primary, #16233b);
+  border-inline-start: 3px solid color-mix(in oklch, var(--color-brand-primary, #007aff), white 45%);
+  padding-inline-start: var(--space-md, 0.75rem);
+}
+.cs-story figcaption, .cs-written figcaption {
+  display: flex; align-items: center; gap: var(--space-md, 0.75rem);
+  font-size: var(--font-size-sm, 0.8rem); color: var(--color-foreground-muted, #5b6576);
+}
+.cs-story figcaption strong, .cs-written figcaption strong { color: var(--color-foreground-primary, #16233b); }
+.cs-links { display: flex; flex-wrap: wrap; gap: var(--space-lg, 1rem); margin: 0; margin-block-start: auto; padding-block-start: var(--space-xs, 0.25rem); }
+
 /* --- Long values in stat tiles wrap gracefully ----------------------------- */
 .stat-tile-value {
   overflow-wrap: normal;
