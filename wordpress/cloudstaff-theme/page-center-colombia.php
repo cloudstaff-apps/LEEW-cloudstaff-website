@@ -16,7 +16,7 @@ get_header();
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="center-back">International Services Centers</a> &rarr; Colombia</span>
-    <h1>Colombia, Nearshore, in real time</h1>
+    <h1>Colombia: Nearshore, in real time</h1>
     <p>Latin America's leading outsourcing destination, university-educated, genuinely bilingual professionals who share your working day and your business culture.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Build a team in Colombia</a>
     </div>
@@ -136,7 +136,7 @@ get_header();
 <section class="site-cta">
   <div class="site-band-inner">
     <h2>Ready to build your Colombia team?</h2>
-    <p>Tell us the roles and hours you need, and we'll show you how a Colombia team fits.</p>
+    <p>Tell us the roles and hours you need, and we'll show you how a team in Colombia fits.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Talk to an Expert</a>
   </div>
 </section>

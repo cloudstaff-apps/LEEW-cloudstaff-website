@@ -57,7 +57,7 @@ get_header();
       <div class="stack-lg">
         <div class="card card-brand">
           <h3>Who employs the staff?</h3>
-          <p>Cloudstaff does. We handle contracts, payroll, benefits, statutory compliance, and HR in-country, you carry no offshore employment liability.</p>
+          <p>Cloudstaff does. We handle contracts, payroll, benefits, statutory compliance, and HR in-country. You carry no offshore employment liability.</p>
         </div>
         <div class="card">
           <h3>Who manages their work?</h3>
@@ -77,7 +77,7 @@ get_header();
     <div>
       <span class="eyebrow">Know your options</span>
       <h2>How remote staffing compares to the alternatives</h2>
-      <p>Outsourcing isn't one thing, it's four distinct models, each with a different balance of cost, control, and effort. For small and mid-size businesses, the remote staffing team model delivers the best cost-to-value ratio: your own dedicated team, fully recruited, employed, supported, and secured by a provider, while you keep complete ownership of workflows and performance.</p>
+      <p>Outsourcing isn't one thing. It's four distinct models, each with a different balance of cost, control, and effort. For small and mid-size businesses, the remote staffing team model delivers the best cost-to-value ratio: your own dedicated team, fully recruited, employed, supported, and secured by a provider, while you keep complete ownership of workflows and performance.</p>
     </div>
     <div class="table-scroll">
       <table class="table compare-table">
@@ -179,7 +179,7 @@ get_header();
         <div class="card card-brand myth-card">
           <span class="badge">The takeaway</span>
           <p>Remote staffing is a fast, cost-efficient way to increase capacity and unlock growth.</p>
-          <p>For CFOs, the question is not whether remote staffing works, it's how to structure it properly, manage risk, and ensure measurable return.</p>
+          <p>For CFOs, the question is not whether remote staffing works. It's how to structure it properly, manage risk, and ensure measurable return.</p>
         </div>
       </div>
     </div>

@@ -1237,3 +1237,4 @@ ul.tb-disclaimer {
 .cov-scale span { text-align:left; } .cov-scale span:last-child { text-align:right; }
 .cov-note { font-size: var(--font-size-sm,0.8rem); color: var(--color-foreground-muted,#5b6576); margin-block-start: var(--space-md,0.75rem); line-height:1.5; }
 .cov-note strong { color: var(--color-foreground-primary,#16233b); }
+.table .table-na { color: var(--color-foreground-muted, #5b6576); text-align: center; }

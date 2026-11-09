@@ -27,7 +27,7 @@ get_header();
   <div class="site-band-inner">
     <div>
       <span class="eyebrow">Real-world AI, built for business</span>
-      <h2>AI that doesn't just answer questions, it gets work done</h2>
+      <h2>AI that doesn't just answer questions. It gets work done</h2>
       <p>Most AI waits to be asked. Cloudstaff AI is different: a secure, practical way to put AI to work inside your business, built around two layers that work together as a <strong>connected AI workforce</strong>.</p>
       <div class="grid-2">
         <div class="card">

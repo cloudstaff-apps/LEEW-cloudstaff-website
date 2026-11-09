@@ -17,7 +17,7 @@ get_header();
     <div class="site-hero-copy">
     <span class="eyebrow">Experience counts</span>
     <h1>Two decades of building teams that stay</h1>
-    <p>For more than 20 years, Cloudstaff has helped global businesses build reliable, high-performing offshore teams that operate as a true extension of their organization. When margin, compliance, and accountability are critical, experience is not optional, it's essential.</p>
+    <p>For more than 20 years, Cloudstaff has helped global businesses build reliable, high-performing offshore teams that operate as a true extension of their organization. When margin, compliance, and accountability are critical, experience is not optional. It's essential.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Meet the team</a>
 </div>
   </div>
@@ -53,7 +53,7 @@ get_header();
       <p>Cloudstaff was founded in 2005 by Australian Internet pioneer Lloyd Ernst and expanded into the Philippines in 2010. Over two decades, we've refined a model designed to protect margin while preserving control: we manage recruitment, employment, infrastructure, security, compliance, and ongoing support, so business leaders can reduce fully loaded labor costs without increasing risk exposure.</p>
       <p>Our experience spans multiple industries, regulatory environments, and growth stages, from mid-market companies scaling support functions to enterprise teams expanding revenue operations. We understand that outsourcing is a financial decision as much as an operational one.</p>
       <figure class="testimonial">
-        <blockquote>&ldquo;Cloudstaff isn't just a service provider, and we're your success partner.&rdquo;</blockquote>
+        <blockquote>&ldquo;Cloudstaff isn't just a service provider. We're your success partner.&rdquo;</blockquote>
         <figcaption><span class="avatar-initials">LE</span><span><strong>Lloyd Ernst</strong>, Founder, Cloudstaff</span></figcaption>
       </figure>
     </div>
@@ -121,7 +121,7 @@ get_header();
     <div>
       <span class="eyebrow">Cloudstaff in-house infrastructure</span>
       <h2>Everything your team needs, under one roof</h2>
-      <p>It takes more than great people to make great teams. Nine in-house functions work behind every Cloudstaffer, this is not just staffing; it's a complete, secure, and scalable operating model.</p>
+      <p>It takes more than great people to make great teams. Nine in-house functions work behind every Cloudstaffer. This is not just staffing; it's a complete, secure, and scalable operating model.</p>
       <div class="grid-3 collapse-2">
         <div class="card"><h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10" cy="7" r="4"/><path d="M10.3 15H7a4 4 0 0 0-4 4v2"/><circle cx="17" cy="17" r="3"/><path d="m21 21-1.9-1.9"/></svg> Talent</h3><p>Sourcing, role design, AI-assisted matching, screening, background and reference checks, hiring support.</p></div>
         <div class="card"><h3><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19.5 13.5 12 21l-7.5-7.5a5 5 0 1 1 7.5-6.6 5 5 0 1 1 7.5 6.6z"/></svg> HR</h3><p>Onboarding, employee relations, performance care, compensation support, career development.</p></div>

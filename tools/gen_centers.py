@@ -108,7 +108,7 @@ COUNTRIES = {
         "name": "Kenya",
         "slug": "center-kenya",
         "tagline": "The rising talent hub",
-        "lede": "Young, tech-savvy, English-fluent professionals, more than 50,000 STEM graduates a year, positioned on GMT+3 for natural UK and European coverage.",
+        "lede": "Young, tech-savvy, English-fluent professionals (more than 50,000 STEM graduates a year) positioned on GMT+3 for natural UK and European coverage.",
         "glance": [
             ("Time zone", "UTC+3"),
             ("STEM grads", "50,000+ / year"),
@@ -166,7 +166,7 @@ def page(c):
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="{{{{URL:international}}}}" class="center-back">International Services Centers</a> &rarr; {c["name"]}</span>
-    <h1>{c["name"]}, {c["tagline"]}</h1>
+    <h1>{c["name"]}: {c["tagline"]}</h1>
     <p>{c["lede"]}</p>
     <a href="{{{{URL:contact}}}}" class="button button-lg">Build a team in {c["name"]}</a>
     </div>
@@ -229,7 +229,7 @@ def page(c):
 <section class="site-cta">
   <div class="site-band-inner">
     <h2>Ready to build your {c["name"]} team?</h2>
-    <p>Tell us the roles and hours you need, and we'll show you how a {c["name"]} team fits.</p>
+    <p>Tell us the roles and hours you need, and we'll show you how a team in {c["name"]} fits.</p>
     <a href="{{{{URL:contact}}}}" class="button button-inverse button-lg">Talk to an Expert</a>
   </div>
 </section>

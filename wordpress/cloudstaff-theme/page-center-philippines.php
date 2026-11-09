@@ -16,7 +16,7 @@ get_header();
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="center-back">International Services Centers</a> &rarr; Philippines</span>
-    <h1>Philippines, The flagship center</h1>
+    <h1>Philippines: The flagship center</h1>
     <p>Where Cloudstaff's story began in 2005, today our largest workforce, our world-class secure campuses, and the deepest bench of outsourcing talent anywhere in our network.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Build a team in Philippines</a>
     </div>
@@ -136,7 +136,7 @@ get_header();
 <section class="site-cta">
   <div class="site-band-inner">
     <h2>Ready to build your Philippines team?</h2>
-    <p>Tell us the roles and hours you need, and we'll show you how a Philippines team fits.</p>
+    <p>Tell us the roles and hours you need, and we'll show you how a team in Philippines fits.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Talk to an Expert</a>
   </div>
 </section>

@@ -17,7 +17,7 @@ get_header();
     <div class="site-hero-copy">
     <span class="eyebrow">For finance leaders</span>
     <h1>The CFO's guide to remote staffing</h1>
-    <p>Remote staffing is not just a cost decision. It is a strategic workforce model designed to improve financial performance, increase resilience, and expand operational capacity without increasing fixed overhead. The question is not whether it works, it's how to structure it properly, manage risk, and ensure measurable return.</p>
+    <p>Remote staffing is not just a cost decision. It is a strategic workforce model designed to improve financial performance, increase resilience, and expand operational capacity without increasing fixed overhead. The question is not whether it works. It's how to structure it properly, manage risk, and ensure measurable return.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Discuss your business case</a>
 </div>
   </div>

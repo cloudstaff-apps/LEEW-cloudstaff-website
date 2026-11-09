@@ -51,7 +51,7 @@ get_header();
       <span class="eyebrow">A worked example</span>
       <h2>Senior Accountant: US hire vs. Cloudstaff hire</h2>
       <p>Depending on the role and location, businesses may reduce fully loaded employment costs by up to 80%. The value extends beyond salary differences, benefits, technology, infrastructure, and overheads are all substantially reduced through a global staffing model. Even a single role can create meaningful savings and improve EBITDA without disrupting day-to-day operations.</p>
-      <p class="cost-bar-savings">Hiring a Senior Accountant through Cloudstaff can save up to 80% compared with hiring onshore, up to US$157,536 per staff member per year, without sacrificing quality.</p>
+      <p class="cost-bar-savings">Hiring a Senior Accountant through Cloudstaff can save up to 80% compared with hiring onshore (up to US$157,536 per staff member per year) without sacrificing quality.</p>
     </div>
     <div class="site-visual">
       <div class="grid-2">

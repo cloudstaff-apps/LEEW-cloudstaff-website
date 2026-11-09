@@ -142,7 +142,7 @@ get_header();
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
           <h3>Define success criteria <span class="badge">~30 min</span></h3>
-          <p>What &ldquo;good&rdquo; looks like at 30, 60, and 90 days, accuracy, throughput, quality, and documented workload expectations.</p>
+          <p>What &ldquo;good&rdquo; looks like at 30, 60, and 90 days (accuracy, throughput, quality), and documented workload expectations.</p>
         </div>
       </div>
     </div>
@@ -154,7 +154,7 @@ get_header();
     <div>
       <span class="eyebrow">Deployment timeline</span>
       <h2>A phased approach designed for controlled growth</h2>
-      <p>Successful offshore scaling is not a single hiring decision, it's a structured program. Each phase builds on the last: launch deliberately, validate performance, optimize execution, then scale with confidence.</p>
+      <p>Successful offshore scaling is not a single hiring decision. It's a structured program. Each phase builds on the last: launch deliberately, validate performance, optimize execution, then scale with confidence.</p>
       <div class="table-scroll">
         <table class="table">
           <thead>

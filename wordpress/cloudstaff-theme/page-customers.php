@@ -123,7 +123,7 @@ get_header();
         <div class="cs-video"><iframe src="https://player.vimeo.com/video/1175069375" title="Leisurecom eCruising, Cloudstaff success story" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
         <span class="cs-tag">Travel &amp; leisure &middot; Australia</span>
         <h3>Leisurecom <small>(eCruising)</small></h3>
-        <p>A Gold Coast travel group, eCruising and Hightide Holidays, whose sales team was weighed down by admin and support work. Cloudstaff took over the support functions so the sales team could focus on revenue, with agents who sometimes outperformed their Australian counterparts and drove significant additional revenue.</p>
+        <p>A Gold Coast travel group (eCruising and Hightide Holidays) whose sales team was weighed down by admin and support work. Cloudstaff took over the support functions so the sales team could focus on revenue, with agents who sometimes outperformed their Australian counterparts and drove significant additional revenue.</p>
         <ul class="cs-results">
           <li>Sales team refocused on revenue</li>
           <li>Agents outperforming local peers</li>

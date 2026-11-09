@@ -16,8 +16,8 @@ get_header();
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="center-back">International Services Centers</a> &rarr; Kenya</span>
-    <h1>Kenya, The rising talent hub</h1>
-    <p>Young, tech-savvy, English-fluent professionals, more than 50,000 STEM graduates a year, positioned on GMT+3 for natural UK and European coverage.</p>
+    <h1>Kenya: The rising talent hub</h1>
+    <p>Young, tech-savvy, English-fluent professionals (more than 50,000 STEM graduates a year) positioned on GMT+3 for natural UK and European coverage.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Build a team in Kenya</a>
     </div>
   </div>
@@ -136,7 +136,7 @@ get_header();
 <section class="site-cta">
   <div class="site-band-inner">
     <h2>Ready to build your Kenya team?</h2>
-    <p>Tell us the roles and hours you need, and we'll show you how a Kenya team fits.</p>
+    <p>Tell us the roles and hours you need, and we'll show you how a team in Kenya fits.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Talk to an Expert</a>
   </div>
 </section>

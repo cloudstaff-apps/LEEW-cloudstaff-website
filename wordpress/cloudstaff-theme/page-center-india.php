@@ -16,7 +16,7 @@ get_header();
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" class="center-back">International Services Centers</a> &rarr; India</span>
-    <h1>India, The engineering powerhouse</h1>
+    <h1>India: The engineering powerhouse</h1>
     <p>One of the world's largest and deepest technical talent pools, backed by a mature STEM and IT ecosystem, the center of gravity for complex, build-heavy work.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Build a team in India</a>
     </div>
@@ -136,7 +136,7 @@ get_header();
 <section class="site-cta">
   <div class="site-band-inner">
     <h2>Ready to build your India team?</h2>
-    <p>Tell us the roles and hours you need, and we'll show you how a India team fits.</p>
+    <p>Tell us the roles and hours you need, and we'll show you how a team in India fits.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Talk to an Expert</a>
   </div>
 </section>
