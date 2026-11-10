@@ -47,17 +47,17 @@ get_header();
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg></div>
           <h3>Your IP and data stay yours</h3>
-          <p>Your knowledge, data, and intellectual property remain with your business, not the model.</p>
+          <p>Your know-how lives in your own repository on Cloudstaff Q, where your Coworkers can use it. Your knowledge, data, and intellectual property remain with your business, not the model.</p>
         </div>
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg></div>
           <h3>Flexible hosting &amp; data sovereignty</h3>
-          <p>Choose where your AI runs and where your data lives, to meet your regulatory needs.</p>
+          <p>Run on Cloudstaff's private cloud, your own private cloud, or on-premise servers. You choose where your AI runs and where your data lives.</p>
         </div>
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4"/><path d="M15 2v4"/><path d="M9 18v4"/><path d="M15 18v4"/><path d="M2 9h4"/><path d="M2 15h4"/><path d="M18 9h4"/><path d="M18 15h4"/></svg></div>
           <h3>Multi-model access</h3>
-          <p>Reach the right AI models for each job, without locking your business into one vendor.</p>
+          <p>Access to hundreds of AI models, so each job gets the right one and your business is not locked into a single vendor.</p>
         </div>
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="2" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><path d="M12 8v3"/><path d="M5 16v-3h14v3"/></svg></div>
@@ -67,7 +67,7 @@ get_header();
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 14 3.5-3.5"/><path d="M20.3 18a9 9 0 1 0-16.6 0"/></svg></div>
           <h3>Dashboards &amp; logs</h3>
-          <p>Full visibility of every action, so work can be reviewed for quality and compliance.</p>
+          <p>Every communication and every decision is logged, with safety reporting built in, so work can be reviewed for quality and compliance.</p>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ _Last updated: 2026-11-10._
 
 ## Summary
 
-A 33-page static marketing site (20 core pages plus 13 customer success story pages) for Cloudstaff, built from shared partials and
+A 34-page static marketing site (21 core pages plus 13 customer success story pages) for Cloudstaff, built from shared partials and
 deployed to GitHub Pages. It repurposes the CFO Kit, the live cloudstaff.com
 success stories, and cloudstaff.ai, optimised for a US audience and positioned
 as the market leader. Everything is token-driven on top of the Cloudstaff
@@ -146,6 +146,25 @@ CFO Guide, Contact.
   Lee to hard-refresh pages he had already opened.
 - The cloud workspace is wiped between sessions. Nothing saved there survives, so
   re-clone each session using the token file above.
+
+## AI section sources (added 2026-11-10)
+
+- **AI Toolkit page** (`ai-toolkit.html`, new) and the "future workforce", "AI
+  maturity" and "AI Toolkit" bands on the AI Enabled Staff overview come from the
+  public brochure "Cloudstaff AI Toolbox" (V260624). The brochure PDF's text layer
+  is corrupt, so it was read by OCR. Third-party statistics are quoted with the
+  brochure's attributions (McKinsey, IBM, Microsoft and LinkedIn, PwC). The
+  brochure's Cisco and BCG statistics were left out.
+- **AI Coworkers additions** ("One of the team", the invoice process example, the
+  comparison cards, "Where do you start?", the six onboarding steps, and "The
+  people behind every Coworker") come from an internal Cloudstaff AI Coworker
+  presentation. It was internal, so these were deliberately NOT carried over and
+  should not be added without Lee's say-so: all pricing and setup costs, the cost
+  comparisons for Tracy, Nicola and Mike, the "10x faster, 10x cheaper, better
+  than a human" claims, the "over 100 Coworkers" library figure, competitor
+  product names, and the strategy and next-steps slides.
+- Cloudstaff Q tiles were enriched from the same presentation (hosting options,
+  hundreds of models, logging of communications and decisions).
 
 ## "AI-enabled Cloudstaffers" wording
 

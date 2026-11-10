@@ -80,7 +80,7 @@ get_header();
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m22 9-10-5L2 9l10 5 10-5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 9v6"/></svg></div>
           <h3>Built around your knowledge</h3>
-          <p>Trained on your processes and know-how, so the expertise stays with your business.</p>
+          <p>Trained on your processes and know-how. The knowledge moves out of individual heads and into your Coworker, so if staff leave, you do not lose it.</p>
         </div>
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="2" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><path d="M12 8v3"/><path d="M5 16v-3h14v3"/></svg></div>
@@ -88,6 +88,67 @@ get_header();
           <p>Works inside your existing systems and governed workflows, not as a standalone tool.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">One of the team</span>
+      <h2>It works like a colleague, because it is set up like one</h2>
+      <p>We don't build apps. We build Coworkers. A Cloudstaff AI Coworker is tailored to a specific role within your business and managed by your Cloudstaffer. It joins your team the same way a person does.</p>
+      <div class="grid-3">
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <h3>A name and an identity</h3>
+          <p>It has a name, an email address, and a Microsoft Teams account, just like your Cloudstaffers, and it appears alongside them in MyStaff.</p>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5"/><path d="M9 13h6"/><path d="M9 17h6"/></svg></div>
+          <h3>A job description</h3>
+          <p>Every Coworker starts with a tightly defined job description and role, for example in legal, accounting, HR, or marketing.</p>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m16 11 2 2 4-4"/></svg></div>
+          <h3>A manager</h3>
+          <p>It reports to a Cloudstaffer who knows your business. That keeps a human in the loop on every workflow.</p>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg></div>
+          <h3>Email it, chat with it, talk to it</h3>
+          <p>Reach your Coworker by email, chat, web, or voice. It can also communicate with other colleagues to get the job done.</p>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></svg></div>
+          <h3>Visible work</h3>
+          <p>You can see the tasks it worked on, and review the decisions it made in the Cloudstaff Q dashboard.</p>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>The ultimate workforce</h3>
+          <p>Cloudstaffers plus AI Coworkers, working side by side in one team with one set of standards.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">Why a chatbot is not enough</span>
+      <h2>A process sounds simple. In reality, businesses have lots of moving parts</h2>
+      <p>Take a request like "show me last month's invoices". Extracting a report of monthly invoices from a finance system is simple. The real work is everything that has to happen before those invoices can be sent out:</p>
+      <ul class="story-checks">
+        <li>Collect overtime reports from the workforce system</li>
+        <li>Verify missing timesheets with particular staff</li>
+        <li>Check procurement for extra billables</li>
+        <li>Import telecommunications costs</li>
+        <li>Credit holidays used in the previous month</li>
+        <li>Decide what should be approved, and what should not</li>
+      </ul>
+      <p>This is the problem Coworkers solve. One collects the timesheet data, another reaches out to the staff whose entries are missing, and a person makes the approval decision, with full visibility of every step in the process.</p>
     </div>
   </div>
 </section>
@@ -116,10 +177,11 @@ get_header();
           <span class="cs-tag">HR &amp; workforce</span>
           <h3>Tracy</h3>
           <p class="intl-tagline">Timesheet Reviewer</p>
-          <p>Tracy reviews timesheet change requests against the rules, flags what needs a human decision, and produces clean status reporting, keeping payroll moving without the manual chase.</p>
+          <p>Tracy reviews every timesheet change request against the rules and classifies it as authentic or not. When a request is not accepted, she tells the person why. She flags what needs a human decision and provides a daily status update and a monthly review, keeping payroll moving without the manual chase.</p>
           <ul class="cs-results">
             <li>Rule-based review</li>
-            <li>Status reporting</li>
+            <li>Explains every rejection</li>
+            <li>Daily and monthly reporting</li>
           </ul>
         </div>
         <div class="card cs-written">
@@ -127,10 +189,11 @@ get_header();
           <span class="cs-tag">Legal &amp; contracts</span>
           <h3>Nicola</h3>
           <p class="intl-tagline">Client Contract Administrator</p>
-          <p>Nicola reviews client contracts, logs variations, and tracks key dates and obligations, so nothing slips through and renewals and deadlines never catch the team off guard.</p>
+          <p>Nicola reviews existing client contracts, documents the variations, and lists the important dates. She monitors new contracts as they arrive, answers questions from staff about specific contracts, and reports daily and weekly to the legal manager, so renewals and deadlines never catch the team off guard.</p>
           <ul class="cs-results">
             <li>Variation logging</li>
             <li>Key-date tracking</li>
+            <li>Answers contract questions</li>
           </ul>
         </div>
       </div>
@@ -151,6 +214,115 @@ get_header();
 <script src="<?php echo esc_url( get_template_directory_uri() . '/coworkers.js' ); ?>" defer></script>
 
 <section class="site-band">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">How it compares</span>
+      <h2>How is a Cloudstaff AI Coworker different?</h2>
+      <div class="grid-3">
+        <div class="card">
+          <span class="cs-tag">Personal AI chat tools</span>
+          <h3>Augment an individual</h3>
+          <ul class="story-checks">
+            <li>Personal productivity tools</li>
+            <li>Lift the skill set of your staff</li>
+            <li>Often adopted as shadow usage, outside company oversight</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="cs-tag">General-purpose AI agents</span>
+          <h3>An agent with a harness</h3>
+          <ul class="story-checks">
+            <li>Trained through prompts</li>
+            <li>Need lots of tedious questions to get right</li>
+            <li>Cannot guarantee that results are repeatable</li>
+          </ul>
+        </div>
+        <div class="card cw-highlight">
+          <span class="cs-tag">Cloudstaff AI Coworker</span>
+          <h3>One of the team</h3>
+          <ul class="story-checks">
+            <li>Structured code, combined with AI, to guarantee repeatable, observable results</li>
+            <li>Supervised by a person</li>
+            <li>A system integration layer that connects to your tools</li>
+            <li>No lock-in to a single frontier AI model</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">Where do you start?</span>
+      <h2>Find the friction around the edges</h2>
+      <p>You do not have to begin with your mission-critical operations. The fastest wins are usually the non-core pain points around them: the systems and processes that have been unloved and neglected. Think compliance administration, onboarding, travel, couriers, expenses, visitor management, and tech support.</p>
+      <p>Once those are running, develop an overall strategy for the core. There, several Coworkers, each reporting to a Cloudstaffer, work together to deliver the solution.</p>
+      <h3>Don't build a bot. Train a Coworker</h3>
+      <div class="grid-3">
+        <div class="card">
+          <div class="step-number">1</div>
+          <h3>Choose a role</h3>
+          <p>Pick from a growing library of roles with established starting points, such as Legal Contract Manager, Business Expense Manager, and Travel Coordinator.</p>
+        </div>
+        <div class="card">
+          <div class="step-number">2</div>
+          <h3>Pair it with a Cloudstaffer</h3>
+          <p>Your Cloudstaffer becomes its manager and the human in the loop. They already know how the work is done.</p>
+        </div>
+        <div class="card">
+          <div class="step-number">3</div>
+          <h3>Start it as an apprentice</h3>
+          <p>A Coworker begins with a job description, is trained as an apprentice, and is then promoted to Coworker.</p>
+        </div>
+        <div class="card">
+          <div class="step-number">4</div>
+          <h3>Train and customize</h3>
+          <p>We study how the task is done today, typically over about a month alongside your Cloudstaffer, and turn it into the skills and processes the Coworker needs.</p>
+        </div>
+        <div class="card">
+          <div class="step-number">5</div>
+          <h3>Request changes as you go</h3>
+          <p>Spot a new feature or a change that is needed, and request it. Improvements are normally deployed within hours. Every interaction is logged, and the Coworker reviews its own log to suggest how it should improve.</p>
+        </div>
+        <div class="card">
+          <div class="step-number">6</div>
+          <h3>Build your library of IP</h3>
+          <p>The skills and tools you build become your intellectual property and your organization's memory. Add more Coworkers as you need new capabilities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">The people behind every Coworker</span>
+      <h2>A human team stands behind the digital one</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <h3>Your Cloudstaffer</h3>
+          <p>Every AI Coworker is managed by a human Cloudstaffer who works for you. They know your processes intimately, deal with your team directly, and translate your needs into the processes and skills the Coworker uses. They are the voice of the customer.</p>
+        </div>
+        <div class="card">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></div>
+          <h3>Q Platform Engineer</h3>
+          <p>Tailors the Cloudstaff Q platform to support your Coworkers, including which AI models are used and how the infrastructure is set up.</p>
+        </div>
+        <div class="card">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></div>
+          <h3>Q Feature Engineer</h3>
+          <p>Builds the bespoke, client-specific features your Coworker relies on, coded for your requirements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted">
   <div class="site-band-inner">
     <div>
       <span class="eyebrow">AI you can trust with real work</span>
