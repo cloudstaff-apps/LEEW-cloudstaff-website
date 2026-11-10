@@ -17,6 +17,78 @@ Design System, with an owned `src/site.css` scaffolding layer.
   `leew-cs.github.io/cloudstaff-website`) was deleted on 2026-11-10 after its history was
   copied here. If either name turns up in old notes or chats, ignore it.
 
+## Start here next session (state at close, 2026-11-10 evening)
+
+**Everything is committed, pushed and deployed. Nothing is in progress.** The
+working tree was clean at close. Lee will pick this up in a new chat.
+
+First steps for a new session:
+
+1. Read this file end to end. It is the single source of truth.
+2. Work on Lee's linked computer, not the cloud workspace (see "Ops notes").
+   Clone `cloudstaff-apps/LEEW-cloudstaff-website` to a scratch folder outside
+   the connected folders (last session used `~/work/site`, remote named `org`;
+   it may still be there, in which case `git pull` it and check it is clean).
+3. Read the token from `Documents\claude\cloudstaff-apps-push.txt`. Never commit it.
+4. After any change: `python3 build.py && python3 tools/noindex.py`, commit, push
+   `main`, wait for the Pages build to report the new sha, then check the live
+   page in Chrome with `?v=<sha>` on the URL.
+5. Update this file in the same commit when a rule, source or decision changes,
+   and copy it to the project doc `claude/website-rebuild-status.md`.
+
+Standing rules Lee has set (do not break these):
+
+- Test site only. Every page in `docs/` stays noindexed.
+- No em dashes anywhere. US spelling.
+- No coloured accent edge on a box, and diagrams in the site palette only
+  (see "House design rule").
+- Copy should be punchy. Flag any fact or claim Claude wrote so Lee can confirm it.
+- Never use "AI Toolkit" or "AI Toolbox". The platform is **Cloudstaff Q**.
+- Do not claim 100% training compliance.
+- The four removed Coworkers stay out (see "Excluded from the public directory").
+- Material from the internal AI Coworker presentation stays off the site:
+  pricing, cost comparisons, 10x claims, "over 100 Coworkers", competitor names.
+
+What changed on 2026-11-10 (latest first):
+
+- AI Coworkers: the process diagram and the "friction around the edges" circle
+  diagram were redrawn in the site palette; the process diagram was cut from 14
+  moving parts to 11 and from 31 connectors to 18.
+- Site-wide: every single-side coloured edge on a callout, card, table column or
+  blockquote was removed and replaced with a tinted fill and thin border.
+- AI Training: new page. Hero "AI skills increase your value. They do not
+  decrease it."; band headed "We're making AI your Cloudstaffer's superpower"
+  with Lee's caped Cloudstaffer photo; five levels (1 to 3 included, 4 and 5
+  advanced and client-paid); wording softened to "the standard we set for every
+  Cloudstaffer".
+- Cloudstaff Q: rewritten around Secure, Govern, Scale, No lock-in, with the
+  concentric rings as the central image. AI Toolkit page merged into it.
+- AI Consultancy: new page.
+- AI Coworkers: hotspot screenshots, avatars, merged chatbot/comparison section
+  with the three reach bars, circle diagram, section reorder.
+- Customer Success Stories: Americas first, 13 internal story pages with photo
+  heroes, nav label renamed.
+- Typography: headings and paragraphs no longer wrap early, on all pages.
+- Hosting: moved to the org repo; old personal repo deleted.
+
+Questions raised with Lee and still unanswered (take no action until he replies):
+
+- Arrivia and Metro Property Management appear as named videos while their
+  written stories are anonymised. Keep both, or align them?
+- Nine video-only customer cards have no written story behind them.
+- The comparison scorecard notes for chat tools and agents, and the eleven
+  "moving parts" labels in the process diagram, were written by Claude.
+- "Human manager" wording remains in five places on AI Coworkers (the hero now
+  says "a Cloudstaffer it reports to"). Change the rest to match?
+- Hotspot 2 placement on the Coworker profile screenshot.
+- AI Consultancy: "working direct with your Coworkers" was read as the client's
+  staff (job functions and SOPs). Confirm.
+- AI Training: Levels 4 and 5 share one card. Split them? Are Coffee Hour and
+  the Survival Guide right for this page?
+- The "Louis Reid" avatar looks female.
+- Cloudstaff Q "see your IP and take it with you": is that backed by the contract?
+- Brochure statistics on the AI pages were not independently re-verified.
+
 ## Prototype is noindexed (important)
 
 Every page in `docs/` carries
@@ -79,7 +151,7 @@ International · CFO Guide · Contact Us, plus quiet "Jobs" and "Talk to an Expe
 - AI Enabled Staff ▾: Overview, AI Coworkers, Cloudstaff Q
 - Roles & Industries ▾: All roles, Team Builder, Pricing & Savings
 
-## Pages (20)
+## Pages (35: 22 core plus 13 story pages)
 
 Home, What Is Remote Staffing, How It Works, Time Zones, Pricing, Team Builder,
 Roles, Security, Why Cloudstaff, Customers, **AI Enabled Staff + AI Coworkers +
