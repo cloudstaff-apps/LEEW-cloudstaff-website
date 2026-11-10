@@ -1,6 +1,6 @@
 # Cloudstaff.com rebuild, handover
 
-_Last updated: 2026-11-09 (end of session)._
+_Last updated: 2026-11-10._
 
 ## Summary
 
@@ -10,8 +10,28 @@ success stories, and cloudstaff.ai, optimised for a US audience and positioned
 as the market leader. Everything is token-driven on top of the Cloudstaff
 Design System, with an owned `src/site.css` scaffolding layer.
 
-- **Live:** https://leew-cs.github.io/cloudstaff-website/
-- **Repo:** https://github.com/LEEW-CS/cloudstaff-website (public; Pages source `main` / `/docs`)
+- **Internal deployment (share this link):** https://cloudstaff-apps.github.io/LEEW-cloudstaff-website/
+  from https://github.com/cloudstaff-apps/LEEW-cloudstaff-website (Pages source `main` / `/docs`,
+  Pages visibility public so staff can view without a GitHub login).
+- **Source repo:** https://github.com/LEEW-CS/cloudstaff-website (Pages source `main` / `/docs`,
+  also served at https://leew-cs.github.io/cloudstaff-website/). As of 2026-11-10 this repo and
+  its Pages site are still public. Lee wants it visible only to himself. Not yet actioned.
+- Both repos share one history. Commit once, then push `main` to both remotes.
+
+## Prototype is noindexed (important)
+
+Every page in `docs/` carries
+`<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">`.
+It is injected by `tools/noindex.py`, a post-build step, so **always build with**:
+
+    python3 build.py && python3 tools/noindex.py
+
+Running `build.py` alone strips the tag and makes the prototype indexable again.
+`python3 tools/noindex.py --check` verifies without writing (exit 1 on any problem).
+`--dry-run` reports what would change. The script also fails if any noindex directive
+leaks into `wordpress/cloudstaff-theme/`, which must stay indexable for the live site.
+`robots.txt` is not used: the site publishes to a subpath, and crawlers only read
+robots.txt at the host root.
 
 ## House writing rule (important)
 
@@ -23,7 +43,7 @@ string, meta description, and CSS comment. If you add content, do not introduce
 
 ## Architecture / build
 
-- Author in `src/` partials. `python3 build.py` renders:
+- Author in `src/` partials. `python3 build.py && python3 tools/noindex.py` renders:
   - `docs/` (the static site GitHub Pages serves), and
   - `wordpress/cloudstaff-theme/` (a parallel WP theme, not activated).
 - Shared chrome: `src/header.html`, `src/footer.html`. Page bodies:
@@ -84,26 +104,29 @@ CFO Guide, Contact.
 
 ## Ops notes / gotchas
 
-- **Push:** a fine-grained PAT is at `/home/claude/.gh_pat` (session-local;
-  gone when the container is reclaimed). Push via an authed URL with proxy env
-  unset: `export -n HTTP_PROXY HTTPS_PROXY http_proxy https_proxy` then
-  `git push "https://x-access-token:$TOKEN@github.com/leew-cs/cloudstaff-website.git" HEAD:main`.
-  After each push run `git update-ref refs/remotes/origin/main HEAD` so the stop
-  hook does not report a false "unpushed".
-- **Commit identity:** the stop hook requires committer `Claude
-  <noreply@anthropic.com>`. Run `git config user.email noreply@anthropic.com &&
-  git config user.name Claude` before committing.
-- **Proxy blocks curl to leew-cs.github.io (403)**, so you cannot verify live
-  pages with curl from the container. Use the Chrome browser tools, or check the
-  build API: `GET /repos/leew-cs/cloudstaff-website/pages/builds/latest` returns
-  `status: built` + the commit sha.
+- **Token:** the `Cloudstaff-push` fine-grained PAT is saved on Lee's computer at
+  `Documents\cloudstaff-push.txt`. Read it from there each session. Never commit it
+  or write it into a stored remote URL.
+- **Where to run git:** on Lee's linked computer (its shell has git, python3 and
+  open network access). Clone to a scratch folder outside the connected folders,
+  pass the token through an inline credential helper, and push `main` to both
+  remotes. The cloud workspace can read the `LEEW-CS` repo, but its proxy refuses
+  the `cloudstaff-apps` repo and the Pages API, so it cannot deploy.
+- **Commit identity:** committer `Claude <noreply@anthropic.com>`.
+- **Verify a deploy** with the GitHub API (`GET /repos/<owner>/<repo>/pages/builds/latest`
+  should report `status: built` and the pushed commit sha) and by fetching a live
+  page and checking for the robots tag.
 - **Deploy lag + CDN cache:** Pages can take a couple of minutes; the bare live
   URL is edge-cached ~10 min, so append `?v=` to bust while verifying, and tell
   Lee to hard-refresh pages he had already opened.
-- Container is ephemeral. Recovery after a reclaim: re-clone from GitHub with a
-  fresh PAT (no local state survives).
+- The cloud workspace is wiped between sessions. Nothing saved there survives, so
+  re-clone each session using the token file above.
 
 ## Open follow-ups
+
+- **Lock down the source repo:** `LEEW-CS/cloudstaff-website` and its Pages site
+  are still public. Decide whether to make the repo private or unpublish its
+  Pages site.
 
 - **Coworker directory avatars:** the 48 directory cards use initials avatars
   (EF, HF, ...). Only Mike/Tracy/Nicola have public photos (used on the featured
