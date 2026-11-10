@@ -12,7 +12,7 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero site-hero-photo center-hero story-hero" style="--hero-image: url('https://www.cloudstaff.com/wp-content/uploads/2026/05/Work-From-Office-109-2.jpg')">
+<section class="site-hero site-hero-photo center-hero story-hero" style="--hero-image: url('https://www.cloudstaff.com/wp-content/uploads/2026/05/Work-From-Office-109-2.jpg'); --hero-focus: 47%">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="center-back">Customer Success Stories</a> &rarr; Legal / Employment Law</span>

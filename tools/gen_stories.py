@@ -69,7 +69,9 @@ def page(s):
     out = []
 
     # hero: the team photo is the background image
-    style = (' style="--hero-image: url(\'%s%s\')"' % (IMG, w["photo"])) if w.get("photo") else ""
+    # photo_focus_y: vertical position (percent) of the people in the photo, so the
+    # short, wide hero band crops to them and not to ceilings, sky or floor.
+    style = (' style="--hero-image: url(\'%s%s\'); --hero-focus: %d%%"' % (IMG, w["photo"], w.get("photo_focus_y", 35))) if w.get("photo") else ""
     out.append(
         '<section class="site-hero site-hero-photo center-hero story-hero"%s>\n'
         '  <div class="site-band-inner">\n'
