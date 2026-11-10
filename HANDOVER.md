@@ -152,6 +152,14 @@ CFO Guide, Contact.
 - **Naming: "AI Toolkit" is the old name for Cloudstaff Q.** Never use "AI
   Toolkit" or "AI Toolbox" on the site. The separate AI Toolkit page created on
   2026-11-10 was merged into `cloudstaff-q.html` the same day and deleted.
+- **Cloudstaff Q messaging (Lee, 2026-11-10):** "AI needs to be secure. Cloudstaff
+  Q is our platform that helps you adopt AI securely, govern it confidently and
+  scale your AI usage responsibly." The page runs in that order: Security, then
+  Governance, then Scalability, then No lock-in. Framing: nobody knows what AI
+  looks like in one, five or ten years, but it will disrupt every business and
+  every employee, so you need a platform that is safe today. No lock-in means the
+  client can see their IP and take it with them if they leave ("not that we want
+  you to leave"). Keep the tone punchy.
 - **Cloudstaff Q page** is built around the four concentric "rings of protection"
   (Staging, Private production, Limited production, Public production), drawn as
   an interactive inline SVG after the All Apps diagram in the public brochure
