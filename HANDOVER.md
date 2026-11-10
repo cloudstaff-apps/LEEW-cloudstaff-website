@@ -16,7 +16,12 @@ Design System, with an owned `src/site.css` scaffolding layer.
 - **Source repo:** https://github.com/LEEW-CS/cloudstaff-website (Pages source `main` / `/docs`,
   also served at https://leew-cs.github.io/cloudstaff-website/). As of 2026-11-10 this repo and
   its Pages site are still public. Lee wants it visible only to himself. Not yet actioned.
-- Both repos share one history. Commit once, then push `main` to both remotes.
+- Both repos share one history, but the internal deployment is **behind**: it is still
+  at the 2026-07-23 commit `f50f3c0` (10 commits, no noindex tag, none of the November
+  work). The source repo is 19 commits ahead and a fast-forward push will sync it.
+  Blocked on a token: `Cloudstaff-push` is owned by the `LEEW-CS` account and cannot
+  write to `cloudstaff-apps` (push returns 403). It needs a fine-grained token whose
+  resource owner is `cloudstaff-apps`, with Contents read and write on that repo.
 
 ## Prototype is noindexed (important)
 
@@ -109,8 +114,8 @@ CFO Guide, Contact.
   or write it into a stored remote URL.
 - **Where to run git:** on Lee's linked computer (its shell has git, python3 and
   open network access). Clone to a scratch folder outside the connected folders,
-  pass the token through an inline credential helper, and push `main` to both
-  remotes. The cloud workspace can read the `LEEW-CS` repo, but its proxy refuses
+  pass the token through an inline credential helper, and push `main` to `origin`
+  (and to the `cloudstaff-apps` remote once a token for that org exists). The cloud workspace can read the `LEEW-CS` repo, but its proxy refuses
   the `cloudstaff-apps` repo and the Pages API, so it cannot deploy.
 - **Commit identity:** committer `Claude <noreply@anthropic.com>`.
 - **Verify a deploy** with the GitHub API (`GET /repos/<owner>/<repo>/pages/builds/latest`
@@ -149,4 +154,3 @@ CFO Guide, Contact.
 - Flags and the AI imagery load from external hosts (flagcdn.com, cloudstaff.ai)
   at view time. Mirror into the repo if a fully self-hosted site is wanted.
 - WP theme is generated but not activated; activation steps still to document.
-- Lee can revoke the PAT when finished.
