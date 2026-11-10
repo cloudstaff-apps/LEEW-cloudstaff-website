@@ -124,6 +124,15 @@ CFO Guide, Contact.
 - The cloud workspace is wiped between sessions. Nothing saved there survives, so
   re-clone each session using the token file above.
 
+## "AI-enabled Cloudstaffers" wording
+
+Reviewed all 13 uses of "Cloudstaffer(s)" on 2026-11-10. Three now read
+"AI-enabled Cloudstaffer(s)" and link to the AI Enabled Staff page (Home and
+Pricing savings sentences, Why Cloudstaff infrastructure intro). The other ten
+stay plain on purpose: headcount stats, client success stories, the productivity
+ladder on Roles, the definition on AI Enabled Staff itself, and the data-access
+card on Security. Inline links in body copy use `class="text-link"` (`src/site.css`).
+
 ## Excluded from the public directory
 
 Removed on 2026-11-10 at Lee's instruction as not for website consumption. Do not
