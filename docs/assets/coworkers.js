@@ -15,8 +15,6 @@
 
     { c: "Technology", n: "Clive Spencer", u: "Sparkboss", d: "Finds the next AI Coworkers to build and turns each idea into a job description.", t: ["AI adoption", "Process discovery"] },
     { c: "Technology", n: "David Lewis", u: "AlphaBoss", d: "The admin platform that monitors every Coworker unit and manages incidents.", t: ["IT operations", "Monitoring"] },
-    { c: "Technology", n: "Dylan Owen", u: "TheBoss", d: "The reference server every Coworker unit is built from: sign-in, library, security.", t: ["Reference server", "Unit framework"] },
-    { c: "Technology", n: "Thomas Jackson", u: "Bruceboss", d: "The reference unit that proves the shared design system for every Coworker.", t: ["Design system", "Reference server"] },
 
     { c: "Facilities", n: "Carla Hewitt", u: "Labelboss", d: "Watches every office label printer and designs and prints labels on demand.", t: ["Printer monitoring", "Labels"] },
     { c: "Facilities", n: "Edgar Bailey", u: "Lockerboss", d: "Assigns lockers and tracks every key, with each change recorded.", t: ["Lockers", "Key tracking"] },
@@ -33,7 +31,6 @@
 
     { c: "Operations", n: "Julie White", u: "Travelboss", d: "Plans and books staff travel, with approvals and tickets on the traveller's phone.", t: ["Travel", "Trip planning"] },
     { c: "Operations", n: "Lisa Ward", u: "EventBoss", d: "Runs events end to end: QR tickets, check-in, and attendance reporting.", t: ["Events", "Ticketing"] },
-    { c: "Operations", n: "Luke Riley", u: "Taskboss", d: "The executive team's task system: a daily plate for each person, chasing overdue work.", t: ["Executive support", "Task management"] },
     { c: "Operations", n: "Scott Parks", u: "ProcessBox", d: "The process library: walks staff through approved steps and keeps them reviewed.", t: ["Process library", "Documentation"] },
     { c: "Operations", n: "Simon Hunt", u: "Standupboss", d: "Runs the daily standup: collects updates, presents the deck, reports blockers.", t: ["Daily standups", "Meetings"] },
 
@@ -44,7 +41,6 @@
 
     { c: "Relationships", n: "Craig Baxter", u: "ApacYoga", d: "Trust relationship management for the APAC team: records, promises, morning priorities.", t: ["Trust management", "APAC"] },
     { c: "Relationships", n: "Laura Jones", u: "Cloudstaff.Yoga", d: "The trust relationship system: one record per contact, and briefs you before meetings.", t: ["Trust management", "Meeting briefs"] },
-    { c: "Relationships", n: "Sadie Clarke", u: "Try Yoga", d: "A trial instance of the Yoga trust system to try before rolling it out.", t: ["Trust management", "Product trial"] },
     { c: "Relationships", n: "Sarah Reid", u: "Optiboss", d: "Trust relationship management: keeps promises on track and briefs you before meetings.", t: ["Trust management", "Meeting briefs"] },
 
     { c: "Supply chain", n: "Elliot Payne", u: "Returnboss", d: "Runs supplier returns, damage claims and credit notes under your rules.", t: ["Returns", "Credit notes"] },

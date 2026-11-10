@@ -87,8 +87,8 @@ CFO Guide, Contact.
     Cloudstaff Q), three pillars with "Evidence today" proof lines, and the two
     engagement models (AI-enabled staffing / Human + AI solutions).
   - AI Coworkers: nine traits, featured Mike/Tracy/Nicola (real photos +
-    coworker collage from cloudstaff.ai), and a **filterable directory** of 48
-    live Coworkers across 13 functions (`coworkers.js`) with a search box.
+    coworker collage from cloudstaff.ai), and a **filterable directory** of 44
+    Coworkers (41 live, 3 in development) across 13 functions (`coworkers.js`) with a search box.
   - Cloudstaff Q: the secure platform / control layer.
 - **Logo**: official Cloudstaff lockup image in the header; official reverse
   (all-white) lockup in the dark footer. `src/cloudstaff-logo*.png`.
@@ -124,9 +124,15 @@ CFO Guide, Contact.
 - The cloud workspace is wiped between sessions. Nothing saved there survives, so
   re-clone each session using the token file above.
 
+## Excluded from the public directory
+
+Removed on 2026-11-10 at Lee's instruction as not for website consumption. Do not
+re-add: TheBoss (Dylan Owen), Bruceboss (Thomas Jackson), Taskboss (Luke Riley),
+Try Yoga (Sadie Clarke).
+
 ## Open follow-ups
 
-- **Coworker directory avatars:** the 48 directory cards use initials avatars
+- **Coworker directory avatars:** the 44 directory cards use initials avatars
   (EF, HF, ...). Only Mike/Tracy/Nicola have public photos (used on the featured
   cards). To use real portraits, Lee needs to export the avatar images from the
   internal Coworker app (or give URLs/a folder), then swap `.avatar-initials`
