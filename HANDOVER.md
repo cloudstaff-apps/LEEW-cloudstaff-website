@@ -163,6 +163,14 @@ CFO Guide, Contact.
   comparisons for Tracy, Nicola and Mike, the "10x faster, 10x cheaper, better
   than a human" claims, the "over 100 Coworkers" library figure, competitor
   product names, and the strategy and next-steps slides.
+- **"How is a Cloudstaff AI Coworker different?"** is an interactive step-up
+  scorecard: three rising steps (chat tools, general-purpose agents, AI Coworker),
+  each scored against the same seven criteria. Hovering or selecting a step swaps
+  the scorecard; the Coworker step is selected by default and meets all seven.
+  The Coworker column and the "trained through prompts", "tedious questions",
+  "not repeatable" and "shadow usage" points come from the presentation. The
+  other notes on chat tools and agents were written by Claude and are Lee's to
+  confirm.
 - **"One of the team" hotspots** (AI Coworkers page): two screenshots with numbered
   hotspots that open on hover, focus or tap, pure CSS. `src/coworker-profile.png`
   is the ExpenseBoss profile of Chris Hayes with the app URLs and part of his
