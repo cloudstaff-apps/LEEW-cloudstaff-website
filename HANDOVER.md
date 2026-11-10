@@ -10,18 +10,12 @@ success stories, and cloudstaff.ai, optimised for a US audience and positioned
 as the market leader. Everything is token-driven on top of the Cloudstaff
 Design System, with an owned `src/site.css` scaffolding layer.
 
-- **Internal deployment (share this link):** https://cloudstaff-apps.github.io/LEEW-cloudstaff-website/
-  from https://github.com/cloudstaff-apps/LEEW-cloudstaff-website (Pages source `main` / `/docs`,
-  Pages visibility public so staff can view without a GitHub login).
-- **Source repo:** https://github.com/LEEW-CS/cloudstaff-website (Pages source `main` / `/docs`,
-  also served at https://leew-cs.github.io/cloudstaff-website/). As of 2026-11-10 this repo and
-  its Pages site are still public. Lee wants it visible only to himself. Not yet actioned.
-- Both repos share one history, but the internal deployment is **behind**: it is still
-  at the 2026-07-23 commit `f50f3c0` (10 commits, no noindex tag, none of the November
-  work). The source repo is 19 commits ahead and a fast-forward push will sync it.
-  Blocked on a token: `Cloudstaff-push` is owned by the `LEEW-CS` account and cannot
-  write to `cloudstaff-apps` (push returns 403). It needs a fine-grained token whose
-  resource owner is `cloudstaff-apps`, with Contents read and write on that repo.
+- **Live:** https://cloudstaff-apps.github.io/LEEW-cloudstaff-website/
+- **Repo:** https://github.com/cloudstaff-apps/LEEW-cloudstaff-website (Pages source `main` / `/docs`).
+  This is the **only** repo for this site. It sits in the corporate GitHub org.
+- **Do not use** `LEEW-CS/cloudstaff-website` or `leew-cs.github.io/cloudstaff-website`.
+  That was Lee's old personal copy. The 2026-11-09 session was pushed there by mistake,
+  the work was copied here on 2026-11-10, and Lee is deleting the personal copy.
 
 ## Prototype is noindexed (important)
 
@@ -109,18 +103,21 @@ CFO Guide, Contact.
 
 ## Ops notes / gotchas
 
-- **Token:** the `Cloudstaff-push` fine-grained PAT is saved on Lee's computer at
-  `Documents\cloudstaff-push.txt`. Read it from there each session. Never commit it
-  or write it into a stored remote URL.
+- **Token:** a fine-grained PAT owned by `cloudstaff-apps` is saved on Lee's computer
+  at `Documents\claude\cloudstaff-apps-push.txt` (expires 2026-12-10). Read it from
+  there each session. Never commit it or write it into a stored remote URL. A new
+  token for this org must have Resource owner set to `cloudstaff-apps` and may need
+  an org owner to approve it before it works.
 - **Where to run git:** on Lee's linked computer (its shell has git, python3 and
-  open network access). Clone to a scratch folder outside the connected folders,
-  pass the token through an inline credential helper, and push `main` to `origin`
-  (and to the `cloudstaff-apps` remote once a token for that org exists). The cloud workspace can read the `LEEW-CS` repo, but its proxy refuses
-  the `cloudstaff-apps` repo and the Pages API, so it cannot deploy.
+  network access to github.com). Clone to a scratch folder outside the connected
+  folders, pass the token through an inline credential helper, and push `main`.
+  The cloud workspace's proxy refuses the `cloudstaff-apps` repo, so it cannot deploy.
 - **Commit identity:** committer `Claude <noreply@anthropic.com>`.
-- **Verify a deploy** with the GitHub API (`GET /repos/<owner>/<repo>/pages/builds/latest`
-  should report `status: built` and the pushed commit sha) and by fetching a live
-  page and checking for the robots tag.
+- **Verify a deploy** with the GitHub API
+  (`GET /repos/cloudstaff-apps/LEEW-cloudstaff-website/pages/builds/latest` should
+  report `status: built` and the pushed commit sha), then load the live site in the
+  browser pane and check the pages. `github.io` is blocked for curl from both the
+  cloud workspace and the linked computer's shell.
 - **Deploy lag + CDN cache:** Pages can take a couple of minutes; the bare live
   URL is edge-cached ~10 min, so append `?v=` to bust while verifying, and tell
   Lee to hard-refresh pages he had already opened.
@@ -129,10 +126,9 @@ CFO Guide, Contact.
 
 ## Open follow-ups
 
-- **Lock down the source repo:** `LEEW-CS/cloudstaff-website` and its Pages site
-  are still public. Decide whether to make the repo private or unpublish its
-  Pages site.
-
+- **Delete the old personal copy:** Lee to delete `LEEW-CS/cloudstaff-website`
+  (Settings, Danger Zone), which also takes `leew-cs.github.io/cloudstaff-website`
+  offline. Safe to do: this repo holds the full history.
 - **Coworker directory avatars:** the 48 directory cards use initials avatars
   (EF, HF, ...). Only Mike/Tracy/Nicola have public photos (used on the featured
   cards). To use real portraits, Lee needs to export the avatar images from the
