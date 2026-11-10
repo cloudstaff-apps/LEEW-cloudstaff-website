@@ -79,6 +79,14 @@
       "description": "Real client success stories from Wipfli, Built, Avetta, Arrivia, McConnell Dowell and more, with 17 video testimonials and the results of building dedicated remote teams with Cloudstaff."
     },
     {
+      "slug": "story-wipfli",
+      "wp_template": "page-story-wipfli",
+      "nav_label": "Wipfli",
+      "in_nav": false,
+      "title": "Wipfli: Customer Success Story | Cloudstaff",
+      "description": "Facing skyrocketing demand for business services, Wipfli knew their US-based talent couldn't keep pace. They made a strategic decision: to grow globally by outsourcing, expanding their team beyond borders. This bold move positioned them for sustained success in a competitive market."
+    },
+    {
       "slug": "story-avetta",
       "wp_template": "page-story-avetta",
       "nav_label": "Avetta",

@@ -12,7 +12,7 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero site-hero-photo center-hero">
+<section class="site-hero site-hero-photo center-hero story-hero">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="center-back">Customer Success Stories</a> &rarr; Travel &amp; Leisure / Membership</span>
@@ -20,12 +20,13 @@ get_header();
     <p>Leading Travel Membership Platform &middot; United States &middot; Cloudstaff partner since 2018</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Talk to an expert</a>
     </div>
+    <div class="story-hero-photo"><img src="https://www.cloudstaff.com/wp-content/uploads/2026/07/Work-From-Office-133.jpg" alt="A Cloudstaff team at work"></div>
   </div>
 </section>
 
 <section class="site-band">
   <div class="site-band-inner">
-    <span class="eyebrow">The results</span>
+    <span class="eyebrow">At a glance</span>
     <h2>The partnership in numbers</h2>
     <div class="grid-4 center-glance">
       <div class="stat-tile"><div class="stat-tile-label">Annual Cruise Sales Volume Generated</div><div class="stat-tile-value">$50M+</div></div>
@@ -34,17 +35,19 @@ get_header();
       <div class="stat-tile"><div class="stat-tile-label">Partner &amp; Customer Satisfaction, Up From 82%</div><div class="stat-tile-value">91%</div></div>
     </div>
     <figure class="card cs-story story-quote">
-      <blockquote>&ldquo;I've pointed other people toward Cloudstaff, and I'll keep doing it... What we've built together is something I'm genuinely proud of. That kind of reliability doesn't come from a contract. It comes from people who actually care about the outcome.&rdquo;</blockquote>
+      <blockquote>&ldquo;I've pointed other people toward Cloudstaff, and I'll keep doing it. Not because I feel obligated to, but because what we've built together is something I'm genuinely proud of. There were moments in this partnership where things moved fast and the pressure was real, and the team handled it. That kind of reliability doesn't come from a contract. It comes from people who actually care about the outcome. We're not done growing this, not even close.&rdquo;</blockquote>
       <figcaption><span class="avatar-initials">VP</span><span><strong>VP, Global Contact Center Operations</strong>, Leading Travel Membership Platform</span></figcaption>
     </figure>
   </div>
 </section>
 
 <section class="site-band site-band-tinted">
-  <div class="site-band-inner">
+  <div class="site-band-inner story-split">
     <div>
       <span class="eyebrow">Travel &amp; Leisure / Membership</span>
-      <h2>The situation</h2>
+      <h2>About the client</h2>
+      <p>Founded in 1997 as a travel exchange business for timeshare and cruise membership owners, this travel membership platform built its reputation managing curated travel products and services through B2B and B2B2C channels for corporate partners and commercial membership organizations. Following a private equity acquisition in 2019, the company focused on operational efficiency and scalable growth across its travel and leisure portfolio.</p>
+      <h3>The situation</h3>
       <p>Following a private equity acquisition in 2019, this travel membership platform needed to move faster and operate more efficiently, but fixed staffing costs were outpacing output and inconsistent service quality was putting key partner relationships at risk.</p>
       <p>What began as staff augmentation evolved into a full-scale virtual sales operation: 225 representatives generating $50M+ in annual cruise sales at a 34% net profit margin.</p>
     </div>
@@ -52,6 +55,7 @@ get_header();
       <div class="stack-lg">
         <dl class="card story-facts">
           <div><dt>Industry</dt><dd>Travel &amp; Leisure / Membership</dd></div>
+          <div><dt>Company size</dt><dd>Large Enterprise</dd></div>
           <div><dt>Headquarters</dt><dd>United States</dd></div>
           <div><dt>Partner since</dt><dd>2018</dd></div>
           <div><dt>Delivery center</dt><dd>Philippines</dd></div>
@@ -65,6 +69,7 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">Before Cloudstaff</span>
     <h2>The challenge</h2>
+    <p>As growth pressures intensified following a private equity acquisition in 2019, this travel membership platform found its existing staffing model struggling to keep pace with where the business needed to go.</p>
     <div class="grid-3">
       <div class="card">
         <div class="step-number">1</div>
@@ -89,6 +94,7 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">What Cloudstaff delivered</span>
     <h2>The solution</h2>
+    <p>In 2018, this travel membership platform engaged Cloudstaff to optimize non-sales functions under a staff augmentation model, embedding skilled Cloudstaffers directly alongside internal teams and Global In-house Centers. When confidence in the model was established, a cruise sales pilot followed in 2022.</p>
     <ul class="story-checks">
       <li><strong>Embedded workforce model.</strong> Cloudstaffers worked directly within existing workflows with in-house responsiveness.</li>
       <li><strong>Full-stack support.</strong> Talent sourcing, onboarding, Cloudstaff Academy training, compliance and tech setup.</li>
@@ -104,20 +110,55 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">Over time</span>
     <h2>Growth and evolution</h2>
+    <ol class="story-timeline">
+      <li><span class="cs-tag">2018</span><span>Non-sales engagement</span></li>
+      <li><span class="cs-tag">2022</span><span>Carefully scoped cruise sales pilot launched with 20 agents, testing virtual staffing in a live revenue environment</span></li>
+      <li><span class="cs-tag">2023</span><span>Pilot proves its value with team exceeding performance expectations, generating results that gave leadership the confidence to expand</span></li>
+      <li><span class="cs-tag">2026</span><span>Cruise sales operation scaled to 225 inbound and outbound representatives</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
+    <span class="eyebrow">The outcome</span>
+    <h2>The results</h2>
+    <p>What started as a cautious, non-sales engagement in 2018 became a full-scale cruise sales operation and a structural competitive advantage. Savings were not treated as an end in themselves but reinvested directly into training, technology, and team development, compounding the value of the partnership with every year of growth.</p>
     <div class="grid-3">
-      <div class="card story-step">
-        <span class="cs-tag">2018</span>
-        <p>Non-sales staff augmentation engagement began</p>
+      <div class="card story-result">
+        <h3>$50M plus</h3>
+        <p>In annual cruise sales volume generated by the virtual sales team</p>
       </div>
-      <div class="card story-step">
-        <span class="cs-tag">2022</span>
-        <p>Cruise sales pilot launched with 20 agents in a live revenue environment</p>
+      <div class="card story-result">
+        <h3>Approximately $17 million</h3>
+        <p>In net revenue from the cruise sales operation</p>
       </div>
-      <div class="card story-step">
-        <span class="cs-tag">2026</span>
-        <p>Operation scaled to 225 inbound and outbound representatives</p>
+      <div class="card story-result">
+        <h3>34% net profit margin</h3>
+        <p>Across the cruise sales operation</p>
+      </div>
+      <div class="card story-result">
+        <h3>40% labor cost savings</h3>
+        <p>Compared to previous onshore arrangements</p>
+      </div>
+      <div class="card story-result">
+        <h3>$1,380 average booking value</h3>
+        <p>Up from $1,200 as sales capability deepened</p>
+      </div>
+      <div class="card story-result">
+        <h3>91% partner and customer satisfaction</h3>
+        <p>Up from 82%</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <span class="eyebrow">Looking ahead</span>
+    <h2>Built to last</h2>
+    <p>The Cloudstaff partnership has long since moved beyond its original scope. It is now a structural part of the company's operational model, and one of the more durable competitive advantages the business has built over the past several years.</p>
+    <p>For businesses in travel, membership services, and adjacent sectors navigating similar pressures on margins, talent supply, and technology adoption, this story offers something worth paying attention to. When virtual staffing is deployed with genuine intention, embedded within real workflows, supported by enterprise-grade people technology, and given the time to mature, the results go well beyond cost savings. The team becomes a growth engine in its own right.</p>
     <p><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="button-link">&larr; All customer success stories</a></p>
   </div>
 </section>

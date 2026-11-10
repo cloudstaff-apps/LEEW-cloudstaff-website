@@ -12,7 +12,7 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero site-hero-photo center-hero">
+<section class="site-hero site-hero-photo center-hero story-hero">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="center-back">Customer Success Stories</a> &rarr; Supply Chain Risk Management</span>
@@ -20,12 +20,13 @@ get_header();
     <p>Avetta &middot; USA &middot; Cloudstaff partner since 2020</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Talk to an expert</a>
     </div>
+    <div class="story-hero-photo"><img src="https://www.cloudstaff.com/wp-content/uploads/2026/05/Avetta.jpg" alt="The Cloudstaff team supporting Avetta"></div>
   </div>
 </section>
 
 <section class="site-band">
   <div class="site-band-inner">
-    <span class="eyebrow">The results</span>
+    <span class="eyebrow">At a glance</span>
     <h2>The partnership in numbers</h2>
     <div class="grid-4 center-glance">
       <div class="stat-tile"><div class="stat-tile-label">Cloudstaffers Embedded Across Global Operations</div><div class="stat-tile-value">125+</div></div>
@@ -34,17 +35,19 @@ get_header();
       <div class="stat-tile"><div class="stat-tile-label">Pre-Screened Talent Pool Accessed</div><div class="stat-tile-value">1M+</div></div>
     </div>
     <figure class="card cs-story story-quote">
-      <blockquote>&ldquo;I wasn't so keen on looking for a partner that we would just throw the business over to. I was truly looking for a partner where we could work directly with their employees to build something special for our customers.&rdquo;</blockquote>
-      <figcaption><span class="avatar-initials">RP</span><span><strong>Richard Parke</strong>, Avetta</span></figcaption>
+      <blockquote>&ldquo;I come from a long history of working in the traditional full managed service BPO space, and I wasn't so keen on looking for a partner that we would just throw the business over to. I was truly looking for a partner where we could work directly with their employees to build something special for our customers&rdquo;</blockquote>
+      <figcaption><img class="avatar-photo" src="https://www.cloudstaff.com/wp-content/uploads/2025/08/Avetta-907x1024.jpg" alt="" loading="lazy"><span><strong>Richard Parke</strong>, Avetta</span></figcaption>
     </figure>
   </div>
 </section>
 
 <section class="site-band site-band-tinted">
-  <div class="site-band-inner">
+  <div class="site-band-inner story-split">
     <div>
       <span class="eyebrow">Supply Chain Risk Management</span>
-      <h2>The situation</h2>
+      <h2>About Avetta</h2>
+      <p>Avetta is a global leader in supply chain risk management, helping companies connect with prequalified suppliers and ensure compliance, safety, and sustainability. Its cloud-based platform delivers real-time visibility into supplier performance and risks, enabling smarter decisions and sustainable growth.</p>
+      <h3>The situation</h3>
       <p>As Avetta's global customer base grew, so did the demand for timely, high-quality support across multiple regions. They needed a partner who could scale quickly and maintain service excellence, without sacrificing the visibility, oversight, or customer-first values that defined their business.</p>
       <p>What began as a Philippines-based support team has grown to 125+ Cloudstaffers spanning four regions, with dedicated Spanish- and Portuguese-speaking pipelines serving Latin American markets from Colombia.</p>
     </div>
@@ -52,7 +55,9 @@ get_header();
       <div class="stack-lg">
         <div class="cs-video"><iframe src="https://www.youtube-nocookie.com/embed/tzwkUdELXTE" title="Avetta, Cloudstaff customer success story" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
         <dl class="card story-facts">
+          <img class="story-logo" src="https://www.cloudstaff.com/wp-content/uploads/2026/03/logo-avetta.png" alt="Avetta logo" loading="lazy">
           <div><dt>Industry</dt><dd>Supply Chain Risk Management</dd></div>
+          <div><dt>Company size</dt><dd>Large</dd></div>
           <div><dt>Headquarters</dt><dd>USA</dd></div>
           <div><dt>Partner since</dt><dd>2020</dd></div>
           <div><dt>Delivery centers</dt><dd>Philippines, Colombia, India</dd></div>
@@ -66,6 +71,7 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">Before Cloudstaff</span>
     <h2>The challenge</h2>
+    <p>As Avetta expanded global customer support across North America, EMEA, APAC, and Latin America, the company faced several critical challenges:</p>
     <div class="grid-3">
       <div class="card">
         <div class="step-number">1</div>
@@ -90,6 +96,7 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">What Cloudstaff delivered</span>
     <h2>The solution</h2>
+    <p>Avetta partnered with Cloudstaff to overcome traditional outsourcing limitations by creating a collaborative, customer-first global support model. Cloudstaff structured the entire engagement around that principle, keeping Avetta closely involved at every stage from recruitment through to daily operations.</p>
     <ul class="story-checks">
       <li><strong>Customer View Portal.</strong> Active involvement in candidate review, interviews, and onboarding decisions at every stage.</li>
       <li><strong>Multilingual pipelines.</strong> Dedicated Spanish- and Portuguese-speaking professionals serve Latin American markets.</li>
@@ -105,20 +112,58 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">Over time</span>
     <h2>Growth and evolution</h2>
+    <ol class="story-timeline">
+      <li><span class="cs-tag">2020</span><span>Launched with a focused Philippines-based customer support team</span></li>
+      <li><span class="story-dot" aria-hidden="true"></span><span>Expanded to 125+ Cloudstaffers embedded across global operations</span></li>
+      <li><span class="story-dot" aria-hidden="true"></span><span>Geographic reach extended into Colombia to serve Spanish and Portuguese-speaking Latin American markets</span></li>
+      <li><span class="story-dot" aria-hidden="true"></span><span>Coverage now spans North America, EMEA, APAC, and Latin America</span></li>
+      <li><span class="story-dot" aria-hidden="true"></span><span>Cloudstaffers progressed into embedded, institutionally knowledgeable team members</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
+    <span class="eyebrow">The outcome</span>
+    <h2>The results</h2>
+    <p>Avetta successfully scaled global customer support without sacrificing quality, visibility, or the customer-first values that define the business. The partnership gave them the agility to enter new markets while keeping the standards that matter most firmly in place.</p>
     <div class="grid-3">
-      <div class="card story-step">
-        <span class="cs-tag">2020</span>
-        <p>Launched with a focused Philippines-based customer support team</p>
+      <div class="card story-result">
+        <h3>125 plus Cloudstaffers</h3>
+        <p>Embedded across global operations</p>
       </div>
-      <div class="card story-step">
-        <span class="cs-tag">Scale-up</span>
-        <p>Geographic reach extended into Colombia for Spanish- and Portuguese-speaking markets</p>
+      <div class="card story-result">
+        <h3>Coverage across 4 regions</h3>
+        <p>North America, EMEA, APAC, and Latin America</p>
       </div>
-      <div class="card story-step">
-        <span class="cs-tag">Today</span>
-        <p>125+ Cloudstaffers embedded across North America, EMEA, APAC and Latin America</p>
+      <div class="card story-result">
+        <h3>Faster NPS and CSAT gains</h3>
+        <p>Than previous outsourcing arrangements delivered</p>
+      </div>
+      <div class="card story-result">
+        <h3>Multilingual support</h3>
+        <p>In English, Spanish, and Portuguese across key markets</p>
+      </div>
+      <div class="card story-result">
+        <h3>Full hiring visibility and control</h3>
+        <p>Retained throughout via Customer View Portal</p>
+      </div>
+      <div class="card story-result">
+        <h3>Enhanced cultural alignment</h3>
+        <p>With Latin American markets now serviced by a Colombia team</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <span class="eyebrow">Looking ahead</span>
+    <h2>Built to last</h2>
+    <p>What began as a staffing solution has evolved into a strategic alliance, with Cloudstaff operating as a genuine extension of Avetta's team rather than a separate provider. Today, with more than 125 Cloudstaffers embedded across the Philippines and Colombia, the partnership is a cornerstone of Avetta's global growth strategy.</p>
+    <p>Parke has actively recommended Cloudstaff to other organisations navigating similar scaling challenges, pointing to the ability to grow customer support capability in a cost-effective way without losing oversight or control of the work being done.</p>
+    <p>As Avetta continues to scale across new markets, Cloudstaff has become more than a partner. It's now a cornerstone of their growth strategy.</p>
+    <p>For organizations facing the same scaling challenges, Avetta's journey proves what's possible when you choose the right partner: filling roles by virtual staffing builds a stronger, customer-focused foundation for long-term growth.</p>
     <p><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="button-link">&larr; All customer success stories</a></p>
   </div>
 </section>

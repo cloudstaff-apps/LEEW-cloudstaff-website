@@ -12,7 +12,7 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero site-hero-photo center-hero">
+<section class="site-hero site-hero-photo center-hero story-hero">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="center-back">Customer Success Stories</a> &rarr; Real Estate / Urban Development</span>
@@ -20,12 +20,13 @@ get_header();
     <p>Real Estate &amp; Land Use Organization &middot; Washington, D.C., USA &middot; Cloudstaff partner since 2024</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Talk to an expert</a>
     </div>
+    <div class="story-hero-photo"><img src="https://www.cloudstaff.com/wp-content/uploads/2026/05/DSC01928-1.jpg" alt="A Cloudstaff team at work"></div>
   </div>
 </section>
 
 <section class="site-band">
   <div class="site-band-inner">
-    <span class="eyebrow">The results</span>
+    <span class="eyebrow">At a glance</span>
     <h2>The partnership in numbers</h2>
     <div class="grid-4 center-glance">
       <div class="stat-tile"><div class="stat-tile-label">Global Professional Network Supported</div><div class="stat-tile-value">45K+</div></div>
@@ -42,10 +43,12 @@ get_header();
 </section>
 
 <section class="site-band site-band-tinted">
-  <div class="site-band-inner">
+  <div class="site-band-inner story-split">
     <div>
       <span class="eyebrow">Real Estate / Urban Development</span>
-      <h2>The situation</h2>
+      <h2>About the client</h2>
+      <p>A leading real estate and land use organization based in Washington, D.C., with a global network of 45,000+ professionals. They advance sustainable development and innovation through thought leadership, collaboration, and the promotion of industry best practices.</p>
+      <h3>The situation</h3>
       <p>Managing a growing network of freelancers across multiple countries had created mounting compliance risk, inconsistent retention, and limited visibility into performance across a global operation.</p>
       <p>Partnering with Cloudstaff in 2024, they replaced that fragmented model with a fully compliant, purpose-built remote team in Clark and Manila, delivering the structure and consistency their mission required.</p>
     </div>
@@ -53,6 +56,7 @@ get_header();
       <div class="stack-lg">
         <dl class="card story-facts">
           <div><dt>Industry</dt><dd>Real Estate / Urban Development</dd></div>
+          <div><dt>Company size</dt><dd>Medium</dd></div>
           <div><dt>Headquarters</dt><dd>Washington, D.C., USA</dd></div>
           <div><dt>Partner since</dt><dd>2024</dd></div>
           <div><dt>Delivery centers</dt><dd>Clark &amp; Manila, Philippines</dd></div>
@@ -66,6 +70,7 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">Before Cloudstaff</span>
     <h2>The challenge</h2>
+    <p>As a global real estate and land use organization expanded its global footprint, it ran into common remote workforce challenges:</p>
     <div class="grid-3">
       <div class="card">
         <div class="step-number">1</div>
@@ -90,6 +95,7 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">What Cloudstaff delivered</span>
     <h2>The solution</h2>
+    <p>In 2024, this Washington D.C.-based organization partnered with Cloudstaff to transition from a fragmented freelance model to a fully managed, high-performing remote team based in Clark and Manila, Philippines. Cloudstaff carefully matched top talent to their specific needs, ensuring every candidate was skilled, mission-aligned, and onboarded compliantly from day one.</p>
     <ul class="story-checks">
       <li>Structured hiring via Cloudstaff's RNI process for skills, mindset and cultural alignment.</li>
       <li>Dedicated success teams providing consistent guidance and performance coaching.</li>
@@ -105,20 +111,54 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">Over time</span>
     <h2>Growth and evolution</h2>
+    <ol class="story-timeline">
+      <li><span class="cs-tag">2024</span><span>Replaced fragmented freelance network with a fully managed dedicated remote team</span></li>
+      <li><span class="story-dot" aria-hidden="true"></span><span>Clark and Manila delivery centers providing hybrid team coverage</span></li>
+      <li><span class="story-dot" aria-hidden="true"></span><span>Compliance risk eliminated through structured Philippine employment contracts and full labor law adherence</span></li>
+      <li><span class="story-dot" aria-hidden="true"></span><span>Team engagement and retention strengthened through Cloudstaff's people-first culture and development programs</span></li>
+      <li><span class="story-dot" aria-hidden="true"></span><span>Full operational visibility achieved through centralized dashboards and real-time reporting tools</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
+    <span class="eyebrow">The outcome</span>
+    <h2>The results</h2>
+    <p>The organization gained more than just staff. They gained a scalable, compliant workforce that performs like a true extension of their in-house team, with the structure, oversight, and development support that the freelance model had never been able to provide.</p>
     <div class="grid-3">
-      <div class="card story-step">
-        <span class="cs-tag">2024</span>
-        <p>Replaced fragmented freelance network with a managed dedicated team</p>
+      <div class="card story-result">
+        <h3>Faster hiring</h3>
+        <p>Without the overhead of managing multiple freelance contracts</p>
       </div>
-      <div class="card story-step">
-        <span class="cs-tag">Transition</span>
-        <p>Compliance risk eliminated through structured Philippine employment</p>
+      <div class="card story-result">
+        <h3>Reduced compliance risk</h3>
+        <p>Across regions</p>
       </div>
-      <div class="card story-step">
-        <span class="cs-tag">Today</span>
-        <p>Full operational visibility with strengthened engagement and retention</p>
+      <div class="card story-result">
+        <h3>Stronger retention</h3>
+        <p>And team continuity</p>
+      </div>
+      <div class="card story-result">
+        <h3>More time</h3>
+        <p>For high-impact, mission-driven work</p>
+      </div>
+      <div class="card story-result">
+        <h3>Full operational visibility through centralized dashboards</h3>
+        <p>And real-time reporting</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <span class="eyebrow">Looking ahead</span>
+    <h2>Built to last</h2>
+    <p>As the client continues to expand its global presence and drive forward its mission, the partnership with Cloudstaff has become more than just a solution for remote staffing; it's now a cornerstone of their operational growth strategy.</p>
+    <p>What began as a shift away from fragmented freelance support has evolved into a structured, future-ready workforce model.</p>
+    <p>Cloudstaff's blend of infrastructure, compliance, and workforce tools now empowers them to scale with precision, maintain oversight across regions, and continuously develop its talent in line with organizational goals.</p>
+    <p>For mission-driven organizations navigating global expansion, this journey shows how the right partnership can turn operational gaps into long-term strengths, building teams that are not only stable, but built to adapt, evolve, and lead into the future.</p>
     <p><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="button-link">&larr; All customer success stories</a></p>
   </div>
 </section>

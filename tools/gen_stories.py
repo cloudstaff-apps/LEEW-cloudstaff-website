@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Generator for the Customer Success Story pages.
 
-Reads tools/stories.json (one entry per client, transcribed from the Cloudstaff
-success story PDFs) and writes src/partials/story-<name>.html, then makes sure
-each page is listed in src/meta.json. Run it, then build:
+Reads tools/stories.json (one entry per client: headline, stats, situation,
+challenge, solution and facts transcribed from the Cloudstaff success story PDFs,
+plus a "web" block carried over from the matching cloudstaff.com/success-stories
+page: about, intros, growth, results, closing section and image paths) and
+writes src/partials/story-<name>.html, then makes sure each page is listed in
+src/meta.json. Run it, then build:
 
     python3 tools/gen_stories.py && python3 build.py && python3 tools/noindex.py
 
@@ -15,6 +18,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PARTIALS = os.path.join(ROOT, "src", "partials")
 META = os.path.join(ROOT, "src", "meta.json")
 STORIES = json.load(open(os.path.join(ROOT, "tools", "stories.json"), encoding="utf-8"))
+IMG = "https://www.cloudstaff.com/wp-content/uploads/"
 
 FACT_LABELS = [("INDUSTRY", "Industry"), ("HEADQUARTERS", "Headquarters"), ("LOCATION", "Location"),
                ("PARTNERSINCE", "Partner since"), ("DELIVERYCENTER", "Delivery center"),
@@ -28,8 +32,7 @@ def e(s):
 def initials(who):
     if who.isupper() or "," in who:
         return e(who.split(",")[0][:2].upper())
-    parts = who.split()
-    return e("".join(p[0] for p in parts[:2]).upper())
+    return e("".join(p[0] for p in who.split()[:2]).upper())
 
 
 def video(s):
@@ -47,116 +50,122 @@ def check(item):
     return "<li>%s</li>" % e(item)
 
 
+def step(g):
+    m = re.match(r"^([^:]{3,24}): (.+)$", g)
+    if m:
+        return '      <li><span class="cs-tag">%s</span><span>%s</span></li>' % (e(m.group(1)), e(m.group(2)))
+    return '      <li><span class="story-dot" aria-hidden="true"></span><span>%s</span></li>' % e(g)
+
+
+def band(cls, inner):
+    return '<section class="%s">\n  <div class="site-band-inner">\n%s\n  </div>\n</section>\n' % (cls, inner)
+
+
 def page(s):
     f = s["facts"]
-    industry = f.get("INDUSTRY", "")
+    w = s.get("web", {})
+    named = bool(w.get("logo"))
+    industry = e(f.get("INDUSTRY", ""))
+    out = []
+
+    # hero
+    photo = ""
+    if w.get("photo"):
+        alt = ("The Cloudstaff team supporting " + s["name"]) if named else "A Cloudstaff team at work"
+        photo = '    <div class="story-hero-photo"><img src="%s%s" alt="%s"></div>\n' % (IMG, w["photo"], e(alt))
+    out.append(
+        '<section class="site-hero site-hero-photo center-hero story-hero">\n'
+        '  <div class="site-band-inner">\n'
+        '    <div class="site-hero-copy">\n'
+        '    <span class="eyebrow"><a href="{{URL:customers}}" class="center-back">Customer Success Stories</a> &rarr; %s</span>\n'
+        '    <h1>%s</h1>\n'
+        '    <p>%s</p>\n'
+        '    <a href="{{URL:contact}}" class="button button-lg">Talk to an expert</a>\n'
+        '    </div>\n%s  </div>\n</section>\n'
+        % (industry, e(s["title"]), " &middot; ".join(e(x) for x in s["meta"]), photo))
+
+    # numbers + voice
     tiles = "\n".join(
         '      <div class="stat-tile"><div class="stat-tile-label">%s</div><div class="stat-tile-value">%s</div></div>' % (e(l), e(v))
         for v, l in s["stats"])
-    if s.get("quote"):
-        voice = '''    <figure class="card cs-story story-quote">
-      <blockquote>&ldquo;%s&rdquo;</blockquote>
-      <figcaption><span class="avatar-initials">%s</span><span><strong>%s</strong>%s</span></figcaption>
-    </figure>''' % (e(s["quote"]), initials(s["who"]), e(s["who"]), (", " + e(s["role"])) if s.get("role") else "")
+    quote = w.get("quote") or s.get("quote")
+    if quote:
+        if w.get("portrait"):
+            avatar = '<img class="avatar-photo" src="%s%s" alt="" loading="lazy">' % (IMG, w["portrait"])
+        else:
+            avatar = '<span class="avatar-initials">%s</span>' % initials(s["who"])
+        role = (", " + e(s["role"])) if s.get("role") else ""
+        voice = ('    <figure class="card cs-story story-quote">\n'
+                 '      <blockquote>&ldquo;%s&rdquo;</blockquote>\n'
+                 '      <figcaption>%s<span><strong>%s</strong>%s</span></figcaption>\n'
+                 '    </figure>' % (e(quote), avatar, e(s["who"]), role))
     else:
         p = s["pull"]
-        voice = '''    <div class="card cs-story story-quote">
-      <h3>%s</h3>
-      <p>%s</p>
-      <p><small>%s</small></p>
-    </div>''' % (e(p["title"]), e(p["text"]), e(p["sub"]))
-    facts = "\n".join("          <div><dt>%s</dt><dd>%s</dd></div>" % (lab, e(f[k])) for k, lab in FACT_LABELS if f.get(k))
-    visual = ("        " + video(s) + "\n") if s.get("video") else ""
+        voice = ('    <div class="card cs-story story-quote">\n      <h3>%s</h3>\n      <p>%s</p>\n      <p><small>%s</small></p>\n    </div>'
+                 % (e(p["title"]), e(p["text"]), e(p["sub"])))
+    out.append(band("site-band",
+                    '    <span class="eyebrow">At a glance</span>\n    <h2>The partnership in numbers</h2>\n'
+                    '    <div class="grid-4 center-glance">\n%s\n    </div>\n%s' % (tiles, voice)))
+
+    # about + situation, with video and facts
+    rows = [(lab, f[k]) for k, lab in FACT_LABELS if f.get(k)]
+    if w.get("size"):
+        rows.insert(1, ("Company size", w["size"]))
+    facts = "\n".join("          <div><dt>%s</dt><dd>%s</dd></div>" % (lab, e(v)) for lab, v in rows)
+    logo = ('          <img class="story-logo" src="%s%s" alt="%s logo" loading="lazy">\n' % (IMG, w["logo"], e(s["name"]))) if named else ""
+    vis = ("        " + video(s) + "\n") if s.get("video") else ""
+    about = ("      <p>%s</p>\n      <h3>The situation</h3>\n" % e(w["about"])) if w.get("about") else ""
     sit = "\n".join("      <p>%s</p>" % e(x) for x in s["situation"])
-    chal = "\n".join('''      <div class="card">
-        <div class="step-number">%d</div>
-        <h3>%s</h3>
-        <p>%s</p>
-      </div>''' % (i + 1, e(h), e(t)) for i, (h, t) in enumerate(s["challenge"]))
-    sol = "\n".join("      " + check(x) for x in s["solution"])
-    tl = "\n".join('''      <div class="card story-step">
-        <span class="cs-tag">%s</span>
-        <p>%s</p>
-      </div>''' % (e(h), e(t)) for h, t in s["timeline"])
-    return '''<section class="site-hero site-hero-photo center-hero">
-  <div class="site-band-inner">
-    <div class="site-hero-copy">
-    <span class="eyebrow"><a href="{{URL:customers}}" class="center-back">Customer Success Stories</a> &rarr; %(industry)s</span>
-    <h1>%(title)s</h1>
-    <p>%(meta)s</p>
-    <a href="{{URL:contact}}" class="button button-lg">Talk to an expert</a>
-    </div>
-  </div>
-</section>
+    about_h2 = e(("About " + s["name"]) if named else "About the client")
+    out.append(
+        '<section class="site-band site-band-tinted">\n  <div class="site-band-inner story-split">\n    <div>\n'
+        '      <span class="eyebrow">%s</span>\n      <h2>%s</h2>\n%s%s\n    </div>\n'
+        '    <div class="site-visual">\n      <div class="stack-lg">\n%s        <dl class="card story-facts">\n%s%s\n        </dl>\n'
+        '      </div>\n    </div>\n  </div>\n</section>\n' % (industry, about_h2, about, sit, vis, logo, facts))
 
-<section class="site-band">
-  <div class="site-band-inner">
-    <span class="eyebrow">The results</span>
-    <h2>The partnership in numbers</h2>
-    <div class="grid-4 center-glance">
-%(tiles)s
-    </div>
-%(voice)s
-  </div>
-</section>
+    # challenge
+    intro = ("    <p>%s</p>\n" % e(w["challenge_intro"])) if w.get("challenge_intro") else ""
+    cards = "\n".join(
+        '      <div class="card">\n        <div class="step-number">%d</div>\n        <h3>%s</h3>\n        <p>%s</p>\n      </div>'
+        % (i + 1, e(h), e(t)) for i, (h, t) in enumerate(s["challenge"]))
+    out.append(band("site-band",
+                    '    <span class="eyebrow">Before Cloudstaff</span>\n    <h2>The challenge</h2>\n%s    <div class="grid-3">\n%s\n    </div>'
+                    % (intro, cards)))
 
-<section class="site-band site-band-tinted">
-  <div class="site-band-inner">
-    <div>
-      <span class="eyebrow">%(industry)s</span>
-      <h2>The situation</h2>
-%(sit)s
-    </div>
-    <div class="site-visual">
-      <div class="stack-lg">
-%(visual)s        <dl class="card story-facts">
-%(facts)s
-        </dl>
-      </div>
-    </div>
-  </div>
-</section>
+    # solution
+    intro = ("    <p>%s</p>\n" % e(w["solution_intro"])) if w.get("solution_intro") else ""
+    items = "\n".join("      " + check(x) for x in s["solution"])
+    out.append(band("site-band site-band-tinted",
+                    '    <span class="eyebrow">What Cloudstaff delivered</span>\n    <h2>The solution</h2>\n%s    <ul class="story-checks">\n%s\n    </ul>'
+                    % (intro, items)))
 
-<section class="site-band">
-  <div class="site-band-inner">
-    <span class="eyebrow">Before Cloudstaff</span>
-    <h2>The challenge</h2>
-    <div class="grid-3">
-%(chal)s
-    </div>
-  </div>
-</section>
+    # growth
+    growth = w.get("growth") or ["%s: %s" % (h, t) for h, t in s["timeline"]]
+    out.append(band("site-band",
+                    '    <span class="eyebrow">Over time</span>\n    <h2>Growth and evolution</h2>\n    <ol class="story-timeline">\n%s\n    </ol>'
+                    % "\n".join(step(g) for g in growth)))
 
-<section class="site-band site-band-tinted">
-  <div class="site-band-inner">
-    <span class="eyebrow">What Cloudstaff delivered</span>
-    <h2>The solution</h2>
-    <ul class="story-checks">
-%(sol)s
-    </ul>
-  </div>
-</section>
+    # results
+    if w.get("results"):
+        cards = "\n".join(
+            '      <div class="card story-result">\n        <h3>%s</h3>\n        <p>%s</p>\n      </div>'
+            % (e(a.rstrip(",:")), e(b[:1].upper() + b[1:])) for a, b in w["results"])
+        out.append(band("site-band site-band-tinted",
+                        '    <span class="eyebrow">The outcome</span>\n    <h2>The results</h2>\n    <p>%s</p>\n    <div class="grid-3">\n%s\n    </div>'
+                        % (e(w["results_intro"]), cards)))
 
-<section class="site-band">
-  <div class="site-band-inner">
-    <span class="eyebrow">Over time</span>
-    <h2>Growth and evolution</h2>
-    <div class="grid-3">
-%(tl)s
-    </div>
-    <p><a href="{{URL:customers}}" class="button-link">&larr; All customer success stories</a></p>
-  </div>
-</section>
+    # closing
+    closing = ""
+    if w.get("closing"):
+        closing = ('    <span class="eyebrow">Looking ahead</span>\n    <h2>Built to last</h2>\n%s\n'
+                   % "\n".join("    <p>%s</p>" % e(x) for x in w["closing"]))
+    out.append(band("site-band",
+                    closing + '    <p><a href="{{URL:customers}}" class="button-link">&larr; All customer success stories</a></p>'))
 
-<section class="site-cta">
-  <div class="site-band-inner">
-    <h2>Ready to build your global team?</h2>
-    <p>Talk to us about embedding world-class remote talent in your firm.</p>
-    <a href="{{URL:contact}}" class="button button-inverse button-lg">Talk to an expert</a>
-  </div>
-</section>
-''' % dict(industry=e(industry), title=e(s["title"]), meta=" &middot; ".join(e(x) for x in s["meta"]),
-           tiles=tiles, voice=voice, sit=sit, visual=visual, facts=facts, chal=chal, sol=sol, tl=tl)
+    out.append('<section class="site-cta">\n  <div class="site-band-inner">\n    <h2>Ready to build your global team?</h2>\n'
+               '    <p>Talk to us about embedding world-class remote talent in your firm.</p>\n'
+               '    <a href="{{URL:contact}}" class="button button-inverse button-lg">Talk to an expert</a>\n  </div>\n</section>\n')
+    return "\n".join(out)
 
 
 def main():

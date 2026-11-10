@@ -672,8 +672,21 @@ html[data-theme="dark"] .step-number {
   background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 85%);
   color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
 }
-.story-step { display: flex; flex-direction: column; gap: var(--space-sm, 0.5rem); }
-.story-step p { margin: 0; }
+.story-hero > .site-band-inner { display: grid; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; grid-template-columns: minmax(0, 1fr); inline-size: 100%; }
+@media (min-width: 900px) { .story-hero > .site-band-inner:has(> .story-hero-photo) { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); } }
+.story-hero-photo img { display: block; inline-size: 100%; block-size: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius-lg, 1rem); box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35); }
+.story-split { align-items: start !important; }
+.story-split h3 { margin-block: var(--space-lg, 1rem) var(--space-sm, 0.5rem); }
+.story-logo { display: block; max-block-size: 2.4rem; max-inline-size: 11rem; inline-size: auto; block-size: auto; object-fit: contain; margin-block-end: var(--space-xs, 0.25rem); }
+.avatar-photo { flex: none; inline-size: 3rem; block-size: 3rem; border-radius: 999px; object-fit: cover; object-position: 50% 18%; }
+.story-quote .avatar-photo { inline-size: 3.75rem; block-size: 3.75rem; }
+.story-timeline { list-style: none; margin: var(--space-xl, 1.5rem) 0 0; padding: 0; display: grid; gap: var(--space-md, 0.75rem); max-width: 52rem; }
+.story-timeline li { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: var(--space-md, 0.75rem); align-items: start; line-height: 1.5; }
+.story-timeline .cs-tag { justify-self: start; }
+.story-dot { justify-self: start; margin: 0.5rem 0 0 0.7rem; inline-size: 0.5rem; block-size: 0.5rem; border-radius: 999px; background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 45%); }
+@media (max-width: 560px) { .story-timeline li { grid-template-columns: minmax(0, 1fr); gap: 0.25rem; } .story-dot { display: none; } }
+.story-result h3 { margin: 0 0 var(--space-xs, 0.25rem); font-size: var(--font-size-md, 1rem); }
+.story-result p { margin: 0; color: var(--color-foreground-muted, #5b6576); }
 .cs-results { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; margin: 0; padding: 0; }
 .cs-results li {
   font-size: 0.76rem; font-weight: 600; line-height: 1.2;

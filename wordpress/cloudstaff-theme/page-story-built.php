@@ -12,7 +12,7 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero site-hero-photo center-hero">
+<section class="site-hero site-hero-photo center-hero story-hero">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="center-back">Customer Success Stories</a> &rarr; Construction</span>
@@ -20,12 +20,13 @@ get_header();
     <p>Built &middot; Sydney, NSW, Australia &middot; Cloudstaff partner since 2016</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Talk to an expert</a>
     </div>
+    <div class="story-hero-photo"><img src="https://www.cloudstaff.com/wp-content/uploads/2026/05/BUILT-14.jpg" alt="The Cloudstaff team supporting Built"></div>
   </div>
 </section>
 
 <section class="site-band">
   <div class="site-band-inner">
-    <span class="eyebrow">The results</span>
+    <span class="eyebrow">At a glance</span>
     <h2>The partnership in numbers</h2>
     <div class="grid-4 center-glance">
       <div class="stat-tile"><div class="stat-tile-label">Cloudstaffers Embedded Across Operations</div><div class="stat-tile-value">40+</div></div>
@@ -35,16 +36,18 @@ get_header();
     </div>
     <figure class="card cs-story story-quote">
       <blockquote>&ldquo;Cloudstaff helped us get that competitive edge within the Australian market because it's allowed us to focus on really critical tasks within the business. It's freed up time for critical thinking.&rdquo;</blockquote>
-      <figcaption><span class="avatar-initials">MG</span><span><strong>Michael Grandish</strong>, Strategic Projects and Innovation Manager, Built</span></figcaption>
+      <figcaption><img class="avatar-photo" src="https://www.cloudstaff.com/wp-content/uploads/2025/08/Built-885x1024.jpg" alt="" loading="lazy"><span><strong>Michael Grandish</strong>, Strategic Projects and Innovation Manager, Built</span></figcaption>
     </figure>
   </div>
 </section>
 
 <section class="site-band site-band-tinted">
-  <div class="site-band-inner">
+  <div class="site-band-inner story-split">
     <div>
       <span class="eyebrow">Construction</span>
-      <h2>The situation</h2>
+      <h2>About Built</h2>
+      <p>Built is a 100% Australian-owned, digital-first construction contractor and one of Australia's largest private construction groups, delivering large-scale new builds, complex refurbishments, and intricate fitouts across commercial, government, health, education, and defence sectors. With over 1,300 employees, a secured pipeline of $7.5 billion, and operations spanning Australia, New Zealand, and the United Kingdom, Built has grown steadily since 1998 by combining the scale of a tier-one contractor with a genuine commitment to innovation and community outcomes.</p>
+      <h3>The situation</h3>
       <p>Growing rapidly across Australia, Built needed a reliable way to handle increased project demands without stretching internal resources, in a construction market facing a persistent talent shortage.</p>
       <p>Skilled Cloudstaff professionals integrated seamlessly into their workflows: 40+ staff across accounting, IT, digital transformation and quantity surveying, with virtually no turnover in a partnership that has now passed its tenth year.</p>
     </div>
@@ -52,7 +55,9 @@ get_header();
       <div class="stack-lg">
         <div class="cs-video"><iframe src="https://player.vimeo.com/video/1173896883" title="Built, Cloudstaff customer success story" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
         <dl class="card story-facts">
+          <img class="story-logo" src="https://www.cloudstaff.com/wp-content/uploads/2025/11/built@4x.png" alt="Built logo" loading="lazy">
           <div><dt>Industry</dt><dd>Construction</dd></div>
+          <div><dt>Company size</dt><dd>Large</dd></div>
           <div><dt>Headquarters</dt><dd>Sydney, NSW, Australia</dd></div>
           <div><dt>Partner since</dt><dd>2016</dd></div>
           <div><dt>Delivery center</dt><dd>Philippines</dd></div>
@@ -66,6 +71,7 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">Before Cloudstaff</span>
     <h2>The challenge</h2>
+    <p>As one of Australia's largest private construction groups, Built had earned a strong reputation for delivering large-scale projects across the commercial, government, health, education, and defense sectors. But as the pace of growth accelerated, the pressures behind the scenes began to mount. Three interconnected challenges were making it increasingly difficult to scale without compromising on quality or focus:</p>
     <div class="grid-3">
       <div class="card">
         <div class="step-number">1</div>
@@ -90,6 +96,7 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">What Cloudstaff delivered</span>
     <h2>The solution</h2>
+    <p>Built chose Cloudstaff after recognizing a clear alignment in values around community, ethics, and people development. What began as a decision to supplement existing staff quickly became one of the most enduring partnerships in the business.</p>
     <ul class="story-checks">
       <li><strong>Shared values.</strong> Cloudstaff selected for alignment on community, ethics, and people development.</li>
       <li>Collaborative onboarding let team members absorb processes and grow into their roles.</li>
@@ -105,20 +112,59 @@ get_header();
   <div class="site-band-inner">
     <span class="eyebrow">Over time</span>
     <h2>Growth and evolution</h2>
+    <ol class="story-timeline">
+      <li><span class="cs-tag">2016</span><span>Built considered outsourcing to facilitate growth and supplement staff during rapid expansion</span></li>
+      <li><span class="story-dot" aria-hidden="true"></span><span>Engaged Cloudstaff to supplement existing teams and develop new processes alongside them</span></li>
+      <li><span class="story-dot" aria-hidden="true"></span><span>Scope expanded across accounting, IT, digital transformation, and quantity surveying</span></li>
+      <li><span class="story-dot" aria-hidden="true"></span><span>40 plus Cloudstaffers now embedded across multiple disciplines contributing day to day</span></li>
+      <li><span class="cs-tag">2026</span><span>Celebrated 10th anniversary of partnership with Cloudstaff</span></li>
+      <li><span class="story-dot" aria-hidden="true"></span><span>Virtually no turnover across the entire duration of the partnership</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
+    <span class="eyebrow">The outcome</span>
+    <h2>The results</h2>
+    <p>Cloudstaff helped Built supplement its internal team with skilled professionals who quickly became essential contributors. The competitive edge gained in the Australian construction market came not from adding more people, but from freeing the right people to focus on what matters most.</p>
     <div class="grid-3">
-      <div class="card story-step">
-        <span class="cs-tag">2016</span>
-        <p>Engaged Cloudstaff to supplement teams during rapid expansion</p>
+      <div class="card story-result">
+        <h3>40 plus Cloudstaffers embedded</h3>
+        <p>Across Built's operations</p>
       </div>
-      <div class="card story-step">
-        <span class="cs-tag">Scale-up</span>
-        <p>Scope expanded across accounting, IT, digital transformation and quantity surveying</p>
+      <div class="card story-result">
+        <h3>Virtually no turnover</h3>
+        <p>Across the partnership</p>
       </div>
-      <div class="card story-step">
-        <span class="cs-tag">2026</span>
-        <p>Celebrated the partnership's 10th anniversary with virtually no turnover</p>
+      <div class="card story-result">
+        <h3>Disciplines covered</h3>
+        <p>Accounting, IT, digital transformation, and quantity surveying</p>
+      </div>
+      <div class="card story-result">
+        <h3>Critical thinking time restored</h3>
+        <p>For the in-house team</p>
+      </div>
+      <div class="card story-result">
+        <h3>Competitive edge gained</h3>
+        <p>In a talent-short Australian construction market</p>
+      </div>
+      <div class="card story-result">
+        <h3>Employment shortage addressed</h3>
+        <p>With qualified, committed, long-term talent</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <span class="eyebrow">Looking ahead</span>
+    <h2>Built to last</h2>
+    <p>What began as a practical response to rapid growth has evolved into one of Built's most enduring operational strengths. With 40 plus Cloudstaffers embedded across accounting, IT, digital transformation, and quantity surveying, the partnership has moved well beyond supplementing headcount into genuinely shaping how Built works and competes.</p>
+    <p>In a sector facing persistent talent shortages, Built's ability to keep growing without compromising quality or critical thinking time reflects exactly what a well-matched remote staffing partnership can deliver.</p>
+    <p>The near-zero turnover across the partnership is not incidental but rather the result of a values alignment that was deliberate from the start, and one that continues to hold.</p>
+    <p>For Australian construction businesses navigating the same pressures, Built's experience makes a compelling case: the right outsourcing partner does not just fill gaps. Over time, it becomes part of how you build.</p>
     <p><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="button-link">&larr; All customer success stories</a></p>
   </div>
 </section>
