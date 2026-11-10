@@ -146,126 +146,6 @@ get_header();
 <section class="site-band site-band-tinted">
   <div class="site-band-inner">
     <div>
-      <span class="eyebrow">Why a chatbot is not enough</span>
-      <h2>A process sounds simple. In reality, businesses have lots of moving parts</h2>
-      <p>Take a request like "show me last month's invoices". Extracting a report of monthly invoices from a finance system is simple. The real work is everything that has to happen before those invoices can be sent out:</p>
-      <figure class="process-figure">
-          <svg class="process-art" viewBox="0 0 1100 610" role="img" aria-labelledby="process-art-title" xmlns="http://www.w3.org/2000/svg">
-          <title id="process-art-title">One simple request, "Show me last month's invoices", fans out into six steps, which then tangle into the many systems and people behind them.</title>
-          <g class="pa-tangle" fill="none">
-          <path d="M60 240 V262 H157 V349 H848 V435"/>
-          <path d="M90 240 V262 H872 V367 H359 V435"/>
-          <path d="M120 240 V271 H755 V394 H979 V435"/>
-          <path d="M150 240 V289 H183 V394 H514 V531"/>
-          <path d="M238 240 V262 H989 V394 H979 V531"/>
-          <path d="M268 240 V289 H105 V358 H383 V531"/>
-          <path d="M298 240 V316 H274 V349 H252 V435"/>
-          <path d="M328 240 V298 H963 V358 H514 V435"/>
-          <path d="M416 240 V307 H196 V349 H407 V531"/>
-          <path d="M446 240 V262 H378 V403 H1039 V531"/>
-          <path d="M476 240 V316 H560 V403 H562 V531"/>
-          <path d="M506 240 V325 H638 V376 H526 V435"/>
-          <path d="M594 240 V271 H989 V376 H872 V531"/>
-          <path d="M624 240 V325 H599 V403 H383 V435"/>
-          <path d="M654 240 V271 H235 V394 H681 V531"/>
-          <path d="M684 240 V307 H287 V403 H550 V435"/>
-          <path d="M772 240 V307 H599 V385 H97 V435"/>
-          <path d="M802 240 V325 H1002 V403 H514 V531"/>
-          <path d="M832 240 V271 H482 V403 H264 V435"/>
-          <path d="M862 240 V271 H131 V376 H264 V531"/>
-          <path d="M950 240 V316 H612 V340 H395 V531"/>
-          <path d="M980 240 V307 H313 V349 H550 V531"/>
-          <path d="M1010 240 V262 H391 V376 H61 V531"/>
-          <path d="M1040 240 V289 H690 V394 H705 V435"/>
-          <path d="M240 469 V504 H405 V469"/>
-          <path d="M715 469 V504 H385 V469"/>
-          <path d="M725 565 V498 H1015 V469"/>
-          <path d="M530 469 V486 H375 V469"/>
-          <path d="M520 469 V492 H550 V531"/>
-          <path d="M1005 565 V492 H385 V565"/>
-          <path d="M95 469 V504 H385 V469"/>
-          </g>
-          <g class="pa-fan" fill="none">
-          <path d="M550 89 L105 190"/>
-          <path d="M550 89 L283 190"/>
-          <path d="M550 89 L461 190"/>
-          <path d="M550 89 L639 190"/>
-          <path d="M550 89 L817 190"/>
-          <path d="M550 89 L995 190"/>
-          </g>
-          <g class="pa-request"><rect x="350" y="35" width="400" height="54" rx="27"/>
-          <text x="550" y="68" text-anchor="middle">&#8220;Show me last month&#8217;s invoices&#8221;</text></g>
-          <g class="pa-steps">
-          <rect x="26" y="190" width="158" height="50" rx="10"/>
-          <text x="105" y="221" text-anchor="middle">Overtime reports</text>
-          <rect x="204" y="190" width="158" height="50" rx="10"/>
-          <text x="283" y="221" text-anchor="middle">Missing timesheets</text>
-          <rect x="382" y="190" width="158" height="50" rx="10"/>
-          <text x="461" y="221" text-anchor="middle">Extra billables</text>
-          <rect x="560" y="190" width="158" height="50" rx="10"/>
-          <text x="639" y="221" text-anchor="middle">Telco costs</text>
-          <rect x="738" y="190" width="158" height="50" rx="10"/>
-          <text x="817" y="221" text-anchor="middle">Holiday credits</text>
-          <rect x="916" y="190" width="158" height="50" rx="10"/>
-          <text x="995" y="221" text-anchor="middle">Approvals</text>
-          </g>
-          <g class="pa-parts">
-          <rect x="19" y="435" width="132" height="34" rx="8" fill="#fde2e4"/>
-          <text x="85" y="457" text-anchor="middle">Workforce system</text>
-          <rect x="174" y="435" width="132" height="34" rx="8" fill="#e2f0cb"/>
-          <text x="240" y="457" text-anchor="middle">Team leads</text>
-          <rect x="329" y="435" width="132" height="34" rx="8" fill="#fff1c1"/>
-          <text x="395" y="457" text-anchor="middle">Staff</text>
-          <rect x="484" y="435" width="132" height="34" rx="8" fill="#dfe7fd"/>
-          <text x="550" y="457" text-anchor="middle">Procurement</text>
-          <rect x="639" y="435" width="132" height="34" rx="8" fill="#f1e4f3"/>
-          <text x="705" y="457" text-anchor="middle">Suppliers</text>
-          <rect x="794" y="435" width="132" height="34" rx="8" fill="#fde2e4"/>
-          <text x="860" y="457" text-anchor="middle">Purchase orders</text>
-          <rect x="949" y="435" width="132" height="34" rx="8" fill="#e2f0cb"/>
-          <text x="1015" y="457" text-anchor="middle">Telco invoices</text>
-          <rect x="19" y="531" width="132" height="34" rx="8" fill="#fff1c1"/>
-          <text x="85" y="553" text-anchor="middle">Leave records</text>
-          <rect x="174" y="531" width="132" height="34" rx="8" fill="#dfe7fd"/>
-          <text x="240" y="553" text-anchor="middle">Payroll</text>
-          <rect x="329" y="531" width="132" height="34" rx="8" fill="#f1e4f3"/>
-          <text x="395" y="553" text-anchor="middle">Managers</text>
-          <rect x="484" y="531" width="132" height="34" rx="8" fill="#fde2e4"/>
-          <text x="550" y="553" text-anchor="middle">Finance system</text>
-          <rect x="639" y="531" width="132" height="34" rx="8" fill="#e2f0cb"/>
-          <text x="705" y="553" text-anchor="middle">Client contracts</text>
-          <rect x="794" y="531" width="132" height="34" rx="8" fill="#fff1c1"/>
-          <text x="860" y="553" text-anchor="middle">Spreadsheets</text>
-          <rect x="949" y="531" width="132" height="34" rx="8" fill="#dfe7fd"/>
-          <text x="1015" y="553" text-anchor="middle">Email threads</text>
-          </g>
-          <g class="pa-notes">
-          <rect x="16" y="14" width="132" height="24" rx="12"/>
-          <text x="26" y="30">It sounds simple</text>
-          <rect x="16" y="144" width="164" height="24" rx="12"/>
-          <text x="26" y="160">Then come the steps</text>
-          <rect x="16" y="252" width="232" height="24" rx="12"/>
-          <text x="26" y="268">The devil is in the detail</text>
-          </g>
-          </svg>
-        <figcaption>It looks like one report. Behind it sit six steps, and behind those, every system and person they touch.</figcaption>
-      </figure>
-      <ul class="story-checks process-list">
-        <li>Collect overtime reports from the workforce system</li>
-        <li>Verify missing timesheets with particular staff</li>
-        <li>Check procurement for extra billables</li>
-        <li>Import telecommunications costs</li>
-        <li>Credit holidays used in the previous month</li>
-        <li>Decide what should be approved, and what should not</li>
-      </ul>
-      <p>This is the problem Coworkers solve. One collects the timesheet data, another reaches out to the staff whose entries are missing, and a person makes the approval decision, with full visibility of every step in the process.</p>
-    </div>
-  </div>
-</section>
-
-<section class="site-band">
-  <div class="site-band-inner">
-    <div>
       <span class="eyebrow">Meet the Coworkers</span>
       <h2>Real jobs, already being done</h2>
       <p class="cs-lead">The goal isn't to replace your staff. It's to take the repetitive, time-sensitive, high-volume work off their plate so they can focus on what matters.</p>
@@ -311,7 +191,7 @@ get_header();
   </div>
 </section>
 
-<section class="site-band site-band-tinted">
+<section class="site-band">
   <div class="site-band-inner">
     <div>
       <span class="eyebrow">Evidence today</span>
@@ -323,37 +203,138 @@ get_header();
 </section>
 <script src="<?php echo esc_url( get_template_directory_uri() . '/coworkers.js' ); ?>" defer></script>
 
-<section class="site-band">
+<section class="site-band site-band-tinted" id="how-it-compares">
   <div class="site-band-inner">
     <div>
-      <span class="eyebrow">How it compares</span>
-      <h2>How is a Cloudstaff AI Coworker different?</h2>
-      <p>Each option is a step up from the one before. Select a step to see what it gives you, and what it leaves out.</p>
-      <div class="stepup" data-stepup>
-        <div class="stepup-steps" role="tablist" aria-label="Compare the three options">
-          <button type="button" class="stepup-step" role="tab" id="stepup-tab-0" aria-controls="stepup-panel-0" aria-selected="false" data-step="0">
-            <span class="stepup-num">Step 1</span>
-            <strong>Personal AI chat tools</strong>
-            <span class="stepup-tag">Augments an individual</span>
-            <span class="stepup-meter" aria-hidden="true"><i style="--fill: 14%"></i></span>
-            <span class="stepup-score">Meets 1 of 7</span>
-          </button>
-          <button type="button" class="stepup-step" role="tab" id="stepup-tab-1" aria-controls="stepup-panel-1" aria-selected="false" data-step="1">
-            <span class="stepup-num">Step 2</span>
-            <strong>General-purpose AI agents</strong>
-            <span class="stepup-tag">An agent with a harness</span>
-            <span class="stepup-meter" aria-hidden="true"><i style="--fill: 43%"></i></span>
-            <span class="stepup-score">Meets 1, partly meets 4</span>
-          </button>
-          <button type="button" class="stepup-step is-best is-active" role="tab" id="stepup-tab-2" aria-controls="stepup-panel-2" aria-selected="true" data-step="2">
-            <span class="stepup-num">Step 3 <em>Best</em></span>
-            <strong>Cloudstaff AI Coworker</strong>
-            <span class="stepup-tag">One of the team</span>
-            <span class="stepup-meter" aria-hidden="true"><i style="--fill: 100%"></i></span>
-            <span class="stepup-score">Meets all 7</span>
-          </button>
+      <span class="eyebrow">Why a chatbot is not enough</span>
+      <h2>A process sounds simple. In reality, businesses have lots of moving parts</h2>
+      <p>Take a request like "show me last month's invoices". Extracting a report of monthly invoices from a finance system is simple. The real work is everything that has to happen before those invoices can be sent out:</p>
+      <h3 class="reach-title">How is a Cloudstaff AI Coworker different?</h3>
+      <p>Each option gets you further down the stack. Hover over or select one to see how far it reaches, and what it leaves out.</p>
+      <div class="reach stepup" data-reach="3">
+        <div class="reach-stage">
+          <figure class="process-figure reach-figure">
+              <svg class="process-art" viewBox="0 0 1100 610" role="img" aria-labelledby="process-art-title" xmlns="http://www.w3.org/2000/svg">
+              <title id="process-art-title">One simple request, "Show me last month's invoices", fans out into six steps, which then tangle into the many systems and people behind them.</title>
+              <g class="pa-tier pa-t3">
+              <g class="pa-tangle" fill="none">
+              <path d="M60 240 V262 H157 V349 H848 V435"/>
+              <path d="M90 240 V262 H872 V367 H359 V435"/>
+              <path d="M120 240 V271 H755 V394 H979 V435"/>
+              <path d="M150 240 V289 H183 V394 H514 V531"/>
+              <path d="M238 240 V262 H989 V394 H979 V531"/>
+              <path d="M268 240 V289 H105 V358 H383 V531"/>
+              <path d="M298 240 V316 H274 V349 H252 V435"/>
+              <path d="M328 240 V298 H963 V358 H514 V435"/>
+              <path d="M416 240 V307 H196 V349 H407 V531"/>
+              <path d="M446 240 V262 H378 V403 H1039 V531"/>
+              <path d="M476 240 V316 H560 V403 H562 V531"/>
+              <path d="M506 240 V325 H638 V376 H526 V435"/>
+              <path d="M594 240 V271 H989 V376 H872 V531"/>
+              <path d="M624 240 V325 H599 V403 H383 V435"/>
+              <path d="M654 240 V271 H235 V394 H681 V531"/>
+              <path d="M684 240 V307 H287 V403 H550 V435"/>
+              <path d="M772 240 V307 H599 V385 H97 V435"/>
+              <path d="M802 240 V325 H1002 V403 H514 V531"/>
+              <path d="M832 240 V271 H482 V403 H264 V435"/>
+              <path d="M862 240 V271 H131 V376 H264 V531"/>
+              <path d="M950 240 V316 H612 V340 H395 V531"/>
+              <path d="M980 240 V307 H313 V349 H550 V531"/>
+              <path d="M1010 240 V262 H391 V376 H61 V531"/>
+              <path d="M1040 240 V289 H690 V394 H705 V435"/>
+              <path d="M240 469 V504 H405 V469"/>
+              <path d="M715 469 V504 H385 V469"/>
+              <path d="M725 565 V498 H1015 V469"/>
+              <path d="M530 469 V486 H375 V469"/>
+              <path d="M520 469 V492 H550 V531"/>
+              <path d="M1005 565 V492 H385 V565"/>
+              <path d="M95 469 V504 H385 V469"/>
+              </g>
+              <g class="pa-parts">
+              <rect x="19" y="435" width="132" height="34" rx="8" fill="#fde2e4"/>
+              <text x="85" y="457" text-anchor="middle">Workforce system</text>
+              <rect x="174" y="435" width="132" height="34" rx="8" fill="#e2f0cb"/>
+              <text x="240" y="457" text-anchor="middle">Team leads</text>
+              <rect x="329" y="435" width="132" height="34" rx="8" fill="#fff1c1"/>
+              <text x="395" y="457" text-anchor="middle">Staff</text>
+              <rect x="484" y="435" width="132" height="34" rx="8" fill="#dfe7fd"/>
+              <text x="550" y="457" text-anchor="middle">Procurement</text>
+              <rect x="639" y="435" width="132" height="34" rx="8" fill="#f1e4f3"/>
+              <text x="705" y="457" text-anchor="middle">Suppliers</text>
+              <rect x="794" y="435" width="132" height="34" rx="8" fill="#fde2e4"/>
+              <text x="860" y="457" text-anchor="middle">Purchase orders</text>
+              <rect x="949" y="435" width="132" height="34" rx="8" fill="#e2f0cb"/>
+              <text x="1015" y="457" text-anchor="middle">Telco invoices</text>
+              <rect x="19" y="531" width="132" height="34" rx="8" fill="#fff1c1"/>
+              <text x="85" y="553" text-anchor="middle">Leave records</text>
+              <rect x="174" y="531" width="132" height="34" rx="8" fill="#dfe7fd"/>
+              <text x="240" y="553" text-anchor="middle">Payroll</text>
+              <rect x="329" y="531" width="132" height="34" rx="8" fill="#f1e4f3"/>
+              <text x="395" y="553" text-anchor="middle">Managers</text>
+              <rect x="484" y="531" width="132" height="34" rx="8" fill="#fde2e4"/>
+              <text x="550" y="553" text-anchor="middle">Finance system</text>
+              <rect x="639" y="531" width="132" height="34" rx="8" fill="#e2f0cb"/>
+              <text x="705" y="553" text-anchor="middle">Client contracts</text>
+              <rect x="794" y="531" width="132" height="34" rx="8" fill="#fff1c1"/>
+              <text x="860" y="553" text-anchor="middle">Spreadsheets</text>
+              <rect x="949" y="531" width="132" height="34" rx="8" fill="#dfe7fd"/>
+              <text x="1015" y="553" text-anchor="middle">Email threads</text>
+              </g>
+              <g class="pa-notes"><rect x="16" y="252" width="232" height="24" rx="12"/>
+              <text x="26" y="268">The devil is in the detail</text></g>
+              </g>
+              <g class="pa-tier pa-t2">
+              <g class="pa-fan" fill="none">
+              <path d="M550 89 L105 190"/>
+              <path d="M550 89 L283 190"/>
+              <path d="M550 89 L461 190"/>
+              <path d="M550 89 L639 190"/>
+              <path d="M550 89 L817 190"/>
+              <path d="M550 89 L995 190"/>
+              </g>
+              <g class="pa-steps">
+              <rect x="26" y="190" width="158" height="50" rx="10"/>
+              <text x="105" y="221" text-anchor="middle">Overtime reports</text>
+              <rect x="204" y="190" width="158" height="50" rx="10"/>
+              <text x="283" y="221" text-anchor="middle">Missing timesheets</text>
+              <rect x="382" y="190" width="158" height="50" rx="10"/>
+              <text x="461" y="221" text-anchor="middle">Extra billables</text>
+              <rect x="560" y="190" width="158" height="50" rx="10"/>
+              <text x="639" y="221" text-anchor="middle">Telco costs</text>
+              <rect x="738" y="190" width="158" height="50" rx="10"/>
+              <text x="817" y="221" text-anchor="middle">Holiday credits</text>
+              <rect x="916" y="190" width="158" height="50" rx="10"/>
+              <text x="995" y="221" text-anchor="middle">Approvals</text>
+              </g>
+              <g class="pa-notes"><rect x="16" y="144" width="164" height="24" rx="12"/>
+              <text x="26" y="160">Then come the steps</text></g>
+              </g>
+              <g class="pa-tier pa-t1">
+              <g class="pa-request"><rect x="350" y="35" width="400" height="54" rx="27"/>
+              <text x="550" y="68" text-anchor="middle">&#8220;Show me last month&#8217;s invoices&#8221;</text></g>
+              <g class="pa-notes"><rect x="16" y="14" width="132" height="24" rx="12"/>
+              <text x="26" y="30">It sounds simple</text></g>
+              </g>
+              </svg>
+          </figure>
+          <div class="reach-bars" role="group" aria-label="How far each option reaches">
+            <button type="button" class="reach-bar" data-step="0" style="--reach: 0.205; --i: 0" aria-pressed="false">
+              <span class="reach-n">1</span><strong>Chat tools</strong><span class="reach-end">The chat</span>
+            </button>
+            <button type="button" class="reach-bar" data-step="1" style="--reach: 0.425; --i: 1" aria-pressed="false">
+              <span class="reach-n">2</span><strong>AI agents</strong><span class="reach-end">The hub data</span>
+            </button>
+            <button type="button" class="reach-bar is-best is-active" data-step="2" style="--reach: 1; --i: 2" aria-pressed="true">
+              <span class="reach-n">3</span><strong>AI Coworker</strong><span class="reach-end">The entire stack</span>
+            </button>
+          </div>
         </div>
-        <div class="stepup-panel" role="tabpanel" id="stepup-panel-0" aria-labelledby="stepup-tab-0" data-panel="0">
+        <p class="reach-caption">
+          <span data-cap="0"><strong>A chat tool gets you the first bit: the chat.</strong> It can answer the question, but everything underneath is still yours to do.</span>
+          <span data-cap="1"><strong>An agent gets you as far as the hub data set.</strong> It can pull the pieces together, but not the detail behind them.</span>
+          <span data-cap="2" class="is-active"><strong>An AI Coworker traverses the entire stack.</strong> It has access to every part and can make sense of the request end to end.</span>
+        </p>
+        <div class="stepup-panel reach-panel" id="reach-panel-0" data-panel="0">
           <h3 class="stepup-panel-title">Personal AI chat tools: meets 1 of 7</h3>
           <ul class="stepup-list">
             <li class="is-yes"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Lifts individual productivity</strong><span class="stepup-word"> Yes. </span>A personal productivity tool that lifts the skills of the person using it.</span></li>
@@ -365,7 +346,7 @@ get_header();
             <li class="is-no"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>One of the team, with a name and a job</strong><span class="stepup-word"> No. </span>A tool each person uses alone.</span></li>
           </ul>
         </div>
-        <div class="stepup-panel" role="tabpanel" id="stepup-panel-1" aria-labelledby="stepup-tab-1" data-panel="1">
+        <div class="stepup-panel reach-panel" id="reach-panel-1" data-panel="1">
           <h3 class="stepup-panel-title">General-purpose AI agents: meets 1, partly meets 4</h3>
           <ul class="stepup-list">
             <li class="is-yes"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Lifts individual productivity</strong><span class="stepup-word"> Yes. </span>Can take real tasks off a person's plate.</span></li>
@@ -377,7 +358,7 @@ get_header();
             <li class="is-no"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>One of the team, with a name and a job</strong><span class="stepup-word"> No. </span>A piece of software, not a colleague.</span></li>
           </ul>
         </div>
-        <div class="stepup-panel is-active" role="tabpanel" id="stepup-panel-2" aria-labelledby="stepup-tab-2" data-panel="2">
+        <div class="stepup-panel reach-panel is-active" id="reach-panel-2" data-panel="2">
           <h3 class="stepup-panel-title">Cloudstaff AI Coworker: meets all 7</h3>
           <ul class="stepup-list">
             <li class="is-yes"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Lifts individual productivity</strong><span class="stepup-word"> Yes. </span>Takes repetitive, high-volume work off your team so they can focus on what matters.</span></li>
@@ -390,24 +371,27 @@ get_header();
           </ul>
         </div>
       </div>
+      <p>This is the problem Coworkers solve. One collects the timesheet data, another reaches out to the staff whose entries are missing, and a person makes the approval decision, with full visibility of every step in the process.</p>
       <script>
       (function () {
-        var root = document.querySelector("[data-stepup]");
+        var root = document.querySelector(".reach");
         if (!root) return;
-        var tabs = root.querySelectorAll(".stepup-step"), panels = root.querySelectorAll(".stepup-panel");
+        var bars = root.querySelectorAll(".reach-bar"), panels = root.querySelectorAll(".reach-panel"), caps = root.querySelectorAll("[data-cap]");
         function show(n) {
-          for (var i = 0; i < tabs.length; i++) {
+          root.setAttribute("data-reach", String(n + 1));
+          for (var i = 0; i < bars.length; i++) {
             var on = i === n;
-            tabs[i].classList.toggle("is-active", on);
-            tabs[i].setAttribute("aria-selected", on ? "true" : "false");
+            bars[i].classList.toggle("is-active", on);
+            bars[i].setAttribute("aria-pressed", on ? "true" : "false");
             panels[i].classList.toggle("is-active", on);
+            caps[i].classList.toggle("is-active", on);
           }
         }
-        for (var i = 0; i < tabs.length; i++) {
+        for (var i = 0; i < bars.length; i++) {
           (function (n) {
-            tabs[n].addEventListener("click", function () { show(n); });
-            tabs[n].addEventListener("mouseenter", function () { show(n); });
-            tabs[n].addEventListener("focus", function () { show(n); });
+            bars[n].addEventListener("click", function () { show(n); });
+            bars[n].addEventListener("mouseenter", function () { show(n); });
+            bars[n].addEventListener("focus", function () { show(n); });
           })(i);
         }
         root.classList.add("is-ready");
@@ -417,7 +401,7 @@ get_header();
   </div>
 </section>
 
-<section class="site-band site-band-tinted">
+<section class="site-band">
   <div class="site-band-inner">
     <div>
       <div class="edge-split">
@@ -490,7 +474,7 @@ get_header();
   </div>
 </section>
 
-<section class="site-band">
+<section class="site-band site-band-tinted">
   <div class="site-band-inner">
     <div>
       <span class="eyebrow">The people behind every Coworker</span>
@@ -516,7 +500,7 @@ get_header();
   </div>
 </section>
 
-<section class="site-band site-band-tinted">
+<section class="site-band">
   <div class="site-band-inner">
     <div>
       <span class="eyebrow">AI you can trust with real work</span>

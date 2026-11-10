@@ -3,8 +3,9 @@
 
 One request at the top fans out neatly into six steps, and the steps then tangle
 into the systems and people behind them. Prints an inline <svg>. The layout is
-seeded, so re-running gives the same picture. Paste the output into the
-"process-art" figure in src/partials/ai-coworkers.html.
+seeded, so re-running gives the same picture. The three tiers are separate groups (pa-t1, pa-t2, pa-t3) so the page can dim the
+tiers an option cannot reach. Paste the output into the "reach-figure" in
+src/partials/ai-coworkers.html.
 """
 import random
 
@@ -29,7 +30,15 @@ def main():
     rows = [452, 548]
     nodes = [(px[i % 7], rows[i // 7]) for i in range(14)]
 
-    # the tangle: orthogonal runs from each step down into the moving parts
+    notes = [(26, 30, 118, "It sounds simple"), (26, 160, 150, "Then come the steps"), (26, 268, 218, "The devil is in the detail")]
+
+    def note(k):
+        x, y, wdt, txt = notes[k]
+        a('<g class="pa-notes"><rect x="%d" y="%d" width="%d" height="24" rx="12"/>' % (x - 10, y - 16, wdt + 14))
+        a('<text x="%d" y="%d">%s</text></g>' % (x, y, txt))
+
+    # tier 3: the tangle of orthogonal runs from each step into the moving parts
+    a('<g class="pa-tier pa-t3">')
     a('<g class="pa-tangle" fill="none">')
     for i, x in enumerate(sx):
         targets = rnd.sample(range(14), 4)
@@ -47,32 +56,33 @@ def main():
         ym = rnd.randrange(486, 518, 6)
         a('<path d="M%d %d V%d H%d V%d"/>' % (ax + rnd.randrange(-30, 30, 10), ay + 17, ym, bx + rnd.randrange(-30, 30, 10), by - 17 if by > ay else by + 17))
     a('</g>')
-
-    # the neat fan from the request to the six steps
-    a('<g class="pa-fan" fill="none">')
-    for x in sx:
-        a('<path d="M%d %d L%d %d"/>' % (top[0], top[1] + 27, x, sy))
-    a('</g>')
-
-    a('<g class="pa-request"><rect x="%d" y="%d" width="400" height="54" rx="27"/>' % (top[0] - 200, top[1] - 27))
-    a('<text x="%d" y="%d" text-anchor="middle">&ldquo;Show me last month&rsquo;s invoices&rdquo;</text></g>' % (top[0], top[1] + 6))
-
-    a('<g class="pa-steps">')
-    for x, label in zip(sx, STEPS):
-        a('<rect x="%d" y="%d" width="158" height="50" rx="10"/>' % (x - 79, sy))
-        a('<text x="%d" y="%d" text-anchor="middle">%s</text>' % (x, sy + 31, label))
-    a('</g>')
-
     a('<g class="pa-parts">')
     for i, ((x, y), label) in enumerate(zip(nodes, PARTS)):
         a('<rect x="%d" y="%d" width="132" height="34" rx="8" fill="%s"/>' % (x - 66, y - 17, FILLS[i % len(FILLS)]))
         a('<text x="%d" y="%d" text-anchor="middle">%s</text>' % (x, y + 5, label))
     a('</g>')
+    note(2)
+    a('</g>')
 
-    a('<g class="pa-notes">')
-    for (x, y, wdt, txt) in [(26, 30, 118, "It sounds simple"), (26, 160, 150, "Then come the steps"), (26, 268, 218, "The devil is in the detail")]:
-        a('<rect x="%d" y="%d" width="%d" height="24" rx="12"/>' % (x - 10, y - 16, wdt + 14))
-        a('<text x="%d" y="%d">%s</text>' % (x, y, txt))
+    # tier 2: the neat fan from the request to the six steps
+    a('<g class="pa-tier pa-t2">')
+    a('<g class="pa-fan" fill="none">')
+    for x in sx:
+        a('<path d="M%d %d L%d %d"/>' % (top[0], top[1] + 27, x, sy))
+    a('</g>')
+    a('<g class="pa-steps">')
+    for x, label in zip(sx, STEPS):
+        a('<rect x="%d" y="%d" width="158" height="50" rx="10"/>' % (x - 79, sy))
+        a('<text x="%d" y="%d" text-anchor="middle">%s</text>' % (x, sy + 31, label))
+    a('</g>')
+    note(1)
+    a('</g>')
+
+    # tier 1: the request itself
+    a('<g class="pa-tier pa-t1">')
+    a('<g class="pa-request"><rect x="%d" y="%d" width="400" height="54" rx="27"/>' % (top[0] - 200, top[1] - 27))
+    a('<text x="%d" y="%d" text-anchor="middle">&#8220;Show me last month&#8217;s invoices&#8221;</text></g>' % (top[0], top[1] + 6))
+    note(0)
     a('</g>')
     a('</svg>')
     print("\n".join("          " + line for line in o))

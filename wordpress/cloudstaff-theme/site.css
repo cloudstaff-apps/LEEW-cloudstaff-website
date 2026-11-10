@@ -722,8 +722,43 @@ html[data-theme="dark"] .step-number {
 .process-art .pa-notes rect { fill: #16233b; }
 .process-art .pa-notes text { fill: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.03em; }
 .process-figure figcaption { margin-block-start: var(--space-sm, 0.5rem); text-align: center; font-size: 0.9rem; color: var(--color-foreground-muted, #5b6576); }
-.process-list { display: none; }
-@media (max-width: 760px) { .process-list { display: grid; } }
+.process-art .pa-tier { transition: opacity 0.25s ease, filter 0.25s ease; }
+.reach[data-reach="1"] .pa-t2, .reach[data-reach="1"] .pa-t3, .reach[data-reach="2"] .pa-t3 { opacity: 0.12; filter: grayscale(1); }
+
+/* --- Reach: how far down the stack each option gets ------------------------ */
+.reach-title { margin-block: var(--space-xl, 1.5rem) var(--space-sm, 0.5rem); font-size: 1.5rem; }
+.reach { margin-block: var(--space-lg, 1rem); --pad: clamp(0.75rem, 2vw, 1.5rem); }
+.reach-stage { display: grid; grid-template-columns: minmax(0, 1fr) 15.5rem; gap: var(--space-md, 0.75rem); align-items: stretch; }
+.reach-figure { margin: 0; padding: var(--pad); }
+.reach-bars { position: relative; }
+.reach-bar {
+  position: absolute; inset-block-start: var(--pad);
+  block-size: calc((100% - 2 * var(--pad)) * var(--reach));
+  inset-inline-start: calc(var(--i) * (100% + 0.5rem) / 3); inline-size: calc((100% - 1rem) / 3);
+  display: flex; flex-direction: column; align-items: center; gap: 0.3rem; padding: 0.6rem 0.25rem;
+  font: inherit; text-align: center; cursor: pointer; overflow: hidden;
+  color: var(--color-foreground-primary, #16233b); background: #fff;
+  border: 2px solid color-mix(in oklch, var(--color-foreground-primary, #16233b), white 80%);
+  border-radius: var(--radius-md, 0.75rem);
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.reach-bar strong { font-size: 0.78rem; line-height: 1.15; }
+.reach-n { flex: none; inline-size: 1.6rem; block-size: 1.6rem; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: 700; background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 85%); color: var(--color-brand-primary, #007aff); }
+.reach-end { margin-block-start: auto; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; color: var(--color-foreground-muted, #5b6576); line-height: 1.2; }
+.reach-bar:hover, .reach-bar.is-active { border-color: var(--color-brand-primary, #007aff); }
+.reach-bar.is-active { background: var(--color-brand-primary, #007aff); color: #fff; }
+.reach-bar.is-active .reach-n { background: #fff; }
+.reach-bar.is-active .reach-end { color: rgba(255, 255, 255, 0.9); }
+.reach-bar:focus-visible { outline: 3px solid color-mix(in oklch, var(--color-brand-primary, #007aff), white 40%); outline-offset: 2px; }
+.reach-caption { margin: var(--space-md, 0.75rem) 0; padding: 0.8rem 1rem; border-radius: var(--radius-md, 0.75rem); background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 90%); border-inline-start: 4px solid var(--color-brand-primary, #007aff); max-width: none !important; }
+.reach-caption span { display: none; }
+.reach-caption span.is-active { display: inline; }
+.reach .stepup-panel { border-radius: var(--radius-lg, 1rem); }
+@media (max-width: 860px) {
+  .reach-stage { grid-template-columns: minmax(0, 1fr); }
+  .reach-bars { order: -1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.4rem; }
+  .reach-bar { position: static; block-size: auto; inline-size: auto; }
+}
 
 /* --- "Find the friction around the edges" diagram -------------------------- */
 .edge-split { display: grid; gap: clamp(1.5rem, 4vw, 3rem); align-items: center; grid-template-columns: minmax(0, 1fr); margin-block-end: var(--space-2xl, 2rem); }
