@@ -191,11 +191,14 @@ Try Yoga (Sadie Clarke).
 
 ## Open follow-ups
 
-- **Coworker directory avatars:** the 44 directory cards use initials avatars
-  (EF, HF, ...). Only Mike/Tracy/Nicola have public photos (used on the featured
-  cards). To use real portraits, Lee needs to export the avatar images from the
-  internal Coworker app (or give URLs/a folder), then swap `.avatar-initials`
-  for `<img>` in `coworkers.js`.
+- **Coworker directory avatars:** done 2026-11-10. The 41 named Coworkers use
+  portraits from Lee's "AI Avatars" folder, resized to 176px in `src/avatars/`
+  and named after the Coworker (`emma-frost.jpg`). `coworkers.js` builds the path
+  from the name and falls back to initials if a file is missing. Three source
+  files were spelled differently from the directory and were matched by hand:
+  "Helen Forster" (Helen Foster), "Jane Doyne" (Jane Doyle) and "Melissa Neilson"
+  (Melissa Nelson). The three "In development" entries have no person and keep
+  their initials badge.
 - **AI content to confirm for public use:** the Mike "~6,000 tickets / ~600
   reworks" stat and the named example Coworkers; whether to name **HaloMD** (a
   client) under the second pillar's evidence, which is currently generalised to

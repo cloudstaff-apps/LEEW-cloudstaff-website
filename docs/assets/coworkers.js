@@ -70,6 +70,13 @@
 
   var state = { cat: "All", q: "" };
 
+  // Avatars sit in an "avatars" folder beside this script (assets/avatars/ on the
+  // static site, the theme folder in WordPress), named after the Coworker.
+  var BASE = (document.currentScript && document.currentScript.src || "").replace(/[^\/]*$/, "");
+  function slug(name) {
+    return name.toLowerCase().replace(/[^a-z]+/g, "-").replace(/^-|-$/g, "");
+  }
+
   function initials(name) {
     return name.replace(/[^A-Za-z ]/g, "").split(/\s+/).filter(Boolean)
       .map(function (w) { return w[0]; }).slice(0, 2).join("").toUpperCase();
@@ -82,13 +89,24 @@
       ? '<span class="cw-unit cw-status">In development</span>'
       : '<span class="cw-unit">' + x.u + '</span>';
     return '<article class="card cw-card' + (planned ? ' cw-card-planned' : '') + '">' +
-      '<div class="cw-head"><span class="avatar-initials' + (planned ? ' cw-planned-av' : '') + '">' +
-      initials(planned ? x.u : x.n) + '</span>' +
+      '<div class="cw-head">' + (planned
+        ? '<span class="avatar-initials cw-planned-av">' + initials(x.u) + '</span>'
+        : '<img class="cw-avatar" src="' + BASE + 'avatars/' + slug(x.n) + '.jpg" alt="" width="56" height="56" loading="lazy" data-initials="' + initials(x.n) + '">') +
       '<span class="cw-id"><strong class="cw-name">' + title + '</strong>' + sub + '</span></div>' +
       '<p class="cw-desc">' + x.d + '</p>' +
       '<ul class="cs-results">' + x.t.map(function (t) { return '<li>' + t + '</li>'; }).join("") + '</ul>' +
       '<span class="cw-cat-tag">' + x.c + '</span></article>';
   }
+
+  // If a portrait is missing, fall back to the initials badge.
+  root.addEventListener("error", function (e) {
+    var img = e.target;
+    if (!img || !img.classList || !img.classList.contains("cw-avatar")) return;
+    var s = document.createElement("span");
+    s.className = "avatar-initials";
+    s.textContent = img.getAttribute("data-initials") || "";
+    img.replaceWith(s);
+  }, true);
 
   function matches(x) {
     if (state.cat !== "All" && x.c !== state.cat) return false;

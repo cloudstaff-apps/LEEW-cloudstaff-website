@@ -114,6 +114,7 @@ def build_static():
     shutil.copyfile(os.path.join(SRC, "cloudstaff-logo-light.png"), os.path.join(DOCS, "assets", "cloudstaff-logo-light.png"))
     for img in IMAGES:
         shutil.copyfile(os.path.join(SRC, img), os.path.join(DOCS, "assets", img))
+    shutil.copytree(os.path.join(SRC, "avatars"), os.path.join(DOCS, "assets", "avatars"), dirs_exist_ok=True)
     open(os.path.join(DOCS, ".nojekyll"), "w").close()
     for slug, p in pages.items():
         body = read(SRC, "partials", f"{slug}.html")
@@ -194,6 +195,7 @@ def build_wp():
     shutil.copyfile(os.path.join(SRC, "cloudstaff-logo-light.png"), os.path.join(THEME, "cloudstaff-logo-light.png"))
     for img in IMAGES:
         shutil.copyfile(os.path.join(SRC, img), os.path.join(THEME, img))
+    shutil.copytree(os.path.join(SRC, "avatars"), os.path.join(THEME, "avatars"), dirs_exist_ok=True)
     # slug -> meta description map used by functions.php
     descriptions = {slug: p["description"] for slug, p in pages.items()}
     with open(os.path.join(THEME, "page-meta.json"), "w", encoding="utf-8") as f:

@@ -1238,6 +1238,7 @@ ul.tb-disclaimer {
 .cw-chip.is-active .cw-count { opacity: 0.85; }
 .cw-card { display: flex; flex-direction: column; gap: 0.55rem; }
 .cw-head { display: flex; align-items: center; gap: 0.6rem; }
+.cw-avatar { flex: none; inline-size: 3.5rem; block-size: 3.5rem; border-radius: 999px; object-fit: cover; background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 82%); }
 .cw-id { display: flex; flex-direction: column; line-height: 1.2; }
 .cw-name { color: var(--color-foreground-primary, #16233b); }
 .cw-unit { font-size: 0.76rem; color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff)); font-weight: 600; }
