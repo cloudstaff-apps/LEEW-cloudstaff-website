@@ -171,6 +171,16 @@ CFO Guide, Contact.
   "not repeatable" and "shadow usage" points come from the presentation. The
   other notes on chat tools and agents were written by Claude and are Lee's to
   confirm.
+- **Two inline SVG diagrams** on the AI Coworkers page. The "process sounds
+  simple" diagram (one request, six steps, then a tangle of systems and people)
+  is drawn by `tools/gen_process_art.py`; paste its output into the
+  `process-figure` in the partial. The "core competency" circle diagram in "Where
+  do you start?" is hand-placed SVG in the partial. Both are original drawings
+  based on Lee's slides, not the stock photos from the slides.
+- Section order on AI Coworkers: What is an AI Coworker, One of the team, Nine
+  things, the process diagram, Meet the Coworkers, the directory, How it
+  compares, Where do you start, The people behind every Coworker, Responsible by
+  default.
 - **"One of the team" hotspots** (AI Coworkers page): two screenshots with numbered
   hotspots that open on hover, focus or tap, pure CSS. `src/coworker-profile.png`
   is the ExpenseBoss profile of Chris Hayes with the app URLs and part of his
