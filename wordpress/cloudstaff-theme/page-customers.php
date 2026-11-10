@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Customers
+ * Template Name: Customer Success Stories
  * Template Post Type: page
  *
  * Generated from src/partials/customers.html by build.py — edit the partial,
@@ -15,7 +15,7 @@ get_header();
 <section class="site-hero site-hero-photo" style="--hero-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=70')" title="A team at work">
   <div class="site-band-inner">
     <div class="site-hero-copy">
-    <span class="eyebrow">Client success stories</span>
+    <span class="eyebrow">Customer success stories</span>
     <h1>What our customers say</h1>
     <p>Trusted by 1,300+ companies worldwide. These are real partnerships and real outcomes, told by the finance, operations, and growth leaders who built dedicated remote teams with Cloudstaff and watched their businesses scale.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Talk to an expert</a>
@@ -28,7 +28,7 @@ get_header();
     <span class="eyebrow">Americas</span>
     <h2>Client testimonials from the Americas</h2>
     <p class="cs-lead">Some stories are best heard in their own words. Press play to hear business leaders across the Americas describe what a dedicated Cloudstaff team changed for them.</p>
-    <div class="grid-3 cs-grid">
+    <div class="grid-2 cs-grid">
 
       <figure class="card cs-story">
         <div class="cs-video"><iframe src="https://player.vimeo.com/video/1172426447" title="Wipfli, Cloudstaff success story" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
@@ -43,7 +43,7 @@ get_header();
         </ul>
         <blockquote>&ldquo;Our demand for business services was outpacing our ability to grow our team with US-based talent.&rdquo;</blockquote>
         <figcaption><span class="avatar-initials">JB</span><span><strong>Jessica Barnas</strong>, Partner, Wipfli Advisory LLC</span></figcaption>
-        <p class="cs-links"><a href="https://player.vimeo.com/video/1172426447" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="https://www.cloudstaff.com/success-stories/wipfli/" target="_blank" rel="noopener" class="button-link">Read the full story &rarr;</a></p>
+        <p class="cs-links"><a href="https://player.vimeo.com/video/1172426447" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a></p>
       </figure>
 
       <figure class="card cs-story">
@@ -58,7 +58,7 @@ get_header();
         </ul>
         <blockquote>&ldquo;They held our hand through the onboarding process, making us feel comfortable outsourcing.&rdquo;</blockquote>
         <figcaption><span class="avatar-initials">CL</span><span><strong>Carleen Lamay</strong>, CEO, C2 Accounting</span></figcaption>
-        <p class="cs-links"><a href="https://player.vimeo.com/video/1175068917" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="https://www.cloudstaff.com/success-stories/c2-accounting-business-support/" target="_blank" rel="noopener" class="button-link">Read the full story &rarr;</a></p>
+        <p class="cs-links"><a href="https://player.vimeo.com/video/1175068917" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="<?php echo esc_url( home_url( '/story-c2-accounting/' ) ); ?>" class="button-link">Read the full story &rarr;</a></p>
       </figure>
 
       <figure class="card cs-story">
@@ -73,11 +73,26 @@ get_header();
         </ul>
         <blockquote>&ldquo;I come from a long history of working in the traditional full managed service BPO space.&rdquo;</blockquote>
         <figcaption><span class="avatar-initials">RP</span><span><strong>Richard Parke</strong>, Avetta</span></figcaption>
-        <p class="cs-links"><a href="https://www.youtube.com/watch?v=tzwkUdELXTE" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="https://www.cloudstaff.com/success-stories/avetta/" target="_blank" rel="noopener" class="button-link">Read the full story &rarr;</a></p>
+        <p class="cs-links"><a href="https://www.youtube.com/watch?v=tzwkUdELXTE" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="<?php echo esc_url( home_url( '/story-avetta/' ) ); ?>" class="button-link">Read the full story &rarr;</a></p>
+      </figure>
+
+      <figure class="card cs-story">
+        <div class="cs-video"><iframe src="https://www.youtube-nocookie.com/embed/OVsl6ATUbEA" title="Alliance Consumer Solutions, Cloudstaff client testimonial" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <span class="cs-tag">Medical collections &middot; USA</span>
+        <h3>Alliance Consumer Solutions</h3>
+        <p>A Mississippi medical-collections agency hit by pandemic-era hiring and retention trouble. Choosing every team member itself from a pre-screened pool, Alliance stood up offshore collectors on encrypted, company-managed devices with 24/7 coverage, keeping calls answered after the local office closed, with zero downtime.</p>
+        <ul class="cs-results">
+          <li>Zero downtime</li>
+          <li>Original team retained 2.5&ndash;3 yrs</li>
+          <li>24/7 coverage</li>
+        </ul>
+        <blockquote>&ldquo;If I had to hire a collector today, it would be another Cloudstaff person.&rdquo;</blockquote>
+        <figcaption><span class="avatar-initials">HM</span><span><strong>Haley McLemore</strong>, CFO, Alliance Consumer Solutions</span></figcaption>
+        <p class="cs-links"><a href="https://www.youtube.com/watch?v=OVsl6ATUbEA" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="<?php echo esc_url( home_url( '/story-alliance/' ) ); ?>" class="button-link">Read the full story &rarr;</a></p>
       </figure>
 
     </div>
-    <div class="grid-4 cs-grid">
+    <div class="grid-3 cs-grid">
 
       <figure class="card cs-story cs-clip">
         <div class="cs-video"><iframe src="https://www.youtube-nocookie.com/embed/QIUC-W0Yq1g" title="Riverton Insurance, Cloudstaff client testimonial" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
@@ -95,12 +110,6 @@ get_header();
         <div class="cs-video"><iframe src="https://www.youtube-nocookie.com/embed/x2QD-wkl-1Y" title="Arrivia, Cloudstaff client testimonial" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
         <span class="cs-tag">Global travel agency</span>
         <h3>Arrivia</h3>
-      </figure>
-
-      <figure class="card cs-story cs-clip">
-        <div class="cs-video"><iframe src="https://www.youtube-nocookie.com/embed/OVsl6ATUbEA" title="Alliance Collection Service, Cloudstaff client testimonial" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-        <span class="cs-tag">Medical collections</span>
-        <h3>Alliance Collection Service</h3>
       </figure>
 
     </div>
@@ -126,7 +135,7 @@ get_header();
         </ul>
         <blockquote>&ldquo;Cloudstaff helped us get that competitive edge within the Australian market.&rdquo;</blockquote>
         <figcaption><span class="avatar-initials">MG</span><span><strong>Michael Grandish</strong>, Strategic Projects &amp; Innovation Manager, Built</span></figcaption>
-        <p class="cs-links"><a href="https://player.vimeo.com/video/1173896883" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="https://www.cloudstaff.com/success-stories/built/" target="_blank" rel="noopener" class="button-link">Read the full story &rarr;</a></p>
+        <p class="cs-links"><a href="https://player.vimeo.com/video/1173896883" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="<?php echo esc_url( home_url( '/story-built/' ) ); ?>" class="button-link">Read the full story &rarr;</a></p>
       </figure>
 
       <figure class="card cs-story">
@@ -141,7 +150,7 @@ get_header();
         </ul>
         <blockquote>&ldquo;We wanted someone that was well established, had a good reputation, and could really deliver.&rdquo;</blockquote>
         <figcaption><span class="avatar-initials">JW</span><span><strong>Jason Wellington</strong>, McConnell Dowell</span></figcaption>
-        <p class="cs-links"><a href="https://player.vimeo.com/video/1181390384" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="https://www.cloudstaff.com/success-stories/mcconnell-dowell/" target="_blank" rel="noopener" class="button-link">Read the full story &rarr;</a></p>
+        <p class="cs-links"><a href="https://player.vimeo.com/video/1181390384" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="<?php echo esc_url( home_url( '/story-mcconnell-dowell/' ) ); ?>" class="button-link">Read the full story &rarr;</a></p>
       </figure>
 
       <figure class="card cs-story">
@@ -156,7 +165,7 @@ get_header();
         </ul>
         <blockquote>&ldquo;Our internal team was busy with backend admin that kept us from being on-site with clients.&rdquo;</blockquote>
         <figcaption><span class="avatar-initials">TD</span><span><strong>Tim Dark</strong>, Managing Director, TM Strata</span></figcaption>
-        <p class="cs-links"><a href="https://player.vimeo.com/video/1181391063" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="https://www.cloudstaff.com/success-stories/tm-strata/" target="_blank" rel="noopener" class="button-link">Read the full story &rarr;</a></p>
+        <p class="cs-links"><a href="https://player.vimeo.com/video/1181391063" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="<?php echo esc_url( home_url( '/story-tm-strata/' ) ); ?>" class="button-link">Read the full story &rarr;</a></p>
       </figure>
 
       <figure class="card cs-story">
@@ -170,7 +179,7 @@ get_header();
         </ul>
         <blockquote>&ldquo;Not only are Cloudstaff agents reliable, they are exceptional at what they do.&rdquo;</blockquote>
         <figcaption><span class="avatar-initials">AJ</span><span><strong>Angela Jenkinson</strong>, Leisurecom (eCruising)</span></figcaption>
-        <p class="cs-links"><a href="https://player.vimeo.com/video/1175069375" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="https://www.cloudstaff.com/success-stories/leisurecom-ecruising/" target="_blank" rel="noopener" class="button-link">Read the full story &rarr;</a></p>
+        <p class="cs-links"><a href="https://player.vimeo.com/video/1175069375" target="_blank" rel="noopener" class="button-link">Watch the video &rarr;</a><a href="<?php echo esc_url( home_url( '/story-leisurecom/' ) ); ?>" class="button-link">Read the full story &rarr;</a></p>
       </figure>
 
     </div>
@@ -237,20 +246,6 @@ get_header();
     <div class="grid-3 cs-grid">
 
       <figure class="card cs-written">
-        <span class="cs-tag">Medical collections &middot; USA</span>
-        <h3>Alliance Consumer Solutions</h3>
-        <p>A Mississippi medical-collections agency hit by pandemic-era hiring and retention trouble. Choosing every team member itself from a pre-screened pool, Alliance stood up offshore collectors on encrypted, company-managed devices with 24/7 coverage, keeping calls answered after the local office closed, with zero downtime.</p>
-        <ul class="cs-results">
-          <li>Zero downtime</li>
-          <li>Original team retained 2.5&ndash;3 yrs</li>
-          <li>24/7 coverage</li>
-        </ul>
-        <blockquote>&ldquo;If I had to hire a collector today, it would be another Cloudstaff person.&rdquo;</blockquote>
-        <figcaption><span class="avatar-initials">HM</span><span><strong>Haley McLemore</strong>, CFO, Alliance Consumer Solutions</span></figcaption>
-        <p class="cs-links"><a href="https://www.cloudstaff.com/success-stories/alliance-consumer-solutions/" target="_blank" rel="noopener" class="button-link">Read the full story &rarr;</a></p>
-      </figure>
-
-      <figure class="card cs-written">
         <span class="cs-tag">Travel &amp; leisure &middot; USA</span>
         <h3>US travel membership platform</h3>
         <p>A leading US travel-membership platform whose fixed staffing costs were outgrowing output. After starting with staff augmentation in 2018, a 2022 cruise-sales pilot of 20 agents scaled into a full revenue operation, with real-time dashboards giving US leaders visibility, on track to 225 representatives by 2026.</p>
@@ -262,7 +257,7 @@ get_header();
         </ul>
         <blockquote>&ldquo;I've pointed other people toward Cloudstaff, and I'll keep doing it.&rdquo;</blockquote>
         <figcaption><span class="avatar-initials">VP</span><span><strong>VP, Global Contact Center Operations</strong></span></figcaption>
-        <p class="cs-links"><a href="https://www.cloudstaff.com/success-stories/travel-leisure-outsourcing/" target="_blank" rel="noopener" class="button-link">Read the full story &rarr;</a></p>
+        <p class="cs-links"><a href="<?php echo esc_url( home_url( '/story-travel-membership/' ) ); ?>" class="button-link">Read the full story &rarr;</a></p>
       </figure>
 
       <figure class="card cs-written">
@@ -274,7 +269,7 @@ get_header();
           <li>0% attrition since 2023</li>
           <li>21-day average to fill a role</li>
         </ul>
-        <p class="cs-links"><a href="https://www.cloudstaff.com/success-stories/employment-law-firm-outsourcing/" target="_blank" rel="noopener" class="button-link">Read the full story &rarr;</a></p>
+        <p class="cs-links"><a href="<?php echo esc_url( home_url( '/story-employment-law/' ) ); ?>" class="button-link">Read the full story &rarr;</a></p>
       </figure>
 
       <figure class="card cs-written">
@@ -286,20 +281,20 @@ get_header();
           <li>Lower compliance risk</li>
           <li>Stronger retention</li>
         </ul>
-        <p class="cs-links"><a href="https://www.cloudstaff.com/success-stories/real-estate-outsourcing/" target="_blank" rel="noopener" class="button-link">Read the full story &rarr;</a></p>
+        <p class="cs-links"><a href="<?php echo esc_url( home_url( '/story-urban-development/' ) ); ?>" class="button-link">Read the full story &rarr;</a></p>
       </figure>
 
       <figure class="card cs-written">
         <span class="cs-tag">Trade &amp; home services &middot; Australia</span>
         <h3>Southeast Queensland trade services</h3>
-        <p>A 60-year-old trade-services business whose lean local team was stretched thin by payroll, compliance, IT, and coordination. Cloudstaff handled everything from recruitment to payroll; a Cebu team of five in customer service, dispatch, and accounts payable grew to 12 within the first year, with zero ramp-up time.</p>
+        <p>A 60-year-old trade-services business whose lean local team was stretched thin by payroll, compliance, IT, and coordination. Cloudstaff handled everything from recruitment to payroll; a Cebu team of five in customer service, dispatch, and accounts payable grew to nine in just three months, with zero ramp-up time.</p>
         <ul class="cs-results">
-          <li>5 &rarr; 12 in year one</li>
+          <li>5 &rarr; 9 in three months</li>
           <li>Zero ramp-up time</li>
         </ul>
         <blockquote>&ldquo;Cloudstaff gave me a feeling of warmth and confidence. They truly knew what they were doing.&rdquo;</blockquote>
         <figcaption><span class="avatar-initials">D</span><span><strong>Director</strong>, Trade services company, SE Queensland</span></figcaption>
-        <p class="cs-links"><a href="https://www.cloudstaff.com/success-stories/offshore-trade-home-services/" target="_blank" rel="noopener" class="button-link">Read the full story &rarr;</a></p>
+        <p class="cs-links"><a href="<?php echo esc_url( home_url( '/story-trade-services/' ) ); ?>" class="button-link">Read the full story &rarr;</a></p>
       </figure>
 
       <figure class="card cs-written">
@@ -313,7 +308,7 @@ get_header();
         </ul>
         <blockquote>&ldquo;Outsourcing has freed up our team to be more customer-focused. It's made a big difference.&rdquo;</blockquote>
         <figcaption><span class="avatar-initials">D</span><span><strong>Director</strong>, Melbourne property management firm</span></figcaption>
-        <p class="cs-links"><a href="https://www.cloudstaff.com/success-stories/property-management-outsourcing/" target="_blank" rel="noopener" class="button-link">Read the full story &rarr;</a></p>
+        <p class="cs-links"><a href="<?php echo esc_url( home_url( '/story-property-management/' ) ); ?>" class="button-link">Read the full story &rarr;</a></p>
       </figure>
 
     </div>

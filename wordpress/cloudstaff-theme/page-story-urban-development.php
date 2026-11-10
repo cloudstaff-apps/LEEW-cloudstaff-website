@@ -1,0 +1,136 @@
+<?php
+/**
+ * Template Name: Real estate and land use organization
+ * Template Post Type: page
+ *
+ * Generated from src/partials/story-urban-development.html by build.py — edit the partial,
+ * not this file, then re-run `python3 build.py`.
+ *
+ * @package Cloudstaff
+ */
+
+get_header();
+?>
+<main class="site-main" id="main-content">
+<section class="site-hero site-hero-photo center-hero">
+  <div class="site-band-inner">
+    <div class="site-hero-copy">
+    <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="center-back">Customer Success Stories</a> &rarr; Real Estate / Urban Development</span>
+    <h1>From Freelancers to a Fully Compliant Team: A Smarter Way to Scale</h1>
+    <p>Real Estate &amp; Land Use Organization &middot; Washington, D.C., USA &middot; Cloudstaff partner since 2024</p>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Talk to an expert</a>
+    </div>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <span class="eyebrow">The results</span>
+    <h2>The partnership in numbers</h2>
+    <div class="grid-4 center-glance">
+      <div class="stat-tile"><div class="stat-tile-label">Global Professional Network Supported</div><div class="stat-tile-value">45K+</div></div>
+      <div class="stat-tile"><div class="stat-tile-label">Delivery Centers: Clark &amp; Manila</div><div class="stat-tile-value">2</div></div>
+      <div class="stat-tile"><div class="stat-tile-label">Compliant Onboarding Under Philippine Employment Law</div><div class="stat-tile-value">100%</div></div>
+      <div class="stat-tile"><div class="stat-tile-label">Real-Time Visibility Via Centralized Dashboards</div><div class="stat-tile-value">24/7</div></div>
+    </div>
+    <div class="card cs-story story-quote">
+      <h3>A Cornerstone of Operational Growth</h3>
+      <p>They gained more than just staff: a scalable, compliant workforce that performs like a true extension of their in-house team, with the structure, oversight, and development support the freelance model could never provide.</p>
+      <p><small>Global real estate &amp; land use network &middot; 45,000+ professionals</small></p>
+    </div>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">Real Estate / Urban Development</span>
+      <h2>The situation</h2>
+      <p>Managing a growing network of freelancers across multiple countries had created mounting compliance risk, inconsistent retention, and limited visibility into performance across a global operation.</p>
+      <p>Partnering with Cloudstaff in 2024, they replaced that fragmented model with a fully compliant, purpose-built remote team in Clark and Manila, delivering the structure and consistency their mission required.</p>
+    </div>
+    <div class="site-visual">
+      <div class="stack-lg">
+        <dl class="card story-facts">
+          <div><dt>Industry</dt><dd>Real Estate / Urban Development</dd></div>
+          <div><dt>Headquarters</dt><dd>Washington, D.C., USA</dd></div>
+          <div><dt>Partner since</dt><dd>2024</dd></div>
+          <div><dt>Delivery centers</dt><dd>Clark &amp; Manila, Philippines</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <span class="eyebrow">Before Cloudstaff</span>
+    <h2>The challenge</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="step-number">1</div>
+        <h3>Compliance risks</h3>
+        <p>Freelancers across countries without consistent contracts created legal exposure.</p>
+      </div>
+      <div class="card">
+        <div class="step-number">2</div>
+        <h3>Retention struggles</h3>
+        <p>Without formal employment structures, talented professionals came and went.</p>
+      </div>
+      <div class="card">
+        <div class="step-number">3</div>
+        <h3>Lack of visibility</h3>
+        <p>Managing performance without a centralized system left too much guesswork.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
+    <span class="eyebrow">What Cloudstaff delivered</span>
+    <h2>The solution</h2>
+    <ul class="story-checks">
+      <li>Structured hiring via Cloudstaff's RNI process for skills, mindset and cultural alignment.</li>
+      <li>Dedicated success teams providing consistent guidance and performance coaching.</li>
+      <li>CS Academy equipping staff with role-specific, industry-tailored upskilling.</li>
+      <li>Compliant onboarding fully aligned with Philippine employment laws and standards.</li>
+      <li><strong>Full visibility.</strong> StaffCentral, Workbench and CS Tap deliver real-time control.</li>
+      <li>AI-powered tools streamlining workflows and reducing manual effort across the team.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <span class="eyebrow">Over time</span>
+    <h2>Growth and evolution</h2>
+    <div class="grid-3">
+      <div class="card story-step">
+        <span class="cs-tag">2024</span>
+        <p>Replaced fragmented freelance network with a managed dedicated team</p>
+      </div>
+      <div class="card story-step">
+        <span class="cs-tag">Transition</span>
+        <p>Compliance risk eliminated through structured Philippine employment</p>
+      </div>
+      <div class="card story-step">
+        <span class="cs-tag">Today</span>
+        <p>Full operational visibility with strengthened engagement and retention</p>
+      </div>
+    </div>
+    <p><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="button-link">&larr; All customer success stories</a></p>
+  </div>
+</section>
+
+<section class="site-cta">
+  <div class="site-band-inner">
+    <h2>Ready to build your global team?</h2>
+    <p>Talk to us about embedding world-class remote talent in your firm.</p>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Talk to an expert</a>
+  </div>
+</section>
+
+</main>
+<?php
+get_footer();

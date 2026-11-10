@@ -25,7 +25,7 @@
         <a href="<?php echo esc_url( home_url( '/timezones/' ) ); ?>" <?php if ( is_page( 'timezones' ) ) echo 'aria-current="page"'; ?>>Time Zones</a>
         <a href="<?php echo esc_url( home_url( '/why-cloudstaff/' ) ); ?>" <?php if ( is_page( 'why-cloudstaff' ) ) echo 'aria-current="page"'; ?>>Why Cloudstaff</a>
         <a href="<?php echo esc_url( home_url( '/security/' ) ); ?>" <?php if ( is_page( 'security' ) ) echo 'aria-current="page"'; ?>>Security</a>
-        <a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" <?php if ( is_page( 'customers' ) ) echo 'aria-current="page"'; ?>>Customers</a>
+        <a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" <?php if ( is_page( 'customers' ) ) echo 'aria-current="page"'; ?>>Customer Success Stories</a>
       </div>
     </div>
     <div class="site-nav-item">

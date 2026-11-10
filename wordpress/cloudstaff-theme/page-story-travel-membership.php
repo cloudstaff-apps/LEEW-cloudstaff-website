@@ -1,0 +1,135 @@
+<?php
+/**
+ * Template Name: Leading travel membership platform
+ * Template Post Type: page
+ *
+ * Generated from src/partials/story-travel-membership.html by build.py — edit the partial,
+ * not this file, then re-run `python3 build.py`.
+ *
+ * @package Cloudstaff
+ */
+
+get_header();
+?>
+<main class="site-main" id="main-content">
+<section class="site-hero site-hero-photo center-hero">
+  <div class="site-band-inner">
+    <div class="site-hero-copy">
+    <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="center-back">Customer Success Stories</a> &rarr; Travel &amp; Leisure / Membership</span>
+    <h1>From Pilot to $50M+ Revenue Engine: Scaling Cruise Sales with Strategic Virtual Staffing</h1>
+    <p>Leading Travel Membership Platform &middot; United States &middot; Cloudstaff partner since 2018</p>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Talk to an expert</a>
+    </div>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <span class="eyebrow">The results</span>
+    <h2>The partnership in numbers</h2>
+    <div class="grid-4 center-glance">
+      <div class="stat-tile"><div class="stat-tile-label">Annual Cruise Sales Volume Generated</div><div class="stat-tile-value">$50M+</div></div>
+      <div class="stat-tile"><div class="stat-tile-label">Inbound &amp; Outbound Sales Representatives</div><div class="stat-tile-value">225</div></div>
+      <div class="stat-tile"><div class="stat-tile-label">Net Profit Margin Across The Sales Operation</div><div class="stat-tile-value">34%</div></div>
+      <div class="stat-tile"><div class="stat-tile-label">Partner &amp; Customer Satisfaction, Up From 82%</div><div class="stat-tile-value">91%</div></div>
+    </div>
+    <figure class="card cs-story story-quote">
+      <blockquote>&ldquo;I've pointed other people toward Cloudstaff, and I'll keep doing it... What we've built together is something I'm genuinely proud of. That kind of reliability doesn't come from a contract. It comes from people who actually care about the outcome.&rdquo;</blockquote>
+      <figcaption><span class="avatar-initials">VP</span><span><strong>VP, Global Contact Center Operations</strong>, Leading Travel Membership Platform</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">Travel &amp; Leisure / Membership</span>
+      <h2>The situation</h2>
+      <p>Following a private equity acquisition in 2019, this travel membership platform needed to move faster and operate more efficiently, but fixed staffing costs were outpacing output and inconsistent service quality was putting key partner relationships at risk.</p>
+      <p>What began as staff augmentation evolved into a full-scale virtual sales operation: 225 representatives generating $50M+ in annual cruise sales at a 34% net profit margin.</p>
+    </div>
+    <div class="site-visual">
+      <div class="stack-lg">
+        <dl class="card story-facts">
+          <div><dt>Industry</dt><dd>Travel &amp; Leisure / Membership</dd></div>
+          <div><dt>Headquarters</dt><dd>United States</dd></div>
+          <div><dt>Partner since</dt><dd>2018</dd></div>
+          <div><dt>Delivery center</dt><dd>Philippines</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <span class="eyebrow">Before Cloudstaff</span>
+    <h2>The challenge</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="step-number">1</div>
+        <h3>Declining margins</h3>
+        <p>Fixed costs grew faster than output, squeezing net profit despite steady revenue.</p>
+      </div>
+      <div class="card">
+        <div class="step-number">2</div>
+        <h3>Operational inefficiency</h3>
+        <p>Lagging technology adoption limited responsiveness to fast-moving opportunities.</p>
+      </div>
+      <div class="card">
+        <div class="step-number">3</div>
+        <h3>Inconsistent experiences</h3>
+        <p>Varying service quality created satisfaction gaps and put partner relationships at risk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted">
+  <div class="site-band-inner">
+    <span class="eyebrow">What Cloudstaff delivered</span>
+    <h2>The solution</h2>
+    <ul class="story-checks">
+      <li><strong>Embedded workforce model.</strong> Cloudstaffers worked directly within existing workflows with in-house responsiveness.</li>
+      <li><strong>Full-stack support.</strong> Talent sourcing, onboarding, Cloudstaff Academy training, compliance and tech setup.</li>
+      <li><strong>Higher booking values.</strong> Average booking rose from $1,200 to $1,380 as sales capability deepened.</li>
+      <li><strong>Scoped pilot, real stakes.</strong> Cruise sales pilot launched with 20 inbound and outbound agents.</li>
+      <li><strong>Enterprise technology.</strong> Real-time dashboards gave US leaders visibility into activity and KPIs.</li>
+      <li>40% labor cost savings reinvested into training, technology and team development.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="site-band">
+  <div class="site-band-inner">
+    <span class="eyebrow">Over time</span>
+    <h2>Growth and evolution</h2>
+    <div class="grid-3">
+      <div class="card story-step">
+        <span class="cs-tag">2018</span>
+        <p>Non-sales staff augmentation engagement began</p>
+      </div>
+      <div class="card story-step">
+        <span class="cs-tag">2022</span>
+        <p>Cruise sales pilot launched with 20 agents in a live revenue environment</p>
+      </div>
+      <div class="card story-step">
+        <span class="cs-tag">2026</span>
+        <p>Operation scaled to 225 inbound and outbound representatives</p>
+      </div>
+    </div>
+    <p><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="button-link">&larr; All customer success stories</a></p>
+  </div>
+</section>
+
+<section class="site-cta">
+  <div class="site-band-inner">
+    <h2>Ready to build your global team?</h2>
+    <p>Talk to us about embedding world-class remote talent in your firm.</p>
+    <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Talk to an expert</a>
+  </div>
+</section>
+
+</main>
+<?php
+get_footer();

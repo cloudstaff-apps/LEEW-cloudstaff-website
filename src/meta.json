@@ -73,10 +73,106 @@
     {
       "slug": "customers",
       "wp_template": "page-customers",
-      "nav_label": "Customers",
+      "nav_label": "Customer Success Stories",
       "in_nav": true,
-      "title": "What Our Customers Say: Client Success Stories | Cloudstaff",
+      "title": "Customer Success Stories: What Our Customers Say | Cloudstaff",
       "description": "Real client success stories from Wipfli, Built, Avetta, Arrivia, McConnell Dowell and more, with 17 video testimonials and the results of building dedicated remote teams with Cloudstaff."
+    },
+    {
+      "slug": "story-avetta",
+      "wp_template": "page-story-avetta",
+      "nav_label": "Avetta",
+      "in_nav": false,
+      "title": "Avetta: Customer Success Story | Cloudstaff",
+      "description": "What began as a Philippines-based support team has grown to 125+ Cloudstaffers spanning four regions, with dedicated Spanish- and Portuguese-speaking pipelines serving Latin American markets from Colombia."
+    },
+    {
+      "slug": "story-alliance",
+      "wp_template": "page-story-alliance",
+      "nav_label": "Alliance Consumer Solutions",
+      "in_nav": false,
+      "title": "Alliance Consumer Solutions: Customer Success Story | Cloudstaff",
+      "description": "Cloudstaff gave them the rare ability to interview and handpick every team member, delivering work ethic and extended-hours availability that consistently outperformed local expectations, with zero downtime through pandemic-era disruptions."
+    },
+    {
+      "slug": "story-c2-accounting",
+      "wp_template": "page-story-c2-accounting",
+      "nav_label": "C2 Accounting",
+      "in_nav": false,
+      "title": "C2 Accounting: Customer Success Story | Cloudstaff",
+      "description": "Cloudstaff's hands-on support made the transition straightforward, scaling C2 to six bookkeepers rated 10 out of 10 who integrate so naturally that clients can't tell they're not in the same office."
+    },
+    {
+      "slug": "story-built",
+      "wp_template": "page-story-built",
+      "nav_label": "Built",
+      "in_nav": false,
+      "title": "Built: Customer Success Story | Cloudstaff",
+      "description": "Skilled Cloudstaff professionals integrated seamlessly into their workflows: 40+ staff across accounting, IT, digital transformation and quantity surveying, with virtually no turnover in a partnership that has now passed its tenth year."
+    },
+    {
+      "slug": "story-mcconnell-dowell",
+      "wp_template": "page-story-mcconnell-dowell",
+      "nav_label": "McConnell Dowell",
+      "in_nav": false,
+      "title": "McConnell Dowell: Customer Success Story | Cloudstaff",
+      "description": "Cloudstaff placed high-calibre candidates quickly, growing from one IT specialist to a fully integrated team of 8 across IT, Sustainability and Cost Estimation, backed by a 99% retention rate."
+    },
+    {
+      "slug": "story-tm-strata",
+      "wp_template": "page-story-tm-strata",
+      "nav_label": "TM Strata",
+      "in_nav": false,
+      "title": "TM Strata: Customer Success Story | Cloudstaff",
+      "description": "Cloudstaff provided a back-end team that already understood their systems and industry, cutting the in-house administrative load by 20% with up to 70% cost savings, and freeing local staff to focus on clients."
+    },
+    {
+      "slug": "story-leisurecom",
+      "wp_template": "page-story-leisurecom",
+      "nav_label": "Leisurecom eCruising",
+      "in_nav": false,
+      "title": "Leisurecom eCruising: Customer Success Story | Cloudstaff",
+      "description": "With support functions fully handled by Cloudstaff, the sales team refocused entirely on selling, generating significant additional revenue, with Cloudstaff agents in some cases outperforming their Australian counterparts."
+    },
+    {
+      "slug": "story-travel-membership",
+      "wp_template": "page-story-travel-membership",
+      "nav_label": "Leading travel membership platform",
+      "in_nav": false,
+      "title": "Leading travel membership platform: Customer Success Story | Cloudstaff",
+      "description": "What began as staff augmentation evolved into a full-scale virtual sales operation: 225 representatives generating $50M+ in annual cruise sales at a 34% net profit margin."
+    },
+    {
+      "slug": "story-employment-law",
+      "wp_template": "page-story-employment-law",
+      "nav_label": "Southern California employment law firm",
+      "in_nav": false,
+      "title": "Southern California employment law firm: Customer Success Story | Cloudstaff",
+      "description": "Cloudstaff provided a nearshore team in Bogotá working US hours with bilingual English and Spanish capability, scaling from 2 specialists to 50+ professionals across two continents with zero attrition."
+    },
+    {
+      "slug": "story-urban-development",
+      "wp_template": "page-story-urban-development",
+      "nav_label": "Real estate and land use organization",
+      "in_nav": false,
+      "title": "Real estate and land use organization: Customer Success Story | Cloudstaff",
+      "description": "Partnering with Cloudstaff in 2024, they replaced that fragmented model with a fully compliant, purpose-built remote team in Clark and Manila, delivering the structure and consistency their mission required."
+    },
+    {
+      "slug": "story-trade-services",
+      "wp_template": "page-story-trade-services",
+      "nav_label": "Trade and home services provider",
+      "in_nav": false,
+      "title": "Trade and home services provider: Customer Success Story | Cloudstaff",
+      "description": "Cloudstaff's fully managed, end-to-end solution removed the administrative burden entirely: the team grew from 5 to 9 members in just three months, driven by performance rather than a hiring target."
+    },
+    {
+      "slug": "story-property-management",
+      "wp_template": "page-story-property-management",
+      "nav_label": "Melbourne property management firm",
+      "in_nav": false,
+      "title": "Melbourne property management firm: Customer Success Story | Cloudstaff",
+      "description": "A reliable Cloudstaff back-office team absorbed that volume: 20% less admin load, up to 70% cost savings and 99% retention. Eight years on, the team is a deeply integrated extension of core operations."
     },
     {
       "slug": "ai-enabled-staff",
