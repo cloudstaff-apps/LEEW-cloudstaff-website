@@ -12,7 +12,7 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero site-hero-photo center-hero story-hero" style="--hero-image: url('https://www.cloudstaff.com/wp-content/uploads/2026/05/Avetta.jpg'); --hero-focus: 27%">
+<section class="site-hero site-hero-photo center-hero story-hero" style="--hero-image: url('https://www.cloudstaff.com/wp-content/uploads/2026/05/Avetta.jpg'); --hero-focus: 31%">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="center-back">Customer Success Stories</a> &rarr; Supply Chain Risk Management</span>
