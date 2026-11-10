@@ -135,7 +135,7 @@ get_header();
         <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 4v4"/><circle cx="12" cy="3" r="1"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M2 14h2"/><path d="M20 14h2"/></svg></div>
           <h3>AI with a defined job</h3>
-          <p>Supervised Coworkers do specific work within defined responsibilities, rules, and review. AI needs a job description, and a human it reports to.</p>
+          <p>Supervised Coworkers do specific work within defined responsibilities, rules, and review. AI needs a job description, and a Cloudstaffer it reports to.</p>
           <p class="ai-evidence-label">Evidence today</p>
           <p class="ai-evidence">Live Coworker units, early client engagements, and in-production client workflows.</p>
         </div>

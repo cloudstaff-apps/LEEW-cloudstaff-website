@@ -17,7 +17,7 @@ get_header();
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/ai-enabled-staff/' ) ); ?>" class="center-back">Cloudstaff AI</a> &rarr; AI Coworkers</span>
     <h1>AI with a defined job</h1>
-    <p>Supervised AI Coworkers do specific work within defined responsibilities, rules, and review. Each one has a job description, a name, its own communication channels, and a human it reports to.</p>
+    <p>Supervised AI Coworkers do specific work within defined responsibilities, rules, and review. Each one has a job description, a name, its own communication channels, and a Cloudstaffer it reports to.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Put a Coworker to work</a>
     </div>
   </div>
