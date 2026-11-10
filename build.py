@@ -31,7 +31,7 @@ CDN = meta["site"]["cdn"]
 pages = {p["slug"]: p for p in meta["pages"]}
 
 # Screenshots and other images in src/ that pages reference with {{ASSET:name}}.
-IMAGES = ["coworker-profile.png", "coworker-team.png"]
+IMAGES = ["coworker-profile.png", "coworker-team.png", "ai-superpower.webp"]
 
 read = lambda *p: open(os.path.join(*p), encoding="utf-8").read()
 header_tpl = read(SRC, "header.html")
