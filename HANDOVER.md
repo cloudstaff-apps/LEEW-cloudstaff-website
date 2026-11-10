@@ -163,6 +163,14 @@ CFO Guide, Contact.
   comparisons for Tracy, Nicola and Mike, the "10x faster, 10x cheaper, better
   than a human" claims, the "over 100 Coworkers" library figure, competitor
   product names, and the strategy and next-steps slides.
+- **"One of the team" hotspots** (AI Coworkers page): two screenshots with numbered
+  hotspots that open on hover, focus or tap, pure CSS. `src/coworker-profile.png`
+  is the ExpenseBoss profile of Chris Hayes with the app URLs and part of his
+  manager's email address masked, as Lee masked them. `src/coworker-team.png` is
+  the Cloudstaff Q Team view cropped to its first row of cards, because the
+  second row shows Taskboss, which is on the excluded list. Images in `src/` are
+  copied by the `IMAGES` list in `build.py`. On phones the popups are replaced by
+  a numbered list under the images.
 - Cloudstaff Q tiles were enriched from the same presentation (hosting options,
   hundreds of models, logging of communications and decisions).
 
