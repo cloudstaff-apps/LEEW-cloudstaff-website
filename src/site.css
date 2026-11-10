@@ -823,6 +823,16 @@ html[data-theme="dark"] .step-number {
 .q-nolock { margin-block-start: var(--space-lg, 1rem) !important; padding: 0.9rem 1.1rem; border-radius: var(--radius-md, 0.75rem); background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 90%); border-inline-start: 4px solid var(--color-brand-primary, #007aff); max-width: none !important; font-size: 1.05rem; }
 .q-sub { margin-block: var(--space-2xl, 2rem) var(--space-sm, 0.5rem); font-size: 1.5rem; }
 .q-lock { border-block-start: 4px solid var(--color-brand-primary, #007aff); }
+.q-sub .cs-tag { vertical-align: middle; margin-inline-end: 0.4rem; }
+.train-level { display: flex; flex-direction: column; }
+.train-level h3 { margin-block: 0 0.2rem; }
+.train-level > p { margin-block: 0 var(--space-sm, 0.5rem); }
+.cs-tag.train-paid { background: #fef3c7; color: #92400e; }
+.train-advanced { display: grid; gap: clamp(1rem, 3vw, 2.5rem); grid-template-columns: minmax(0, 1fr); align-items: center; border-inline-start: 4px solid #f59e0b; }
+@media (min-width: 860px) { .train-advanced { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); } }
+.train-advanced h3 { margin-block: 0 var(--space-xs, 0.25rem); }
+.train-advanced p + p { margin-block-start: var(--space-sm, 0.5rem); }
+.train-nums { display: flex; gap: 0.4rem; }
 .feature-tile h3 .cs-tag { display: inline-block; vertical-align: middle; margin-inline-start: 0.35rem; }
 
 /* --- Step-up comparison (three rising steps, one scorecard) ---------------- */
