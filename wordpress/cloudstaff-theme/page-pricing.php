@@ -91,7 +91,7 @@ get_header();
     <div>
       <span class="eyebrow">Quality staff at a fraction of the cost</span>
       <h2>Typical monthly cost by role: US vs. Cloudstaff</h2>
-      <p>A small team of 5&ndash;10 Cloudstaffers can generate up to <strong>US$450,000 in annual labor savings</strong> compared with equivalent US hires, with high-cost roles delivering the greatest savings per employee. Operational roles show strong ROI with up to 75% savings and stable talent availability.</p>
+      <p>A small team of 5&ndash;10 <a href="<?php echo esc_url( home_url( '/ai-enabled-staff/' ) ); ?>">AI-enabled Cloudstaffers</a> can generate up to <strong>US$450,000 in annual labor savings</strong> compared with equivalent US hires, with high-cost roles delivering the greatest savings per employee. Operational roles show strong ROI with up to 75% savings and stable talent availability.</p>
       <div class="table-scroll">
         <table class="table">
           <thead>
