@@ -16,20 +16,54 @@ get_header();
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/ai-enabled-staff/' ) ); ?>" class="center-back">Cloudstaff AI</a> &rarr; Cloudstaff Q</span>
-    <h1>Cloudstaff Q</h1>
-    <p>Everything your business needs to adopt AI securely, govern it confidently, and scale it responsibly. Cloudstaff Q is the platform that builds, trains, connects, and governs your AI Coworkers and AI-built applications, so your data and IP stay yours and you can see exactly what your digital workforce is doing.</p>
+    <h1>Adopt AI securely. Govern it confidently. Scale it responsibly.</h1>
+    <p>AI needs to be secure. Cloudstaff Q is the platform that lets you bring AI into your business safely, manage your own governance and compliance, and scale as much or as little as you need.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Book a strategy session</a>
     </div>
   </div>
 </section>
 
-<section class="site-band" id="all-apps">
+<section class="site-band">
   <div class="site-band-inner">
     <div>
-      <span class="eyebrow">Rings of protection</span>
-      <h2>Nothing reaches the outside world until it is ready</h2>
-      <p>AI-assisted development lets businesses create tools, automations, and Coworkers faster than ever, and many Cloudstaff customers encourage their Cloudstaffers to build them, because they know the processes first hand. The risk is exposure: if something is deployed publicly too early, a vulnerability or a configuration issue can expose sensitive business data.</p>
-      <p>Cloudstaff Q answers that with four rings of controlled deployment. Everything starts in the innermost ring and moves outward one ring at a time, only when its security, access controls, data handling, and operational readiness have been reviewed.</p>
+      <span class="eyebrow">Why Cloudstaff Q</span>
+      <h2>Nobody knows where AI will be in a year. You still have to act today</h2>
+      <p>None of us knows what AI will look like in one year, five years, or ten. But we all know it is going to be massively disruptive, and that it will touch every business and every employee.</p>
+      <p>You cannot wait for the picture to clear. You need a way to bring AI into your business now that is safe today, under your control, and still yours tomorrow. That is Cloudstaff Q.</p>
+      <div class="grid-3 q-pillars">
+        <a class="card q-pillar" href="#secure">
+          <div class="step-number">1</div>
+          <h3>Adopt it securely</h3>
+          <p>Private AI and four rings of protection, so nothing sensitive leaks and nothing reaches the outside world before it is ready.</p>
+          <span class="button-link">Security &darr;</span>
+        </a>
+        <a class="card q-pillar" href="#govern">
+          <div class="step-number">2</div>
+          <h3>Govern it confidently</h3>
+          <p>Your rules, visibly enforced. You manage your own governance and compliance, and you can see every action.</p>
+          <span class="button-link">Governance &darr;</span>
+        </a>
+        <a class="card q-pillar" href="#scale">
+          <div class="step-number">3</div>
+          <h3>Scale it responsibly</h3>
+          <p>Start with one Coworker or one team. Grow as much or as little as you need, without rebuilding anything.</p>
+          <span class="button-link">Scalability &darr;</span>
+        </a>
+      </div>
+      <p class="q-nolock"><strong>And there is no lock-in.</strong> You can see your IP at any time, and take it with you if you ever leave. <a href="#no-lock-in" class="text-link">How that works</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted" id="secure">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">1. Security</span>
+      <h2>AI needs to be secure. Start there</h2>
+      <p>The risks are real and they are already inside most businesses. Staff paste client data, financial records, source code, and internal documents into public AI tools without realizing where it goes. AI-built apps and automations get published before anyone has checked them. One misconfiguration can expose sensitive data.</p>
+      <p>Cloudstaff Q closes both doors. Your people get powerful AI inside a private environment, and everything they build is held inside rings of protection until it has earned its way out.</p>
+      <h3 class="q-sub" id="all-apps">Four rings of protection</h3>
+      <p>Everything starts in the innermost ring and moves outward one ring at a time, only when its security, access controls, data handling, and operational readiness have been reviewed. Nothing reaches the outside world until it is ready.</p>
       <div class="rings" data-rings>
         <figure class="rings-figure">
           <svg class="rings-art" viewBox="0 0 640 372" role="img" aria-labelledby="rings-art-title" xmlns="http://www.w3.org/2000/svg">
@@ -114,125 +148,8 @@ get_header();
         for (var i = 0; i < items.length; i++) { bind(items[i], i); bind(rings[i], i); }
       })();
       </script>
-    </div>
-  </div>
-</section>
-
-<section class="site-band site-band-tinted">
-  <div class="site-band-inner">
-    <div>
-      <span class="eyebrow">What Cloudstaff Q does</span>
-      <h2>The control layer for a connected AI workforce</h2>
-      <p>Cloudstaff Q is the infrastructure behind every AI Coworker. It provides a secure place to build and train them, an integration layer that connects to the APIs, platforms, and tools you already use, and the dashboards and logs that make every action reviewable for management and compliance. AI Coworkers do the work; Cloudstaff Q keeps it connected, governed, and accountable.</p>
-      <div class="grid-3">
-        <div class="feature-tile">
-          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
-          <h3>Secure by design</h3>
-          <p>Governance and controlled access are built in, on a secure, redundant architecture.</p>
-        </div>
-        <div class="feature-tile">
-          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg></div>
-          <h3>Your IP and data stay yours</h3>
-          <p>Your know-how lives in your own repository on Cloudstaff Q, where your Coworkers can use it. Your knowledge, data, and intellectual property remain with your business, not the model.</p>
-        </div>
-        <div class="feature-tile">
-          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg></div>
-          <h3>Flexible hosting &amp; data sovereignty</h3>
-          <p>Run on Cloudstaff's private cloud, your own private cloud, or on-premise servers. You choose where your AI runs and where your data lives.</p>
-        </div>
-        <div class="feature-tile">
-          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4"/><path d="M15 2v4"/><path d="M9 18v4"/><path d="M15 18v4"/><path d="M2 9h4"/><path d="M2 15h4"/><path d="M18 9h4"/><path d="M18 15h4"/></svg></div>
-          <h3>Multi-model access</h3>
-          <p>Access to hundreds of AI models, so each job gets the right one and your business is not locked into a single vendor.</p>
-        </div>
-        <div class="feature-tile">
-          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="2" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><path d="M12 8v3"/><path d="M5 16v-3h14v3"/></svg></div>
-          <h3>Integration layer</h3>
-          <p>Connects Coworkers to the systems, APIs, and tools your teams already work in.</p>
-        </div>
-        <div class="feature-tile">
-          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 14 3.5-3.5"/><path d="M20.3 18a9 9 0 1 0-16.6 0"/></svg></div>
-          <h3>Dashboards &amp; logs</h3>
-          <p>Every communication and every decision is logged, with safety reporting built in, so work can be reviewed for quality and compliance.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="site-band">
-  <div class="site-band-inner">
-    <div>
-      <span class="eyebrow">Why it matters</span>
-      <h2>AI is an operating framework, not a single tool</h2>
-      <p>Artificial intelligence is rapidly changing the way businesses operate. From customer support and administration through to software development, marketing, accounting, and data analysis, AI can significantly improve productivity and efficiency.</p>
-      <p>But implementing AI in a business also introduces new challenges around security, compliance, governance, and staff training. Without the right controls, staff may unknowingly enter sensitive client data, financial records, source code, internal documents, or customer information into public AI platforms. That creates unnecessary risk and makes it difficult to monitor how AI is being used across your teams.</p>
-      <p>Rather than treating AI as a single tool, Cloudstaff Q gives you a complete operating framework for AI: defining what is allowed, giving teams access to secure AI environments, and controlling how AI reaches your systems and your customers.</p>
-      <div class="grid-3 center-glance">
-        <div class="stat-tile"><div class="stat-tile-label">of organizations use AI in at least one business function</div><div class="stat-tile-value">78%</div></div>
-        <div class="stat-tile"><div class="stat-tile-label">of organizations lack AI governance policies to manage AI or prevent shadow AI</div><div class="stat-tile-value">63%</div></div>
-        <div class="stat-tile"><div class="stat-tile-label">of AI users bring their own AI tools to work</div><div class="stat-tile-value">78%</div></div>
-      </div>
-      <p><small>Sources, in order: McKinsey, The State of AI: Global Survey 2025. IBM, Cost of a Data Breach Report 2025. Microsoft and LinkedIn, 2024 Work Trend Index.</small></p>
-    </div>
-  </div>
-</section>
-
-<section class="site-band site-band-tinted">
-  <div class="site-band-inner">
-    <div>
-      <span class="eyebrow">Govern</span>
-      <h2>Set the rules, and make them stick</h2>
-      <p>Move from uncontrolled AI usage to governed access, with a practical policy, visible permissions, and network-level controls.</p>
-      <div class="grid-3">
-        <div class="card toolkit-card" id="policy-builder">
-          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5"/><path d="M9 13h6"/><path d="M9 17h6"/></svg></div>
-          <h3>AI Policy Builder</h3>
-          <p>Before introducing AI into your business, your team needs clear guidance on which AI activities are permitted, restricted, or prohibited. The AI Policy Builder guides you through the key decisions and produces a practical governance framework tailored to your organization.</p>
-          <ul class="story-checks">
-            <li>Customer and confidential data handling</li>
-            <li>Public AI tools versus private AI systems</li>
-            <li>Approved and restricted AI activities</li>
-            <li>AI usage for coding, content, reporting, and customer interactions</li>
-            <li>Compliance and security requirements</li>
-          </ul>
-          <p>It defines clear rules for everyday scenarios such as summarizing meeting notes, drafting customer emails, analyzing spreadsheets, generating code, or uploading documents into AI tools. It can also distinguish between types of data and types of AI system, which is more workable than a simple allow or block approach. Finished policies go directly to your Cloudstaffers, who are notified automatically when anything changes.</p>
-        </div>
-        <div class="card toolkit-card" id="badge-pack">
-          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="9" r="6"/><path d="m9 14.2-1 7.8 4-2.5 4 2.5-1-7.8"/></svg></div>
-          <h3>Badge Pack AI</h3>
-          <p>Even the best AI policy is ineffective if staff do not understand or remember it. Badge Pack reinforces your policy through a simple visual system of approved activity badges and compliance indicators, visible at the point of work.</p>
-          <ul class="story-checks">
-            <li>Which AI activities are permitted</li>
-            <li>Which tools are approved</li>
-            <li>Which activities require approval</li>
-            <li>Which actions are prohibited</li>
-          </ul>
-          <p>Badges can represent certifications, permissions, and approved AI tools, so AI access can be aligned to role, department, client requirements, and risk profile. They appear within Cloudstaff applications and timesheeting systems, an ongoing reminder that AI usage is governed, monitored, and aligned with your policy settings.</p>
-        </div>
-        <div class="card toolkit-card" id="access-controls">
-          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <h3>AI Access Controls</h3>
-          <p>Not every AI platform is suitable for your business. Cloudstaff can apply AI website access rules at the network level, based on your company's AI policy.</p>
-          <ul class="story-checks">
-            <li>Permit approved AI platforms</li>
-            <li>Block unauthorized AI tools</li>
-            <li>Restrict access to public AI systems</li>
-            <li>Reduce the risk of data leakage</li>
-          </ul>
-          <p>Rules can be tailored by role, department, or client requirement. An accounting team might be allowed an approved spreadsheet plugin while developers use approved coding tools, and a support team can use private summarization tools but be blocked from entering customer records into public AI websites. Anyone who tries to open a blocked platform is told that access is restricted under company policy.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="site-band">
-  <div class="site-band-inner">
-    <div>
-      <span class="eyebrow">Private AI platforms</span>
-      <h2>Private, secure places for AI work</h2>
-      <p>Give your teams real AI capability inside environments you control.</p>
+      <h3 class="q-sub">Private AI, inside your walls</h3>
+      <p>Real AI capability for your teams, in environments you control, not on a public platform.</p>
       <div class="grid-3">
         <div class="card toolkit-card" id="allchat">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg></div>
@@ -275,66 +192,167 @@ get_header();
           <p>Cloudstaff works with you to define the use case, map the conversation flow, connect the relevant systems where appropriate, and build a voice agent that fits your operating model. Outcomes are logged and reported.</p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="site-band site-band-tinted" id="security-testing">
-  <div class="site-band-inner">
-    <div>
-      <span class="eyebrow">Add-on service</span>
-      <h2>AI Security Testing</h2>
-      <p>Applications and automations can now be built faster than security reviews can keep pace. Rapid development can introduce risks in authentication, permissions, integrations, data handling, and deployment configuration. As an add-on to Cloudstaff Q, Cloudstaff's Technology Security Team tests AI-built applications, automations, bots, and workflows before they move to a wider ring or are exposed to the internet.</p>
-      <ul class="story-checks">
-        <li>Application vulnerabilities</li>
-        <li>Security misconfigurations</li>
-        <li>Unsafe integrations</li>
-        <li>Data exposure risks</li>
-        <li>Authentication and access control weaknesses</li>
-        <li>Automation and bot security issues</li>
-      </ul>
-      <p>The service is particularly valuable for rapidly developed or AI-generated applications, where speed can outpace traditional security processes. By combining AI-assisted testing with expert security review, you can deploy AI solutions faster, with stronger governance and reduced operational risk.</p>
-    </div>
-  </div>
-</section>
-
-<section class="site-band">
-  <div class="site-band-inner">
-    <div>
-      <span class="eyebrow">Practical AI. Governed AI. Secure AI.</span>
-      <h2>The same security discipline, extended to AI</h2>
-      <p>Cloudstaff Q runs on the workforce infrastructure and security capabilities Cloudstaff already operates for client-facing work, managed devices, access controls, monitored facilities, and audited governance. AI work doesn't get a lower bar; it gets the same one.</p>
-      <p>AI adoption does not need to be uncontrolled, risky, or overwhelming. With the right policy framework, access controls, and secure AI platforms, you can give your teams the benefits of AI while maintaining appropriate oversight, without compromising data security, client trust, or compliance expectations.</p>
+      <h3 class="q-sub">One security standard for people and AI</h3>
+      <p>Cloudstaff Q runs on the workforce infrastructure and security capabilities Cloudstaff already operates for client-facing work: managed devices, access controls, monitored facilities, and audited governance. AI work does not get a lower bar. It gets the same one.</p>
       <div class="grid-3">
-        <div class="card toolkit-card">
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Secure by design</h3>
+          <p>Governance and controlled access are built in, on a secure, redundant architecture, with data protection and encryption throughout.</p>
+        </div>
+        <div class="feature-tile">
           <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg></div>
-          <h3>Private AI infrastructure</h3>
-          <ul class="story-checks">
-            <li>Data protection and encryption</li>
-            <li>Private development infrastructure</li>
-            <li>Threat monitoring and incident response</li>
-          </ul>
+          <h3>Private infrastructure</h3>
+          <p>Private development and hosting infrastructure, with threat monitoring and incident response.</p>
         </div>
-        <div class="card toolkit-card">
-          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v18"/><path d="M8 21h8"/><path d="M4 7h16"/><path d="m5 7-3 6a3.3 3.3 0 0 0 6 0z"/><path d="m19 7-3 6a3.3 3.3 0 0 0 6 0z"/></svg></div>
-          <h3>Policy frameworks</h3>
-          <ul class="story-checks">
-            <li>Compliance and regulatory alignment</li>
-            <li>Risk management and assessments</li>
-            <li>Audit trails and reporting</li>
-          </ul>
-        </div>
-        <div class="card toolkit-card">
-          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg></div>
-          <h3>Controls</h3>
-          <ul class="story-checks">
-            <li>Approved AI tools and platforms</li>
-            <li>User training and guardrails</li>
-            <li>Content filtering and guardrails</li>
-          </ul>
+        <div class="feature-tile" id="security-testing">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>AI Security Testing <span class="cs-tag">Add-on service</span></h3>
+          <p>Cloudstaff's Technology Security Team tests AI-built applications, automations, bots, and workflows before they move to a wider ring: vulnerabilities, misconfigurations, unsafe integrations, data exposure, and weak authentication or access control.</p>
         </div>
       </div>
       <p><a href="<?php echo esc_url( home_url( '/security/' ) ); ?>" class="button-link">See Cloudstaff's security &amp; compliance &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="site-band" id="govern">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">2. Governance</span>
+      <h2>Govern it confidently. Your rules, visibly enforced</h2>
+      <p>Most businesses have AI in use before they have a policy for it. Cloudstaff Q puts you back in charge: you decide what is allowed, your people can see those rules where they work, the network enforces them, and every action is on the record. You manage your own governance and compliance.</p>
+      <div class="grid-2 center-glance">
+        <div class="stat-tile"><div class="stat-tile-label">of organizations lack AI governance policies to manage AI or prevent shadow AI</div><div class="stat-tile-value">63%</div></div>
+        <div class="stat-tile"><div class="stat-tile-label">of AI users bring their own AI tools to work</div><div class="stat-tile-value">78%</div></div>
+      </div>
+      <p><small>Sources: IBM, Cost of a Data Breach Report 2025. Microsoft and LinkedIn, 2024 Work Trend Index.</small></p>
+      <div class="grid-3">
+        <div class="card toolkit-card" id="policy-builder">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5"/><path d="M9 13h6"/><path d="M9 17h6"/></svg></div>
+          <h3>AI Policy Builder</h3>
+          <p>Before introducing AI into your business, your team needs clear guidance on which AI activities are permitted, restricted, or prohibited. The AI Policy Builder guides you through the key decisions and produces a practical governance framework tailored to your organization.</p>
+          <ul class="story-checks">
+            <li>Customer and confidential data handling</li>
+            <li>Public AI tools versus private AI systems</li>
+            <li>Approved and restricted AI activities</li>
+            <li>AI usage for coding, content, reporting, and customer interactions</li>
+            <li>Compliance and security requirements</li>
+          </ul>
+          <p>It defines clear rules for everyday scenarios such as summarizing meeting notes, drafting customer emails, analyzing spreadsheets, generating code, or uploading documents into AI tools. It can also distinguish between types of data and types of AI system, which is more workable than a simple allow or block approach. Finished policies go directly to your Cloudstaffers, who are notified automatically when anything changes.</p>
+        </div>
+        <div class="card toolkit-card" id="badge-pack">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="9" r="6"/><path d="m9 14.2-1 7.8 4-2.5 4 2.5-1-7.8"/></svg></div>
+          <h3>Badge Pack AI</h3>
+          <p>Even the best AI policy is ineffective if staff do not understand or remember it. Badge Pack reinforces your policy through a simple visual system of approved activity badges and compliance indicators, visible at the point of work.</p>
+          <ul class="story-checks">
+            <li>Which AI activities are permitted</li>
+            <li>Which tools are approved</li>
+            <li>Which activities require approval</li>
+            <li>Which actions are prohibited</li>
+          </ul>
+          <p>Badges can represent certifications, permissions, and approved AI tools, so AI access can be aligned to role, department, client requirements, and risk profile. They appear within Cloudstaff applications and timesheeting systems, an ongoing reminder that AI usage is governed, monitored, and aligned with your policy settings.</p>
+        </div>
+        <div class="card toolkit-card" id="access-controls">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>AI Access Controls</h3>
+          <p>Not every AI platform is suitable for your business. Cloudstaff can apply AI website access rules at the network level, based on your company's AI policy.</p>
+          <ul class="story-checks">
+            <li>Permit approved AI platforms</li>
+            <li>Block unauthorized AI tools</li>
+            <li>Restrict access to public AI systems</li>
+            <li>Reduce the risk of data leakage</li>
+          </ul>
+          <p>Rules can be tailored by role, department, or client requirement. An accounting team might be allowed an approved spreadsheet plugin while developers use approved coding tools, and a support team can use private summarization tools but be blocked from entering customer records into public AI websites. Anyone who tries to open a blocked platform is told that access is restricted under company policy.</p>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 14 3.5-3.5"/><path d="M20.3 18a9 9 0 1 0-16.6 0"/></svg></div>
+          <h3>Dashboards and logs</h3>
+          <p>Every communication and every decision is logged, with safety reporting built in, so work can be reviewed for quality and compliance.</p>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v18"/><path d="M8 21h8"/><path d="M4 7h16"/><path d="m5 7-3 6a3.3 3.3 0 0 0 6 0z"/><path d="m19 7-3 6a3.3 3.3 0 0 0 6 0z"/></svg></div>
+          <h3>Policy frameworks</h3>
+          <p>Compliance and regulatory alignment, risk management and assessments, and audit trails and reporting.</p>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg></div>
+          <h3>Controls</h3>
+          <p>Approved AI tools and platforms, user training and guardrails, and content filtering.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band site-band-tinted" id="scale">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">3. Scalability</span>
+      <h2>Scale as much, or as little, as you need</h2>
+      <p>You do not have to bet the business on AI to get started. Begin with one Coworker, one team, or one workflow. When it proves itself, add the next. Cloudstaff Q is the control layer behind every AI Coworker, so growing means adding to what you have, not rebuilding it.</p>
+      <div class="grid-3">
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg></div>
+          <h3>Start small, grow fast</h3>
+          <p>Support increasing users, workloads, and business requirements with confidence, at the pace that suits you.</p>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h6.5a3.5 3.5 0 0 0 0-7h-5a3.5 3.5 0 0 1 0-7H16"/></svg></div>
+          <h3>Prototype to production</h3>
+          <p>A structured deployment framework moves each application outward, ring by ring, as it is ready for a wider audience.</p>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="2" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="16" y="16" width="6" height="6" rx="1"/><path d="M12 8v3"/><path d="M5 16v-3h14v3"/></svg></div>
+          <h3>Integration layer</h3>
+          <p>Connects Coworkers to the systems, APIs, and tools your teams already work in, so each new Coworker plugs into the same foundation.</p>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4"/><path d="M15 2v4"/><path d="M9 18v4"/><path d="M15 18v4"/><path d="M2 9h4"/><path d="M2 15h4"/><path d="M18 9h4"/><path d="M18 15h4"/></svg></div>
+          <h3>Hundreds of AI models</h3>
+          <p>Each job gets the right model, and as better models arrive you can move to them.</p>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c3 3.5 3 14.5 0 18"/><path d="M12 3c-3 3.5-3 14.5 0 18"/></svg></div>
+          <h3>Flexible hosting</h3>
+          <p>Run on Cloudstaff's private cloud, your own private cloud, or on-premise servers. You choose where your AI runs and where your data lives.</p>
+        </div>
+        <div class="feature-tile">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>A connected AI workforce</h3>
+          <p>AI Coworkers do the work. Cloudstaff Q keeps it connected, governed, and accountable, however many you run.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-band" id="no-lock-in">
+  <div class="site-band-inner">
+    <div>
+      <span class="eyebrow">No lock-in</span>
+      <h2>Your IP stays yours. Take it with you</h2>
+      <p>Nobody can promise you what AI looks like in ten years. So we do not ask you to bet on us for ten years. Cloudstaff Q has no lock-in. You can see your IP whenever you like, and if you ever decide to leave, you take it with you. Not that we want you to leave.</p>
+      <div class="grid-3">
+        <div class="card q-lock">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10" cy="7" r="4"/><path d="M10.3 15H7a4 4 0 0 0-4 4v2"/><circle cx="17" cy="17" r="3"/><path d="m21 21-1.9-1.9"/></svg></div>
+          <h3>You can see your IP</h3>
+          <p>Your know-how, the skills and processes your Coworkers run on, lives in your own repository on Cloudstaff Q. It is yours to inspect at any time.</p>
+        </div>
+        <div class="card q-lock">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m17 11 4-4-4-4"/><path d="M21 7H9"/><path d="m7 13-4 4 4 4"/><path d="M3 17h12"/></svg></div>
+          <h3>You can take it with you</h3>
+          <p>Your knowledge, data, and intellectual property remain with your business, not with us and not with the model. If you leave, it leaves with you.</p>
+        </div>
+        <div class="card q-lock">
+          <div class="feature-tile-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4"/><path d="M15 2v4"/><path d="M9 18v4"/><path d="M15 18v4"/><path d="M2 9h4"/><path d="M2 15h4"/><path d="M18 9h4"/><path d="M18 15h4"/></svg></div>
+          <h3>No model lock-in either</h3>
+          <p>Cloudstaff Q is not tied to a single AI vendor. Whatever the next breakthrough is, you are free to use it.</p>
+        </div>
+      </div>
+      <p>It is a platform for today: one that lets you safely bring AI into your business, manage your own governance and compliance, and scale as much or as little as you need.</p>
     </div>
   </div>
 </section>
@@ -364,8 +382,8 @@ get_header();
 
 <section class="site-cta">
   <div class="site-band-inner">
-    <h2>Deploy AI without losing control</h2>
-    <p>See how Cloudstaff Q would connect, govern, and secure AI Coworkers and AI-built applications inside your business.</p>
+    <h2>Bring AI in safely. Start now</h2>
+    <p>See how Cloudstaff Q would secure, govern, and scale AI inside your business, with no lock-in.</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-inverse button-lg">Book a strategy session</a>
   </div>
 </section>
