@@ -432,6 +432,14 @@ h3 > .icon {
 }
 .button-link:hover { text-decoration: underline; background: none; box-shadow: none; }
 
+/* Inline link inside running body copy: brand colour, underlined, normal weight */
+.text-link {
+  color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.text-link:hover { text-decoration-thickness: 2px; }
+
 /* --- Grids (owned here so column behavior is deterministic) ------------- */
 .grid-2, .grid-3, .grid-4 {
   display: grid;

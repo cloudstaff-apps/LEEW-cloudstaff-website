@@ -123,7 +123,7 @@ get_header();
     <div>
       <span class="eyebrow">A repeatable value-creation lever</span>
       <h2>Skilled roles at a fraction of the fully loaded local cost</h2>
-      <p>Hiring a senior accountant through Cloudstaff can save up to 80% compared with hiring onshore (up to <strong>US$157,536 per staff member per year</strong>) without sacrificing quality. A small team of 5&ndash;10 <a href="<?php echo esc_url( home_url( '/ai-enabled-staff/' ) ); ?>">AI-enabled Cloudstaffers</a> can save up to <strong>US$450,000 annually</strong>.</p>
+      <p>Hiring a senior accountant through Cloudstaff can save up to 80% compared with hiring onshore (up to <strong>US$157,536 per staff member per year</strong>) without sacrificing quality. A small team of 5&ndash;10 <a href="<?php echo esc_url( home_url( '/ai-enabled-staff/' ) ); ?>" class="text-link">AI-enabled Cloudstaffers</a> can save up to <strong>US$450,000 annually</strong>.</p>
       <p>The value extends beyond salary. Employment costs, benefits, technology, infrastructure, and overheads are all substantially reduced, turning fixed SG&amp;A into a predictable, scalable operating expense.</p>
       <a href="<?php echo esc_url( home_url( '/pricing/' ) ); ?>" class="button button-secondary">See the full cost breakdown</a>
     </div>
