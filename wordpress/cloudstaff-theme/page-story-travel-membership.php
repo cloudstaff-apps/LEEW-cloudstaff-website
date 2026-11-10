@@ -12,7 +12,7 @@
 get_header();
 ?>
 <main class="site-main" id="main-content">
-<section class="site-hero site-hero-photo center-hero story-hero">
+<section class="site-hero site-hero-photo center-hero story-hero" style="--hero-image: url('https://www.cloudstaff.com/wp-content/uploads/2026/07/Work-From-Office-133.jpg')">
   <div class="site-band-inner">
     <div class="site-hero-copy">
     <span class="eyebrow"><a href="<?php echo esc_url( home_url( '/customers/' ) ); ?>" class="center-back">Customer Success Stories</a> &rarr; Travel &amp; Leisure / Membership</span>
@@ -20,7 +20,6 @@ get_header();
     <p>Leading Travel Membership Platform &middot; United States &middot; Cloudstaff partner since 2018</p>
     <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="button button-lg">Talk to an expert</a>
     </div>
-    <div class="story-hero-photo"><img src="https://www.cloudstaff.com/wp-content/uploads/2026/07/Work-From-Office-133.jpg" alt="A Cloudstaff team at work"></div>
   </div>
 </section>
 

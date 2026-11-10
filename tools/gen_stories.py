@@ -68,21 +68,18 @@ def page(s):
     industry = e(f.get("INDUSTRY", ""))
     out = []
 
-    # hero
-    photo = ""
-    if w.get("photo"):
-        alt = ("The Cloudstaff team supporting " + s["name"]) if named else "A Cloudstaff team at work"
-        photo = '    <div class="story-hero-photo"><img src="%s%s" alt="%s"></div>\n' % (IMG, w["photo"], e(alt))
+    # hero: the team photo is the background image
+    style = (' style="--hero-image: url(\'%s%s\')"' % (IMG, w["photo"])) if w.get("photo") else ""
     out.append(
-        '<section class="site-hero site-hero-photo center-hero story-hero">\n'
+        '<section class="site-hero site-hero-photo center-hero story-hero"%s>\n'
         '  <div class="site-band-inner">\n'
         '    <div class="site-hero-copy">\n'
         '    <span class="eyebrow"><a href="{{URL:customers}}" class="center-back">Customer Success Stories</a> &rarr; %s</span>\n'
         '    <h1>%s</h1>\n'
         '    <p>%s</p>\n'
         '    <a href="{{URL:contact}}" class="button button-lg">Talk to an expert</a>\n'
-        '    </div>\n%s  </div>\n</section>\n'
-        % (industry, e(s["title"]), " &middot; ".join(e(x) for x in s["meta"]), photo))
+        '    </div>\n  </div>\n</section>\n'
+        % (style, industry, e(s["title"]), " &middot; ".join(e(x) for x in s["meta"])))
 
     # numbers + voice
     tiles = "\n".join(

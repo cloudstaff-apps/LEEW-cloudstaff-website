@@ -672,10 +672,19 @@ html[data-theme="dark"] .step-number {
   background: color-mix(in oklch, var(--color-brand-primary, #007aff), white 85%);
   color: var(--color-brand-primary-strong, var(--color-brand-primary, #007aff));
 }
-.story-hero > .site-band-inner { display: grid; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; grid-template-columns: minmax(0, 1fr); inline-size: 100%; }
-@media (min-width: 900px) { .story-hero > .site-band-inner:has(> .story-hero-photo) { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); } }
-.story-hero-photo img { display: block; inline-size: 100%; block-size: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius-lg, 1rem); box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35); }
-.story-hero h1 { font-size: clamp(1.9rem, 3.3vw, 2.7rem); line-height: 1.15; }
+/* Story hero: the client team photo is the background, under a heavier overlay
+   because the headline runs the full width. Kept short so the title wraps wide. */
+.story-hero {
+  min-height: 0;
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+  background-image:
+    linear-gradient(100deg, rgba(7, 17, 35, 0.93) 0%, rgba(7, 17, 35, 0.82) 55%, rgba(7, 17, 35, 0.62) 100%),
+    var(--hero-image, linear-gradient(135deg, #0b1c38, #17427c));
+  background-position: center, center 30%;
+}
+.story-hero > .site-band-inner { inline-size: 100%; }
+.story-hero h1 { font-size: clamp(1.75rem, 2.9vw, 2.5rem); line-height: 1.15; max-width: 62rem; text-wrap: balance; }
+.story-hero p { max-width: 62rem; }
 .story-split { align-items: start !important; }
 .story-split p + p { margin-block-start: var(--space-md, 0.75rem); }
 .story-split h3 { margin-block: var(--space-lg, 1rem) var(--space-sm, 0.5rem); }
