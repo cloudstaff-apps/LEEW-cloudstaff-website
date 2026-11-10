@@ -106,15 +106,15 @@ get_header();
             <span class="hotspot-dot" aria-hidden="true">1</span>
             <div class="hotspot-card"><strong>A name and an identity</strong><p>It has a name, an email address, and a Microsoft Teams account, just like your Cloudstaffers, and it appears alongside them in MyStaff.</p></div>
           </div>
-          <div class="hotspot" style="--x: 60%; --y: 23.5%" tabindex="0" role="button" aria-label="2. A job description">
+          <div class="hotspot" style="--x: 64.5%; --y: 23.5%" tabindex="0" role="button" aria-label="2. A job description">
             <span class="hotspot-dot" aria-hidden="true">2</span>
             <div class="hotspot-card"><strong>A job description</strong><p>Every Coworker starts with a tightly defined job description and role, for example in legal, accounting, HR, or marketing.</p></div>
           </div>
-          <div class="hotspot is-up" style="--x: 25%; --y: 86%" tabindex="0" role="button" aria-label="3. A manager">
+          <div class="hotspot is-up" style="--x: 30%; --y: 86%" tabindex="0" role="button" aria-label="3. A manager">
             <span class="hotspot-dot" aria-hidden="true">3</span>
             <div class="hotspot-card"><strong>A manager</strong><p>It reports to a Cloudstaffer who knows your business. That keeps a human in the loop on every workflow.</p></div>
           </div>
-          <div class="hotspot is-left" style="--x: 85.5%; --y: 61%" tabindex="0" role="button" aria-label="4. Email it, chat with it, talk to it">
+          <div class="hotspot is-left" style="--x: 89.5%; --y: 57%" tabindex="0" role="button" aria-label="4. Email it, chat with it, talk to it">
             <span class="hotspot-dot" aria-hidden="true">4</span>
             <div class="hotspot-card"><strong>Email it, chat with it, talk to it</strong><p>Reach your Coworker by email, chat, web, or voice. It can also communicate with other colleagues to get the job done.</p></div>
           </div>
@@ -125,7 +125,7 @@ get_header();
         </div>
         <div class="hotspot-figure">
           <img src="<?php echo esc_url( get_template_directory_uri() . '/coworker-team.png' ); ?>" alt="The Team view in Cloudstaff Q, showing five AI Coworkers, each with a name, a role, an email address, and the unit they look after" width="1913" height="336" loading="lazy">
-          <div class="hotspot" style="--x: 50%; --y: 16%" tabindex="0" role="button" aria-label="6. The ultimate workforce">
+          <div class="hotspot" style="--x: 44.6%; --y: 30%" tabindex="0" role="button" aria-label="6. The ultimate workforce">
             <span class="hotspot-dot" aria-hidden="true">6</span>
             <div class="hotspot-card"><strong>The ultimate workforce</strong><p>Cloudstaffers plus AI Coworkers, working side by side in one team with one set of standards.</p></div>
           </div>
