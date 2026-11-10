@@ -75,8 +75,13 @@ CFO Guide, Contact.
 
 ## What shipped this session
 
-- **Customers page** (`customers.html`): 13 success stories, 6 with embedded
-  Vimeo videos, 7 written, from cloudstaff.com/success-stories.
+- **Customers page** (`customers.html`): 23 client cards, ordered by region with
+  the Americas first, then Asia Pacific, then the stats band, then written stories.
+  17 carry video: 6 full stories on Vimeo, Avetta (full story, YouTube), and 10
+  short YouTube testimonial clips added 2026-11-10 with name and industry only
+  (no written copy exists for them yet). 6 are written-only. Full-story copy is
+  from cloudstaff.com/success-stories. The 6 Vimeo videos are the same films as
+  Cloudstaff's YouTube uploads, so do not add the YouTube versions as well.
 - **International**: interactive "Follow the sun" coverage tool (`coverage.js`)
   with day/night shift bars (sun/moon SVG). Center "Explore" links are buttons;
   Specialist-hubs card has a Contact-us button; sibling-country pills carry flags.
