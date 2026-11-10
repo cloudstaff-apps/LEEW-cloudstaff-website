@@ -178,6 +178,10 @@ CFO Guide, Contact.
   industry, a job role, or the client's specific needs (example: an advanced
   course for accountants), and clients pay for them. Lee did not say how Level 4
   differs from Level 5, so the page presents them together.
+- AI Training headline: "We're making AI your Cloudstaffer's superpower". The
+  caped Cloudstaffer beside it is Lee's own image (`src/ai-superpower.webp`). His
+  file was a JPG with a checkerboard baked in, so the background was cut out
+  before use. It sits on a CSS sunburst (`.superpower` in `site.css`).
 - **AI Training** (`ai-training.html`) and **AI Consultancy**
   (`ai-consultancy.html`) are their own pages and are NOT part of Cloudstaff Q.
   AI Coffee Hour and the AI Survival Guide sit on the Training page. Consultancy
