@@ -1,92 +1,105 @@
 #!/usr/bin/env python3
 """Draws the "a process sounds simple" diagram for the AI Coworkers page.
 
-One request at the top fans out neatly into six steps, and the steps then tangle
-into the systems and people behind them. Prints an inline <svg>. The layout is
-seeded, so re-running gives the same picture. The three tiers are separate groups (pa-t1, pa-t2, pa-t3) so the page can dim the
-tiers an option cannot reach. Paste the output into the "reach-figure" in
-src/partials/ai-coworkers.html.
+One request at the top fans out into six steps, and the steps then cross over
+into the systems and people behind them. Prints an inline <svg>. The three tiers
+are separate groups (pa-t1, pa-t2, pa-t3) so the page can dim the tiers an option
+cannot reach. Paste the output into the "reach-figure" in
+src/partials/ai-coworkers.html (or run with --write to splice it in).
+
+Style rules: brand blue, navy text, white and pale grey boxes only. No pastel
+fills, no black lines. Keep it to eleven moving parts so it stays readable.
 """
-import random
+import re
+import sys
 
-W, H = 1100, 610
+W, H = 1100, 540
 STEPS = ["Overtime reports", "Missing timesheets", "Extra billables", "Telco costs", "Holiday credits", "Approvals"]
-PARTS = ["Workforce system", "Team leads", "Staff", "Procurement", "Suppliers", "Purchase orders", "Telco invoices",
-         "Leave records", "Payroll", "Managers", "Finance system", "Client contracts", "Spreadsheets", "Email threads"]
-FILLS = ["#fde2e4", "#e2f0cb", "#fff1c1", "#dfe7fd", "#f1e4f3"]
+ROW1 = ["Workforce system", "Team leads", "Procurement", "Suppliers", "Telco invoices", "Finance system"]
+ROW2 = ["Leave records", "Payroll", "Client contracts", "Spreadsheets", "Email threads"]
+# step index -> parts it depends on, as (row, column)
+LINKS = {
+    0: [(1, 0), (1, 1), (2, 1)],
+    1: [(1, 0), (2, 0), (2, 4)],
+    2: [(2, 2), (2, 3), (1, 5)],
+    3: [(1, 4), (1, 3), (1, 2)],
+    4: [(2, 0), (2, 1), (1, 1)],
+    5: [(1, 5), (2, 4), (2, 2)],
+}
 
 
-def main():
-    rnd = random.Random(7)
+def render():
     o = []
     a = o.append
     a('<svg class="process-art" viewBox="0 0 %d %d" role="img" aria-labelledby="process-art-title" xmlns="http://www.w3.org/2000/svg">' % (W, H))
     a('<title id="process-art-title">One simple request, "Show me last month\'s invoices", fans out into six steps, '
-      'which then tangle into the many systems and people behind them.</title>')
-    top = (550, 62)
+      'which then cross over into the many systems and people behind them.</title>')
+    top = (550, 58)
     sx = [105 + i * 178 for i in range(6)]
-    sy = 190
-    px = [85 + i * 155 for i in range(7)]
-    rows = [452, 548]
-    nodes = [(px[i % 7], rows[i // 7]) for i in range(14)]
+    sy, sh = 176, 48
+    r1y, r2y, ph, pw = 392, 468, 36, 150
+    r2x = [(sx[i] + sx[i + 1]) // 2 for i in range(5)]
 
-    notes = [(26, 30, 118, "It sounds simple"), (26, 160, 150, "Then come the steps"), (26, 268, 218, "The devil is in the detail")]
+    def note(y, txt):
+        a('<g class="pa-notes"><rect x="0" y="%d" width="%d" height="20" rx="4"/>' % (y - 14, len(txt) * 7.6 + 10))
+        a('<text x="2" y="%d">%s</text></g>' % (y, txt.upper()))
 
-    def note(k):
-        x, y, wdt, txt = notes[k]
-        a('<g class="pa-notes"><rect x="%d" y="%d" width="%d" height="24" rx="12"/>' % (x - 10, y - 16, wdt + 14))
-        a('<text x="%d" y="%d">%s</text></g>' % (x, y, txt))
-
-    # tier 3: the tangle of orthogonal runs from each step into the moving parts
     a('<g class="pa-tier pa-t3">')
     a('<g class="pa-tangle" fill="none">')
+    used = {}
     for i, x in enumerate(sx):
-        targets = rnd.sample(range(14), 4)
-        for k, t in enumerate(targets):
-            nx, ny = nodes[t]
-            x0 = x - 45 + k * 30
-            y1 = rnd.randrange(262, 330, 9)
-            xm = rnd.randrange(40, W - 40, 13)
-            y2 = rnd.randrange(340, 412, 9)
-            x3 = nx - 36 + rnd.randrange(0, 72, 12)
-            a('<path d="M%d %d V%d H%d V%d H%d V%d"/>' % (x0, sy + 50, y1, xm, y2, x3, ny - 17))
-    for _ in range(7):
-        p, q = rnd.sample(range(14), 2)
-        (ax, ay), (bx, by) = nodes[p], nodes[q]
-        ym = rnd.randrange(486, 518, 6)
-        a('<path d="M%d %d V%d H%d V%d"/>' % (ax + rnd.randrange(-30, 30, 10), ay + 17, ym, bx + rnd.randrange(-30, 30, 10), by - 17 if by > ay else by + 17))
+        for k, (row, col) in enumerate(LINKS[i]):
+            x0 = x - 40 + k * 40
+            key = (row, col)
+            n = used.get(key, 0)
+            used[key] = n + 1
+            if row == 1:
+                x1 = sx[col] - 30 + n * 30
+                a('<path d="M%d %d C%d %d %d %d %d %d"/>' % (x0, sy + sh, x0, 318, x1, 300, x1, r1y))
+            else:
+                x1 = r2x[col] - 6 + n * 6
+                a('<path d="M%d %d C%d %d %d %d %d %d V%d"/>' % (x0, sy + sh, x0, 312, x1, 292, x1, 376, r2y))
     a('</g>')
     a('<g class="pa-parts">')
-    for i, ((x, y), label) in enumerate(zip(nodes, PARTS)):
-        a('<rect x="%d" y="%d" width="132" height="34" rx="8" fill="%s"/>' % (x - 66, y - 17, FILLS[i % len(FILLS)]))
-        a('<text x="%d" y="%d" text-anchor="middle">%s</text>' % (x, y + 5, label))
+    for x, label in zip(sx, ROW1):
+        a('<rect x="%d" y="%d" width="%d" height="%d" rx="8"/>' % (x - pw // 2, r1y, pw, ph))
+        a('<text x="%d" y="%d" text-anchor="middle">%s</text>' % (x, r1y + 23, label))
+    for x, label in zip(r2x, ROW2):
+        a('<rect x="%d" y="%d" width="%d" height="%d" rx="8"/>' % (x - pw // 2, r2y, pw, ph))
+        a('<text x="%d" y="%d" text-anchor="middle">%s</text>' % (x, r2y + 23, label))
     a('</g>')
-    note(2)
+    note(270, "The devil is in the detail")
     a('</g>')
 
-    # tier 2: the neat fan from the request to the six steps
     a('<g class="pa-tier pa-t2">')
     a('<g class="pa-fan" fill="none">')
     for x in sx:
-        a('<path d="M%d %d L%d %d"/>' % (top[0], top[1] + 27, x, sy))
+        a('<path d="M%d %d C%d %d %d %d %d %d"/>' % (top[0], top[1] + 26, top[0], 140, x, 120, x, sy))
     a('</g>')
     a('<g class="pa-steps">')
     for x, label in zip(sx, STEPS):
-        a('<rect x="%d" y="%d" width="158" height="50" rx="10"/>' % (x - 79, sy))
-        a('<text x="%d" y="%d" text-anchor="middle">%s</text>' % (x, sy + 31, label))
+        a('<rect x="%d" y="%d" width="158" height="%d" rx="10"/>' % (x - 79, sy, sh))
+        a('<text x="%d" y="%d" text-anchor="middle">%s</text>' % (x, sy + 30, label))
     a('</g>')
-    note(1)
+    note(150, "Then come the steps")
     a('</g>')
 
-    # tier 1: the request itself
     a('<g class="pa-tier pa-t1">')
-    a('<g class="pa-request"><rect x="%d" y="%d" width="400" height="54" rx="27"/>' % (top[0] - 200, top[1] - 27))
-    a('<text x="%d" y="%d" text-anchor="middle">&#8220;Show me last month&#8217;s invoices&#8221;</text></g>' % (top[0], top[1] + 6))
-    note(0)
+    a('<g class="pa-request"><rect x="%d" y="%d" width="400" height="52" rx="26"/>' % (top[0] - 200, top[1] - 26))
+    a('<text x="%d" y="%d" text-anchor="middle">&#8220;Show me last month&#8217;s invoices&#8221;</text></g>' % (top[0], top[1] + 7))
+    note(24, "It sounds simple")
     a('</g>')
     a('</svg>')
-    print("\n".join("          " + line for line in o))
+    return "\n".join("              " + line for line in o)
 
 
 if __name__ == "__main__":
-    main()
+    svg = render()
+    if "--write" in sys.argv:
+        p = "src/partials/ai-coworkers.html"
+        s = open(p, encoding="utf-8").read()
+        s, n = re.subn(r'[ \t]*<svg class="process-art".*?</svg>', lambda m: svg, s, count=1, flags=re.S)
+        assert n == 1
+        open(p, "w", encoding="utf-8").write(s)
+    else:
+        print(svg)

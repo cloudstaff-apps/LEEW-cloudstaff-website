@@ -712,17 +712,16 @@ html[data-theme="dark"] .step-number {
   box-shadow: 0 14px 34px rgba(11, 28, 56, 0.1);
 }
 .process-art { display: block; inline-size: 100%; block-size: auto; font-family: inherit; }
-.process-art .pa-fan path { stroke: var(--color-brand-primary, #007aff); stroke-width: 2.5; stroke-linecap: round; }
-.process-art .pa-tangle path { stroke: #16233b; stroke-width: 1.5; stroke-linejoin: round; opacity: 0.78; }
+.process-art .pa-fan path { stroke: var(--color-brand-primary, #007aff); stroke-width: 2; stroke-linecap: round; }
+.process-art .pa-tangle path { stroke: var(--color-brand-primary, #007aff); stroke-width: 1.4; stroke-linecap: round; opacity: 0.38; }
 .process-art .pa-request rect { fill: var(--color-brand-primary, #007aff); }
 .process-art .pa-request text { fill: #fff; font-size: 20px; font-weight: 700; }
-.process-art .pa-steps rect { fill: #e5f0ff; stroke: var(--color-brand-primary, #007aff); stroke-width: 2; }
-.process-art .pa-steps text { fill: #16233b; font-size: 15px; font-weight: 700; }
-.process-art .pa-parts rect { stroke: #16233b; stroke-width: 1.2; }
-.process-art .pa-parts text { fill: #16233b; font-size: 12.5px; font-weight: 600; }
-.process-art .pa-notes rect { fill: #16233b; }
-.process-art .pa-notes text { fill: #fff; font-size: 12px; font-weight: 700; letter-spacing: 0.03em; }
-.process-figure figcaption { margin-block-start: var(--space-sm, 0.5rem); text-align: center; font-size: 0.9rem; color: var(--color-foreground-muted, #5b6576); }
+.process-art .pa-steps rect { fill: #fff; stroke: #9cc4fb; stroke-width: 1.5; }
+.process-art .pa-steps text { fill: #16233b; font-size: 15px; font-weight: 600; }
+.process-art .pa-parts rect { fill: #f3f6fa; stroke: #d3dbe7; stroke-width: 1; }
+.process-art .pa-parts text { fill: #16233b; font-size: 13px; font-weight: 500; }
+.process-art .pa-notes rect { fill: #fff; }
+.process-art .pa-notes text { fill: var(--color-brand-primary, #007aff); font-size: 11.5px; font-weight: 700; letter-spacing: 0.07em; }
 .process-art .pa-tier { transition: opacity 0.25s ease, filter 0.25s ease; }
 .reach[data-reach="1"] .pa-t2, .reach[data-reach="1"] .pa-t3, .reach[data-reach="2"] .pa-t3 { opacity: 0.12; filter: grayscale(1); }
 
@@ -767,14 +766,15 @@ html[data-theme="dark"] .step-number {
 .edge-split p + p { margin-block-start: var(--space-md, 0.75rem); }
 .edge-figure { margin: 0; }
 .edge-art { display: block; inline-size: 100%; max-inline-size: 30rem; block-size: auto; margin-inline: auto; font-family: inherit; overflow: visible; }
-.edge-art .ea-ring { fill: none; stroke: color-mix(in oklch, var(--color-brand-primary, #007aff), white 55%); stroke-width: 2; stroke-dasharray: 6 8; }
+.edge-art .ea-ring { fill: none; stroke: color-mix(in oklch, var(--color-brand-primary, #007aff), white 55%); stroke-width: 1.5; }
 .edge-art .ea-core circle { fill: var(--color-brand-primary, #007aff); }
 .edge-art .ea-core-title { fill: #fff; font-size: 34px; font-weight: 700; }
 .edge-art .ea-core-sub { fill: rgba(255, 255, 255, 0.88); font-size: 14px; font-weight: 600; }
-.edge-art .ea-edge circle { stroke: #fff; stroke-width: 4; filter: drop-shadow(0 6px 10px rgba(11, 28, 56, 0.18)); }
-.edge-art .ea-edge text { fill: #16233b; font-size: 19px; font-weight: 700; }
+.edge-art .ea-edge circle { fill: #fff; stroke: #c9dcf8; stroke-width: 1.5; filter: drop-shadow(0 4px 10px rgba(11, 28, 56, 0.08)); transition: fill 0.18s ease, stroke 0.18s ease; }
+.edge-art .ea-edge:hover circle { fill: #e9f2ff; stroke: var(--color-brand-primary, #007aff); }
+.edge-art .ea-edge text { fill: #16233b; font-size: 18px; font-weight: 600; }
 .edge-art .ea-edge { transition: transform 0.18s ease; cursor: default; }
-.edge-art .ea-edge:hover { transform: scale(1.08); }
+.edge-art .ea-edge:hover { transform: scale(1.05); }
 .edge-figure figcaption { margin-block-start: var(--space-sm, 0.5rem); text-align: center; font-size: 0.9rem; color: var(--color-foreground-muted, #5b6576); }
 @media (prefers-reduced-motion: reduce) { .edge-art .ea-edge { transition: none; } .edge-art .ea-edge:hover { transform: none; } }
 
