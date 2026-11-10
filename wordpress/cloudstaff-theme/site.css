@@ -703,6 +703,70 @@ html[data-theme="dark"] .step-number {
 .toolkit-card > p { margin-block: 0 var(--space-sm, 0.5rem); }
 .cw-highlight { border: 2px solid var(--color-brand-primary, #007aff); }
 
+/* --- Step-up comparison (three rising steps, one scorecard) ---------------- */
+.stepup { margin-block-start: var(--space-xl, 1.5rem); }
+.stepup-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-md, 0.75rem); align-items: end; }
+.stepup-step {
+  display: flex; flex-direction: column; justify-content: flex-end; gap: 0.3rem;
+  text-align: start; cursor: pointer; font: inherit; color: var(--color-foreground-primary, #16233b);
+  background: #fff; padding: 1rem 1.1rem;
+  border: 2px solid color-mix(in oklch, var(--color-foreground-primary, #16233b), white 86%);
+  border-radius: var(--radius-lg, 1rem) var(--radius-lg, 1rem) 0 0; border-block-end-width: 0;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+.stepup-step:nth-child(1) { min-block-size: 9.5rem; }
+.stepup-step:nth-child(2) { min-block-size: 12.5rem; }
+.stepup-step:nth-child(3) { min-block-size: 15.5rem; }
+.stepup-step strong { font-size: 1.15rem; line-height: 1.2; }
+.stepup-num { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-foreground-muted, #5b6576); }
+.stepup-num em { font-style: normal; margin-inline-start: 0.4rem; padding: 0.1rem 0.5rem; border-radius: 999px; background: var(--color-brand-primary, #007aff); color: #fff; }
+.stepup-tag { font-size: 0.9rem; color: var(--color-foreground-muted, #5b6576); }
+.stepup-meter { display: block; block-size: 0.5rem; border-radius: 999px; margin-block-start: 0.5rem; background: color-mix(in oklch, var(--color-foreground-primary, #16233b), white 88%); overflow: hidden; }
+.stepup-meter i { display: block; block-size: 100%; inline-size: var(--fill); border-radius: inherit; background: color-mix(in oklch, var(--color-foreground-primary, #16233b), white 45%); }
+.stepup-step.is-best .stepup-meter i { background: #16a34a; }
+.stepup-score { font-size: 0.82rem; font-weight: 600; }
+.stepup-step:hover, .stepup-step.is-active { border-color: var(--color-brand-primary, #007aff); }
+.stepup-step.is-active { background: var(--color-brand-primary, #007aff); color: #fff; }
+.stepup-step.is-active .stepup-num, .stepup-step.is-active .stepup-tag { color: rgba(255, 255, 255, 0.85); }
+.stepup-step.is-active .stepup-num em { background: #fff; color: var(--color-brand-primary, #007aff); }
+.stepup-step.is-active .stepup-meter { background: rgba(255, 255, 255, 0.3); }
+.stepup-step.is-active .stepup-meter i { background: #fff; }
+.stepup-step:focus-visible { outline: 3px solid color-mix(in oklch, var(--color-brand-primary, #007aff), white 40%); outline-offset: 2px; }
+.stepup-panel {
+  background: #fff; padding: clamp(1rem, 2.5vw, 1.75rem);
+  border: 2px solid var(--color-brand-primary, #007aff);
+  border-radius: 0 0 var(--radius-lg, 1rem) var(--radius-lg, 1rem);
+  margin-block-end: var(--space-md, 0.75rem);
+}
+.stepup.is-ready .stepup-panel { display: none; margin-block-end: 0; }
+.stepup.is-ready .stepup-panel.is-active { display: block; }
+.stepup-panel-title { margin: 0 0 var(--space-md, 0.75rem); font-size: 1.05rem; }
+.stepup-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.6rem var(--space-2xl, 2rem); grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 860px) { .stepup-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.stepup-list li { display: grid; grid-template-columns: 1.6rem minmax(0, 1fr); gap: 0.6rem; align-items: start; line-height: 1.45; }
+.stepup-icon { inline-size: 1.5rem; block-size: 1.5rem; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700; margin-block-start: 0.05rem; }
+.stepup-list .is-yes .stepup-icon { background: #dcfce7; color: #15803d; }
+.stepup-list .is-yes .stepup-icon::before { content: "\2713"; }
+.stepup-list .is-part .stepup-icon { background: #fef3c7; color: #b45309; }
+.stepup-list .is-part .stepup-icon::before { content: "~"; }
+.stepup-list .is-no .stepup-icon { background: #fee2e2; color: #b91c1c; }
+.stepup-list .is-no .stepup-icon::before { content: "\2715"; }
+.stepup-text strong { display: block; }
+.stepup-text { color: var(--color-foreground-muted, #5b6576); font-size: 0.95rem; }
+.stepup-text strong { color: var(--color-foreground-primary, #16233b); font-size: 1rem; }
+.stepup-word { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.stepup-list .is-no .stepup-text strong { color: var(--color-foreground-muted, #5b6576); text-decoration: line-through; text-decoration-color: color-mix(in oklch, #b91c1c, white 40%); }
+@media (max-width: 640px) {
+  .stepup-steps { gap: 0.35rem; }
+  .stepup-step { padding: 0.6rem 0.55rem; }
+  .stepup-step strong { font-size: 0.82rem; }
+  .stepup-tag { display: none; }
+  .stepup-score { font-size: 0.68rem; }
+  .stepup-step:nth-child(1) { min-block-size: 7rem; }
+  .stepup-step:nth-child(2) { min-block-size: 8.5rem; }
+  .stepup-step:nth-child(3) { min-block-size: 10rem; }
+}
+
 /* --- Screenshot with numbered hotspots ------------------------------------- */
 .hotspots { margin-block-start: var(--space-xl, 1.5rem); }
 .hotspot-hint { color: var(--color-foreground-muted, #5b6576); font-size: 0.9rem; margin: 0 0 var(--space-sm, 0.5rem); }

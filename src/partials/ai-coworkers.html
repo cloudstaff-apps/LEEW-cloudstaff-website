@@ -213,36 +213,91 @@
     <div>
       <span class="eyebrow">How it compares</span>
       <h2>How is a Cloudstaff AI Coworker different?</h2>
-      <div class="grid-3">
-        <div class="card">
-          <span class="cs-tag">Personal AI chat tools</span>
-          <h3>Augment an individual</h3>
-          <ul class="story-checks">
-            <li>Personal productivity tools</li>
-            <li>Lift the skill set of your staff</li>
-            <li>Often adopted as shadow usage, outside company oversight</li>
+      <p>Each option is a step up from the one before. Select a step to see what it gives you, and what it leaves out.</p>
+      <div class="stepup" data-stepup>
+        <div class="stepup-steps" role="tablist" aria-label="Compare the three options">
+          <button type="button" class="stepup-step" role="tab" id="stepup-tab-0" aria-controls="stepup-panel-0" aria-selected="false" data-step="0">
+            <span class="stepup-num">Step 1</span>
+            <strong>Personal AI chat tools</strong>
+            <span class="stepup-tag">Augments an individual</span>
+            <span class="stepup-meter" aria-hidden="true"><i style="--fill: 14%"></i></span>
+            <span class="stepup-score">Meets 1 of 7</span>
+          </button>
+          <button type="button" class="stepup-step" role="tab" id="stepup-tab-1" aria-controls="stepup-panel-1" aria-selected="false" data-step="1">
+            <span class="stepup-num">Step 2</span>
+            <strong>General-purpose AI agents</strong>
+            <span class="stepup-tag">An agent with a harness</span>
+            <span class="stepup-meter" aria-hidden="true"><i style="--fill: 43%"></i></span>
+            <span class="stepup-score">Meets 1, partly meets 4</span>
+          </button>
+          <button type="button" class="stepup-step is-best is-active" role="tab" id="stepup-tab-2" aria-controls="stepup-panel-2" aria-selected="true" data-step="2">
+            <span class="stepup-num">Step 3 <em>Best</em></span>
+            <strong>Cloudstaff AI Coworker</strong>
+            <span class="stepup-tag">One of the team</span>
+            <span class="stepup-meter" aria-hidden="true"><i style="--fill: 100%"></i></span>
+            <span class="stepup-score">Meets all 7</span>
+          </button>
+        </div>
+        <div class="stepup-panel" role="tabpanel" id="stepup-panel-0" aria-labelledby="stepup-tab-0" data-panel="0">
+          <h3 class="stepup-panel-title">Personal AI chat tools: meets 1 of 7</h3>
+          <ul class="stepup-list">
+            <li class="is-yes"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Lifts individual productivity</strong><span class="stepup-word"> Yes. </span>A personal productivity tool that lifts the skills of the person using it.</span></li>
+            <li class="is-no"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Trained on how your business works</strong><span class="stepup-word"> No. </span>Not trained on your processes.</span></li>
+            <li class="is-no"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Repeatable, observable results</strong><span class="stepup-word"> No. </span>Answers vary from one prompt to the next.</span></li>
+            <li class="is-no"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Supervised by a named person</strong><span class="stepup-word"> No. </span>Often adopted as shadow usage, outside company oversight.</span></li>
+            <li class="is-no"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Connected to your systems</strong><span class="stepup-word"> No. </span>Works only on what a person types or pastes into it.</span></li>
+            <li class="is-no"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Free of lock-in to one AI model</strong><span class="stepup-word"> No. </span>Tied to its own vendor's models.</span></li>
+            <li class="is-no"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>One of the team, with a name and a job</strong><span class="stepup-word"> No. </span>A tool each person uses alone.</span></li>
           </ul>
         </div>
-        <div class="card">
-          <span class="cs-tag">General-purpose AI agents</span>
-          <h3>An agent with a harness</h3>
-          <ul class="story-checks">
-            <li>Trained through prompts</li>
-            <li>Need lots of tedious questions to get right</li>
-            <li>Cannot guarantee that results are repeatable</li>
+        <div class="stepup-panel" role="tabpanel" id="stepup-panel-1" aria-labelledby="stepup-tab-1" data-panel="1">
+          <h3 class="stepup-panel-title">General-purpose AI agents: meets 1, partly meets 4</h3>
+          <ul class="stepup-list">
+            <li class="is-yes"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Lifts individual productivity</strong><span class="stepup-word"> Yes. </span>Can take real tasks off a person's plate.</span></li>
+            <li class="is-part"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Trained on how your business works</strong><span class="stepup-word"> Partly. </span>Trained through prompts, and it takes lots of tedious questions to get right.</span></li>
+            <li class="is-no"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Repeatable, observable results</strong><span class="stepup-word"> No. </span>Cannot guarantee that results are repeatable.</span></li>
+            <li class="is-part"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Supervised by a named person</strong><span class="stepup-word"> Partly. </span>Depends on who set it up.</span></li>
+            <li class="is-part"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Connected to your systems</strong><span class="stepup-word"> Partly. </span>Possible, but each connection has to be built.</span></li>
+            <li class="is-part"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Free of lock-in to one AI model</strong><span class="stepup-word"> Partly. </span>Usually built around a single model.</span></li>
+            <li class="is-no"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>One of the team, with a name and a job</strong><span class="stepup-word"> No. </span>A piece of software, not a colleague.</span></li>
           </ul>
         </div>
-        <div class="card cw-highlight">
-          <span class="cs-tag">Cloudstaff AI Coworker</span>
-          <h3>One of the team</h3>
-          <ul class="story-checks">
-            <li>Structured code, combined with AI, to guarantee repeatable, observable results</li>
-            <li>Supervised by a person</li>
-            <li>A system integration layer that connects to your tools</li>
-            <li>No lock-in to a single frontier AI model</li>
+        <div class="stepup-panel is-active" role="tabpanel" id="stepup-panel-2" aria-labelledby="stepup-tab-2" data-panel="2">
+          <h3 class="stepup-panel-title">Cloudstaff AI Coworker: meets all 7</h3>
+          <ul class="stepup-list">
+            <li class="is-yes"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Lifts individual productivity</strong><span class="stepup-word"> Yes. </span>Takes repetitive, high-volume work off your team so they can focus on what matters.</span></li>
+            <li class="is-yes"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Trained on how your business works</strong><span class="stepup-word"> Yes. </span>Trained on your processes, with the Cloudstaffer who does the work today.</span></li>
+            <li class="is-yes"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Repeatable, observable results</strong><span class="stepup-word"> Yes. </span>Structured code, combined with AI, guarantees repeatable, observable results.</span></li>
+            <li class="is-yes"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Supervised by a named person</strong><span class="stepup-word"> Yes. </span>Reports to a Cloudstaffer, with a human in the loop on every workflow.</span></li>
+            <li class="is-yes"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Connected to your systems</strong><span class="stepup-word"> Yes. </span>A system integration layer connects it to the tools you already use.</span></li>
+            <li class="is-yes"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>Free of lock-in to one AI model</strong><span class="stepup-word"> Yes. </span>No lock-in to a single frontier AI model.</span></li>
+            <li class="is-yes"><span class="stepup-icon" aria-hidden="true"></span><span class="stepup-text"><strong>One of the team, with a name and a job</strong><span class="stepup-word"> Yes. </span>A name, an email address, a job description, and a place in your team.</span></li>
           </ul>
         </div>
       </div>
+      <script>
+      (function () {
+        var root = document.querySelector("[data-stepup]");
+        if (!root) return;
+        var tabs = root.querySelectorAll(".stepup-step"), panels = root.querySelectorAll(".stepup-panel");
+        function show(n) {
+          for (var i = 0; i < tabs.length; i++) {
+            var on = i === n;
+            tabs[i].classList.toggle("is-active", on);
+            tabs[i].setAttribute("aria-selected", on ? "true" : "false");
+            panels[i].classList.toggle("is-active", on);
+          }
+        }
+        for (var i = 0; i < tabs.length; i++) {
+          (function (n) {
+            tabs[n].addEventListener("click", function () { show(n); });
+            tabs[n].addEventListener("mouseenter", function () { show(n); });
+            tabs[n].addEventListener("focus", function () { show(n); });
+          })(i);
+        }
+        root.classList.add("is-ready");
+      })();
+      </script>
     </div>
   </div>
 </section>
