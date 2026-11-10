@@ -176,24 +176,24 @@ CFO Guide, Contact.
   comparisons for Tracy, Nicola and Mike, the "10x faster, 10x cheaper, better
   than a human" claims, the "over 100 Coworkers" library figure, competitor
   product names, and the strategy and next-steps slides.
-- **"How is a Cloudstaff AI Coworker different?"** is an interactive step-up
-  scorecard: three rising steps (chat tools, general-purpose agents, AI Coworker),
-  each scored against the same seven criteria. Hovering or selecting a step swaps
-  the scorecard; the Coworker step is selected by default and meets all seven.
-  The Coworker column and the "trained through prompts", "tedious questions",
-  "not repeatable" and "shadow usage" points come from the presentation. The
-  other notes on chat tools and agents were written by Claude and are Lee's to
-  confirm.
-- **Two inline SVG diagrams** on the AI Coworkers page. The "process sounds
-  simple" diagram (one request, six steps, then a tangle of systems and people)
-  is drawn by `tools/gen_process_art.py`; paste its output into the
-  `process-figure` in the partial. The "core competency" circle diagram in "Where
-  do you start?" is hand-placed SVG in the partial. Both are original drawings
-  based on Lee's slides, not the stock photos from the slides.
+- **"Why a chatbot is not enough" and "How is a Cloudstaff AI Coworker
+  different?" are one section** (`#how-it-compares`). The process diagram (drawn
+  by `tools/gen_process_art.py`, three tier groups `pa-t1` to `pa-t3`) sits beside
+  three vertical bars whose heights show how far down the stack each option
+  reaches: chat tools reach the request, AI agents reach the six steps ("the hub
+  data"), the AI Coworker reaches the whole stack. Hovering or selecting a bar
+  dims the tiers that option cannot reach, swaps a one-line caption, and swaps
+  the seven-point scorecard underneath. The Coworker is selected by default.
+  Lee's framing: a chatbot gets you the chat, an agent gets you to the hub data
+  set, the AI Coworker traverses the entire stack end to end. The Coworker column
+  and four points against the others come from the presentation; the remaining
+  scorecard notes on chat tools and agents were written by Claude.
+- The "core competency" circle diagram in "Where do you start?" is hand-placed
+  inline SVG in the partial, based on Lee's slide.
 - Section order on AI Coworkers: What is an AI Coworker, One of the team, Nine
-  things, the process diagram, Meet the Coworkers, the directory, How it
-  compares, Where do you start, The people behind every Coworker, Responsible by
-  default.
+  things, Meet the Coworkers, the directory, Why a chatbot is not enough (with
+  the comparison), Where do you start, The people behind every Coworker,
+  Responsible by default.
 - **"One of the team" hotspots** (AI Coworkers page): two screenshots with numbered
   hotspots that open on hover, focus or tap, pure CSS. `src/coworker-profile.png`
   is the ExpenseBoss profile of Chris Hayes with the app URLs and part of his
