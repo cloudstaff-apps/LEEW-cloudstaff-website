@@ -13,9 +13,9 @@ Design System, with an owned `src/site.css` scaffolding layer.
 - **Live:** https://cloudstaff-apps.github.io/LEEW-cloudstaff-website/
 - **Repo:** https://github.com/cloudstaff-apps/LEEW-cloudstaff-website (Pages source `main` / `/docs`).
   This is the **only** repo for this site. It sits in the corporate GitHub org.
-- **Do not use** `LEEW-CS/cloudstaff-website` or `leew-cs.github.io/cloudstaff-website`.
-  That was Lee's old personal copy. The 2026-11-09 session was pushed there by mistake,
-  the work was copied here on 2026-11-10, and Lee is deleting the personal copy.
+- There is no other copy. Lee's old personal repo (`LEEW-CS/cloudstaff-website`, served at
+  `leew-cs.github.io/cloudstaff-website`) was deleted on 2026-11-10 after its history was
+  copied here. If either name turns up in old notes or chats, ignore it.
 
 ## Prototype is noindexed (important)
 
@@ -104,7 +104,7 @@ CFO Guide, Contact.
 ## Ops notes / gotchas
 
 - **Token:** a fine-grained PAT owned by `cloudstaff-apps` is saved on Lee's computer
-  at `Documents\claude\cloudstaff-apps-push.txt` (expires 2026-12-10). Read it from
+  at `Documents\claude\cloudstaff-apps-push.txt` (expires 2027-02-08). Read it from
   there each session. Never commit it or write it into a stored remote URL. A new
   token for this org must have Resource owner set to `cloudstaff-apps` and may need
   an org owner to approve it before it works.
@@ -126,9 +126,6 @@ CFO Guide, Contact.
 
 ## Open follow-ups
 
-- **Delete the old personal copy:** Lee to delete `LEEW-CS/cloudstaff-website`
-  (Settings, Danger Zone), which also takes `leew-cs.github.io/cloudstaff-website`
-  offline. Safe to do: this repo holds the full history.
 - **Coworker directory avatars:** the 48 directory cards use initials avatars
   (EF, HF, ...). Only Mike/Tracy/Nicola have public photos (used on the featured
   cards). To use real portraits, Lee needs to export the avatar images from the
