@@ -42,7 +42,8 @@
         <a href="<?php echo esc_url( home_url( '/ai-enabled-staff/' ) ); ?>" <?php if ( is_page( 'ai-enabled-staff' ) ) echo 'aria-current="page"'; ?>>Overview</a>
         <a href="<?php echo esc_url( home_url( '/ai-coworkers/' ) ); ?>" <?php if ( is_page( 'ai-coworkers' ) ) echo 'aria-current="page"'; ?>>AI Coworkers</a>
         <a href="<?php echo esc_url( home_url( '/cloudstaff-q/' ) ); ?>" <?php if ( is_page( 'cloudstaff-q' ) ) echo 'aria-current="page"'; ?>>Cloudstaff Q</a>
-        <a href="<?php echo esc_url( home_url( '/ai-toolkit/' ) ); ?>" <?php if ( is_page( 'ai-toolkit' ) ) echo 'aria-current="page"'; ?>>AI Toolkit</a>
+        <a href="<?php echo esc_url( home_url( '/ai-training/' ) ); ?>" <?php if ( is_page( 'ai-training' ) ) echo 'aria-current="page"'; ?>>AI Training</a>
+        <a href="<?php echo esc_url( home_url( '/ai-consultancy/' ) ); ?>" <?php if ( is_page( 'ai-consultancy' ) ) echo 'aria-current="page"'; ?>>AI Consultancy</a>
       </div>
     </div>
     <a href="<?php echo esc_url( home_url( '/international/' ) ); ?>" <?php if ( is_page( 'international' ) ) echo 'aria-current="page"'; ?>>International</a>

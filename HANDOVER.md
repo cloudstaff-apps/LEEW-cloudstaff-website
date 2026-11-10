@@ -4,7 +4,7 @@ _Last updated: 2026-11-10._
 
 ## Summary
 
-A 34-page static marketing site (21 core pages plus 13 customer success story pages) for Cloudstaff, built from shared partials and
+A 35-page static marketing site (22 core pages plus 13 customer success story pages) for Cloudstaff, built from shared partials and
 deployed to GitHub Pages. It repurposes the CFO Kit, the live cloudstaff.com
 success stories, and cloudstaff.ai, optimised for a US audience and positioned
 as the market leader. Everything is token-driven on top of the Cloudstaff
@@ -149,12 +149,25 @@ CFO Guide, Contact.
 
 ## AI section sources (added 2026-11-10)
 
-- **AI Toolkit page** (`ai-toolkit.html`, new) and the "future workforce", "AI
-  maturity" and "AI Toolkit" bands on the AI Enabled Staff overview come from the
-  public brochure "Cloudstaff AI Toolbox" (V260624). The brochure PDF's text layer
-  is corrupt, so it was read by OCR. Third-party statistics are quoted with the
-  brochure's attributions (McKinsey, IBM, Microsoft and LinkedIn, PwC). The
-  brochure's Cisco and BCG statistics were left out.
+- **Naming: "AI Toolkit" is the old name for Cloudstaff Q.** Never use "AI
+  Toolkit" or "AI Toolbox" on the site. The separate AI Toolkit page created on
+  2026-11-10 was merged into `cloudstaff-q.html` the same day and deleted.
+- **Cloudstaff Q page** is built around the four concentric "rings of protection"
+  (Staging, Private production, Limited production, Public production), drawn as
+  an interactive inline SVG after the All Apps diagram in the public brochure
+  "Cloudstaff AI Toolbox" (V260624). It also holds Govern (AI Policy Builder,
+  Badge Pack AI, AI Access Controls), private AI platforms (AllChat, AllBot, AI
+  Voice Support), and AI Security Testing, which is an **add-on service**, not
+  part of Q itself.
+- **AI Training** (`ai-training.html`) and **AI Consultancy**
+  (`ai-consultancy.html`) are their own pages and are NOT part of Cloudstaff Q.
+  AI Coffee Hour and the AI Survival Guide sit on the Training page. Consultancy
+  positioning from Lee: consultants on the ground in the USA and Australia build
+  fully customised AI Coworkers, and specialise in working directly with the
+  client's staff, examining job functions and standard operating procedures.
+- The brochure PDF's text layer is corrupt, so it was read by OCR. Third-party
+  statistics are quoted with the brochure's attributions (McKinsey, IBM,
+  Microsoft and LinkedIn, PwC). Its Cisco and BCG statistics were left out.
 - **AI Coworkers additions** ("One of the team", the invoice process example, the
   comparison cards, "Where do you start?", the six onboarding steps, and "The
   people behind every Coworker") come from an internal Cloudstaff AI Coworker

@@ -742,6 +742,43 @@ html[data-theme="dark"] .step-number {
 .edge-figure figcaption { margin-block-start: var(--space-sm, 0.5rem); text-align: center; font-size: 0.9rem; color: var(--color-foreground-muted, #5b6576); }
 @media (prefers-reduced-motion: reduce) { .edge-art .ea-edge { transition: none; } .edge-art .ea-edge:hover { transform: none; } }
 
+/* --- Cloudstaff Q: rings of controlled deployment -------------------------- */
+.rings { display: grid; gap: clamp(1.25rem, 3vw, 2.5rem); align-items: center; grid-template-columns: minmax(0, 1fr); margin-block: var(--space-xl, 1.5rem); }
+@media (min-width: 900px) { .rings { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); } }
+.rings-figure { margin: 0; }
+.rings-figure figcaption { text-align: center; font-size: 0.85rem; color: var(--color-foreground-muted, #5b6576); margin-block-start: 0.25rem; }
+.rings-art { display: block; inline-size: 100%; block-size: auto; font-family: inherit; overflow: visible; }
+.rings-art .rg-ring { cursor: pointer; outline: none; }
+.rings-art .rg-ring path { stroke-width: 2.5; transition: fill 0.15s ease, stroke-width 0.15s ease; }
+.rings-art .rg-3 path { fill: #fff1e6; stroke: #f97316; }
+.rings-art .rg-2 path { fill: #f3e8ff; stroke: #9333ea; }
+.rings-art .rg-1 path { fill: #dcf5f1; stroke: #0d9488; }
+.rings-art .rg-0 path { fill: #dbe9ff; stroke: #007aff; }
+.rings-art .rg-3.is-active path { fill: #fed7aa; stroke-width: 5; }
+.rings-art .rg-2.is-active path { fill: #e3c8fd; stroke-width: 5; }
+.rings-art .rg-1.is-active path { fill: #a7e8de; stroke-width: 5; }
+.rings-art .rg-0.is-active path { fill: #b3d1ff; stroke-width: 5; }
+.rings-art .rg-name { fill: #16233b; font-size: 17px; font-weight: 700; }
+.rings-art .rg-sub { fill: #3d4a61; font-size: 11.5px; font-weight: 600; }
+.rings-art .rg-badge { stroke: #fff; stroke-width: 3; }
+.rings-art .rg-3 .rg-badge { fill: #f97316; } .rings-art .rg-2 .rg-badge { fill: #9333ea; }
+.rings-art .rg-1 .rg-badge { fill: #0d9488; } .rings-art .rg-0 .rg-badge { fill: #007aff; }
+.rings-art .rg-badge-n { fill: #fff; font-size: 13px; font-weight: 700; }
+.rings-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-sm, 0.5rem); }
+.rings-item {
+  display: grid; grid-template-columns: 2.2rem minmax(0, 1fr); gap: 0.75rem; align-items: start;
+  padding: 0.8rem 0.9rem; border-radius: var(--radius-md, 0.75rem); cursor: pointer; outline: none;
+  background: #fff; border: 2px solid color-mix(in oklch, var(--color-foreground-primary, #16233b), white 88%);
+  font-size: 0.92rem; line-height: 1.45; color: var(--color-foreground-muted, #5b6576);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.rings-item strong { display: block; font-size: 1.02rem; color: var(--color-foreground-primary, #16233b); }
+.rings-item em { display: block; font-style: normal; font-weight: 600; font-size: 0.82rem; color: var(--color-foreground-primary, #16233b); margin-block-end: 0.15rem; }
+.rings-num { inline-size: 2rem; block-size: 2rem; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; color: #fff; background: var(--ring); }
+.rings-item.is-active, .rings-item:hover { border-color: var(--color-brand-primary, #007aff); box-shadow: 0 8px 22px rgba(11, 28, 56, 0.12); }
+.rings-item:focus-visible { outline: 3px solid color-mix(in oklch, var(--color-brand-primary, #007aff), white 40%); outline-offset: 2px; }
+#all-apps, #security-testing { scroll-margin-top: 5rem; }
+
 /* --- Step-up comparison (three rising steps, one scorecard) ---------------- */
 .stepup { margin-block-start: var(--space-xl, 1.5rem); }
 .stepup-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-md, 0.75rem); align-items: end; }
