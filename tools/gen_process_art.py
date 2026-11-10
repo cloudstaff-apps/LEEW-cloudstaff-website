@@ -41,7 +41,7 @@ def render():
     r2x = [(sx[i] + sx[i + 1]) // 2 for i in range(5)]
 
     def note(y, txt):
-        a('<g class="pa-notes"><rect x="0" y="%d" width="%d" height="20" rx="4"/>' % (y - 14, len(txt) * 7.6 + 10))
+        a('<g class="pa-notes"><rect x="0" y="%d" width="%d" height="20" rx="4"/>' % (y - 14, len(txt) * 8.4 + 10))
         a('<text x="2" y="%d">%s</text></g>' % (y, txt.upper()))
 
     a('<g class="pa-tier pa-t3">')
