@@ -32,6 +32,13 @@ leaks into `wordpress/cloudstaff-theme/`, which must stay indexable for the live
 `robots.txt` is not used: the site publishes to a subpath, and crawlers only read
 robots.txt at the host root.
 
+## House design rule (important)
+
+**No coloured accent edge on a box.** Lee reads a text box with one coloured
+side (a thick left or top border) as a sign of AI-generated content. Highlight a
+callout with a tinted background and a thin border all round, never a single
+coloured edge. This includes blockquotes.
+
 ## House writing rule (important)
 
 **No em dashes anywhere.** Lee considers them an AI tell. Use full stops and
@@ -178,6 +185,8 @@ CFO Guide, Contact.
   industry, a job role, or the client's specific needs (example: an advanced
   course for accountants), and clients pay for them. Lee did not say how Level 4
   differs from Level 5, so the page presents them together.
+- Do not claim 100% training compliance. Say the first three levels are "the
+  standard we set for every Cloudstaffer", not that every Cloudstaffer takes them.
 - AI Training headline: "We're making AI your Cloudstaffer's superpower". The
   caped Cloudstaffer beside it is Lee's own image (`src/ai-superpower.webp`). His
   file was a JPG with a checkerboard baked in, so the background was cut out
