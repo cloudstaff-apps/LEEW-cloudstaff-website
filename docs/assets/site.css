@@ -1603,6 +1603,7 @@ ul.tb-disclaimer {
 .hol-cell--off { background:#bcdcff; color:#0b3a66; }
 .hol-cell--same { background: var(--color-surface-canvas,#f0f4f9); color: var(--color-foreground-primary,#16233b); border:1px solid rgba(22,35,59,0.12); }
 .hol-cell--empty { border:1px dashed rgba(22,35,59,0.25); color: var(--color-foreground-muted,#5b6576); font-size: var(--font-size-xs,0.78rem); align-items:center; }
+.hol-cell--blank { padding:0; }
 .hol-date { font-weight:700; white-space:nowrap; }
 .hol-name { flex:1 1 9rem; }
 .hol-cell-note { flex:1 0 100%; font-size: var(--font-size-xs,0.75rem); opacity:0.8; }
@@ -1621,6 +1622,7 @@ ul.tb-disclaimer {
   .hol-head .hol-mid { display:none; }
   .hol-mid { padding-block:0.1rem; }
   .hol-mid:empty { display:none; }
+  .hol-cell--blank { display:none; }
   .hol-mid .hol-ico { transform: rotate(90deg); }
   .hol-row { margin-block: var(--space-md,0.75rem); }
 }

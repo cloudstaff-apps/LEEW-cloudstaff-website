@@ -1,4 +1,4 @@
-/* Cloudstaff public holiday planner (v1.0).
+/* Cloudstaff public holiday planner (v1.1).
    Compares the public holidays of a Cloudstaffer's service country with the
    client's own public holidays, for Monday to Friday only, and shows which
    days the team works and which days it takes off.
@@ -170,6 +170,9 @@
   }
   function empty(text) { return '<div class="hol-cell hol-cell--empty">' + text + '</div>'; }
 
+  /* Placeholder that keeps a one-sided row in its own column. */
+  var BLANK = '<div class="hol-cell hol-cell--blank" aria-hidden="true"></div>';
+
   function row(left, mid, right, cls) {
     return '<div class="hol-row' + (cls ? " " + cls : "") + '">' + left +
       '<div class="hol-mid">' + mid + '</div>' + right + '</div>';
@@ -247,10 +250,10 @@
             '</div></div>';
         } else if (r.a) {
           onlyA++;
-          html += row(cell(r.a, offKind), "", "");
+          html += row(cell(r.a, offKind), "", BLANK);
         } else {
           onlyB++;
-          html += row("", "", cell(r.b, workKind));
+          html += row(BLANK, "", cell(r.b, workKind));
         }
       });
     }

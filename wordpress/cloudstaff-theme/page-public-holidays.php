@@ -62,7 +62,7 @@ get_header();
      date that is not final. Edit this block to add a country, a region or a year. -->
 <script type="application/json" id="hol-data">
 {
- "version": "1.0",
+ "version": "1.1",
  "year": 2027,
  "staff": {
   "ph": {
@@ -394,8 +394,8 @@ get_header();
   "us": {
    "label": "USA",
    "flag": "us",
-   "regionLabel": "Holiday calendar",
-   "source": "US federal holidays (5 U.S.C. 6103, OPM schedule)",
+   "regionLabel": "State",
+   "source": "US federal holidays (OPM schedule) plus state government holidays set by state law",
    "base": [
     {
      "d": "01-01",
@@ -460,7 +460,617 @@ get_header();
    ],
    "regions": {
     "fed": {
-     "label": "Federal holidays (all states)",
+     "label": "Federal holidays only",
+     "h": []
+    },
+    "al": {
+     "label": "Alabama",
+     "h": [
+      {
+       "d": "04-26",
+       "n": "Confederate Memorial Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "06-07",
+       "n": "Jefferson Davis' Birthday",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "ak": {
+     "label": "Alaska",
+     "h": [
+      {
+       "d": "03-29",
+       "n": "Seward's Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "10-18",
+       "n": "Alaska Day",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "az": {
+     "label": "Arizona",
+     "h": []
+    },
+    "ar": {
+     "label": "Arkansas",
+     "h": []
+    },
+    "ca": {
+     "label": "California",
+     "h": [
+      {
+       "d": "03-31",
+       "n": "Cesar Chavez Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "co": {
+     "label": "Colorado",
+     "h": [
+      {
+       "d": "10-04",
+       "n": "Frances Xavier Cabrini Day",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "ct": {
+     "label": "Connecticut",
+     "h": [
+      {
+       "d": "02-12",
+       "n": "Lincoln's Birthday",
+       "note": "State government holiday"
+      },
+      {
+       "d": "03-26",
+       "n": "Good Friday",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "de": {
+     "label": "Delaware",
+     "h": [
+      {
+       "d": "03-26",
+       "n": "Good Friday",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "dc": {
+     "label": "District of Columbia",
+     "h": [
+      {
+       "d": "04-16",
+       "n": "DC Emancipation Day",
+       "note": "District government holiday"
+      }
+     ]
+    },
+    "fl": {
+     "label": "Florida",
+     "h": [
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "ga": {
+     "label": "Georgia",
+     "h": [
+      {
+       "d": "11-26",
+       "n": "State Holiday (day after Thanksgiving)",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "hi": {
+     "label": "Hawaii",
+     "h": [
+      {
+       "d": "03-26",
+       "n": "Prince Kuhio Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "03-26",
+       "n": "Good Friday",
+       "note": "State government holiday"
+      },
+      {
+       "d": "06-11",
+       "n": "King Kamehameha I Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "08-20",
+       "n": "Statehood Day",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "id": {
+     "label": "Idaho",
+     "h": []
+    },
+    "il": {
+     "label": "Illinois",
+     "h": [
+      {
+       "d": "02-12",
+       "n": "Lincoln's Birthday",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "in": {
+     "label": "Indiana",
+     "h": [
+      {
+       "d": "03-26",
+       "n": "Good Friday",
+       "note": "State government holiday"
+      },
+      {
+       "d": "05-04",
+       "n": "Primary Election Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-02",
+       "n": "General Election Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-26",
+       "n": "Lincoln's Birthday (observed day after Thanksgiving)",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "ia": {
+     "label": "Iowa",
+     "h": [
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "ks": {
+     "label": "Kansas",
+     "h": []
+    },
+    "ky": {
+     "label": "Kentucky",
+     "h": [
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "la": {
+     "label": "Louisiana",
+     "h": [
+      {
+       "d": "02-09",
+       "n": "Mardi Gras",
+       "note": "State government holiday"
+      },
+      {
+       "d": "03-26",
+       "n": "Good Friday",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "me": {
+     "label": "Maine",
+     "h": [
+      {
+       "d": "04-19",
+       "n": "Patriots' Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "md": {
+     "label": "Maryland",
+     "h": [
+      {
+       "d": "11-26",
+       "n": "American Indian Heritage Day",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "ma": {
+     "label": "Massachusetts",
+     "h": [
+      {
+       "d": "04-19",
+       "n": "Patriots' Day",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "mi": {
+     "label": "Michigan",
+     "h": [
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "mn": {
+     "label": "Minnesota",
+     "h": [
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "ms": {
+     "label": "Mississippi",
+     "h": [
+      {
+       "d": "04-26",
+       "n": "Confederate Memorial Day",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "mo": {
+     "label": "Missouri",
+     "h": [
+      {
+       "d": "02-12",
+       "n": "Lincoln's Birthday",
+       "note": "State government holiday"
+      },
+      {
+       "d": "05-08",
+       "n": "Truman Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "05-07",
+       "n": "Truman Day (observed)",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "mt": {
+     "label": "Montana",
+     "h": []
+    },
+    "ne": {
+     "label": "Nebraska",
+     "h": [
+      {
+       "d": "04-30",
+       "n": "Arbor Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "nv": {
+     "label": "Nevada",
+     "h": [
+      {
+       "d": "10-29",
+       "n": "Nevada Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-26",
+       "n": "Family Day",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "nh": {
+     "label": "New Hampshire",
+     "h": [
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "nj": {
+     "label": "New Jersey",
+     "h": [
+      {
+       "d": "03-26",
+       "n": "Good Friday",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-02",
+       "n": "Election Day",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "nm": {
+     "label": "New Mexico",
+     "h": [
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "ny": {
+     "label": "New York",
+     "h": [
+      {
+       "d": "02-12",
+       "n": "Lincoln's Birthday",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-02",
+       "n": "Election Day",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "nc": {
+     "label": "North Carolina",
+     "h": [
+      {
+       "d": "03-26",
+       "n": "Good Friday",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "nd": {
+     "label": "North Dakota",
+     "h": [
+      {
+       "d": "03-26",
+       "n": "Good Friday",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "oh": {
+     "label": "Ohio",
+     "h": []
+    },
+    "ok": {
+     "label": "Oklahoma",
+     "h": [
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "or": {
+     "label": "Oregon",
+     "h": []
+    },
+    "pa": {
+     "label": "Pennsylvania",
+     "h": [
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "ri": {
+     "label": "Rhode Island",
+     "h": [
+      {
+       "d": "08-09",
+       "n": "Victory Day",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "sc": {
+     "label": "South Carolina",
+     "h": [
+      {
+       "d": "05-10",
+       "n": "Confederate Memorial Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "sd": {
+     "label": "South Dakota",
+     "h": []
+    },
+    "tn": {
+     "label": "Tennessee",
+     "h": [
+      {
+       "d": "03-26",
+       "n": "Good Friday",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "tx": {
+     "label": "Texas",
+     "h": [
+      {
+       "d": "01-19",
+       "n": "Confederate Heroes Day",
+       "note": "State partial staffing holiday"
+      },
+      {
+       "d": "03-02",
+       "n": "Texas Independence Day",
+       "note": "State partial staffing holiday"
+      },
+      {
+       "d": "04-21",
+       "n": "San Jacinto Day",
+       "note": "State partial staffing holiday"
+      },
+      {
+       "d": "08-27",
+       "n": "Lyndon Baines Johnson Day",
+       "note": "State partial staffing holiday"
+      },
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "ut": {
+     "label": "Utah",
+     "h": [
+      {
+       "d": "07-24",
+       "n": "Pioneer Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "07-23",
+       "n": "Pioneer Day (observed)",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "vt": {
+     "label": "Vermont",
+     "h": [
+      {
+       "d": "03-02",
+       "n": "Town Meeting Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "08-16",
+       "n": "Bennington Battle Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "va": {
+     "label": "Virginia",
+     "h": [
+      {
+       "d": "11-02",
+       "n": "Election Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-26",
+       "n": "Day after Thanksgiving",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "wa": {
+     "label": "Washington",
+     "h": [
+      {
+       "d": "11-26",
+       "n": "Native American Heritage Day",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "wv": {
+     "label": "West Virginia",
+     "h": [
+      {
+       "d": "06-20",
+       "n": "West Virginia Day",
+       "note": "State government holiday"
+      },
+      {
+       "d": "06-21",
+       "n": "West Virginia Day (observed)",
+       "note": "State government holiday"
+      },
+      {
+       "d": "11-26",
+       "n": "Lincoln's Day (day after Thanksgiving)",
+       "note": "State government holiday"
+      }
+     ]
+    },
+    "wi": {
+     "label": "Wisconsin",
+     "h": []
+    },
+    "wy": {
+     "label": "Wyoming",
      "h": []
     }
    }

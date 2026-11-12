@@ -108,7 +108,7 @@ Questions raised with Lee and still unanswered (take no action until he replies)
   date-ordered list. Weekend holidays are listed separately underneath.
 - **Data is held in the page**, in the JSON block `#hol-data` (Lee's instruction;
   it may move to a database later). 2027 only. `"t": 1` marks a date that is not
-  final. Planner version is the `version` field (currently 1.0); bump it on change.
+  final. Planner version is the `version` field (currently 1.1); bump it on change.
 - **Sources.** publicholidays.info was Lee's suggested source but its 2026 pages
   had errors (Juneteenth missing from the USA, Black Saturday on a Sunday), so the
   data was taken from primary sources instead: Philippines Proclamation No. 1427;
@@ -117,7 +117,14 @@ Questions raised with Lee and still unanswered (take no action until he replies)
   Kenya Public Holidays Act; USA OPM federal schedule; Australia Fair Work
   Ombudsman 2027 list; UK GOV.UK; New Zealand computed from the Holidays Act rules
   because Employment New Zealand had not published 2027.
-- **Known gaps to raise with Lee:** USA is federal holidays only (no state days);
+- **USA states (v1.1, 2026-11-12):** the State list holds "Federal holidays only"
+  plus all 50 states and DC. Each state adds its state government holidays to the
+  federal list. These were computed from the statutory rules Claude knows, not
+  checked against each state's published 2027 calendar, so treat them as moderate
+  confidence. Federal holidays a state does not observe (Columbus Day in several
+  states) are not removed. Election-day holidays are included only where the state
+  observes one every year (New Jersey, New York, Virginia, Indiana).
+- **Known gaps to raise with Lee:**
   Philippine Eid'l Fitr and Eid'l Adha are estimates until proclaimed; Indian
   holidays vary by state; Kenya's 2027 election day is not included; Tasmanian
   regional days, part-day holidays (Christmas Eve and New Year's Eve evenings) and
