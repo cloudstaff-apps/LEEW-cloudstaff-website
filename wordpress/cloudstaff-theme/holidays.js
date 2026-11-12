@@ -1,4 +1,4 @@
-/* Cloudstaff public holiday planner (v1.1).
+/* Cloudstaff public holiday planner (v1.2).
    Compares the public holidays of a Cloudstaffer's service country with the
    client's own public holidays, for Monday to Friday only, and shows which
    days the team works and which days it takes off.
@@ -200,7 +200,7 @@
     html += '<div class="hol-head">' +
       '<div class="hol-head-col">' +
         '<span class="hol-head-title">' + (swapMode ? "Staff will work these days" : "Staff will take these days off") + '</span>' +
-        '<span class="hol-head-sub">' + flag(s.flag, s.label) + ' ' + esc(s.label) + ' public holidays</span></div>' +
+        '<span class="hol-head-sub">' + flag(s.flag, s.label) + ' ' + esc(s.long || s.label) + ' public holidays</span></div>' +
       '<div class="hol-mid"></div>' +
       '<div class="hol-head-col">' +
         '<span class="hol-head-title">' + (swapMode ? "Staff will take these days off" : "Staff will work these days") + '</span>' +
@@ -270,7 +270,7 @@
       };
       html += '<div class="hol-weekend"><span class="hol-weekend-title">Public holidays that fall on a weekend</span>' +
         '<span class="hol-weekend-sub">Listed for completeness. A Monday to Friday team is not working on these days, so nothing changes.</span>' +
-        '<div class="hol-weekend-cols"><div><span class="hol-head-sub">' + flag(s.flag, s.label) + ' ' + esc(s.label) + '</span>' + list(wa) + '</div>' +
+        '<div class="hol-weekend-cols"><div><span class="hol-head-sub">' + flag(s.flag, s.label) + ' ' + esc(s.long || s.label) + '</span>' + list(wa) + '</div>' +
         '<div><span class="hol-head-sub">' + flag(c.flag, c.label) + ' ' + esc(c.label) + ', ' + esc(regionName) + '</span>' + list(wb) + '</div></div></div>';
     }
 

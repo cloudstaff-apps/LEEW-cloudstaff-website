@@ -108,12 +108,15 @@ Questions raised with Lee and still unanswered (take no action until he replies)
   date-ordered list. Weekend holidays are listed separately underneath.
 - **Data is held in the page**, in the JSON block `#hol-data` (Lee's instruction;
   it may move to a database later). 2027 only. `"t": 1` marks a date that is not
-  final. Planner version is the `version` field (currently 1.1); bump it on change.
+  final. Planner version is the `version` field (currently 1.2); bump it on change.
 - **Sources.** publicholidays.info was Lee's suggested source but its 2026 pages
   had errors (Juneteenth missing from the USA, Black Saturday on a Sunday), so the
   data was taken from primary sources instead: Philippines Proclamation No. 1427;
-  India DoPT memorandum of 16 July 2026 (the 17 gazetted holidays for Delhi
-  offices, used as the national proxy); Colombia computed from Ley 51 of 1983;
+  India follows **Karnataka plus national holidays** (Lee, 2026-11-12: Cloudstaff
+  India is incorporated in Karnataka). Karnataka had not published its official
+  2027 list, so the dates are publicholidays.info's 2027 estimates, with Muharram
+  taken from the DoPT memorandum of 16 July 2026. Replace them when the Karnataka
+  notification is out (usually mid to late November); Colombia computed from Ley 51 of 1983;
   Kenya Public Holidays Act; USA OPM federal schedule; Australia Fair Work
   Ombudsman 2027 list; UK GOV.UK; New Zealand computed from the Holidays Act rules
   because Employment New Zealand had not published 2027.
@@ -125,8 +128,7 @@ Questions raised with Lee and still unanswered (take no action until he replies)
   states) are not removed. Election-day holidays are included only where the state
   observes one every year (New Jersey, New York, Virginia, Indiana).
 - **Known gaps to raise with Lee:**
-  Philippine Eid'l Fitr and Eid'l Adha are estimates until proclaimed; Indian
-  holidays vary by state; Kenya's 2027 election day is not included; Tasmanian
+  Philippine Eid'l Fitr and Eid'l Adha are estimates until proclaimed; Kenya's 2027 election day is not included; Tasmanian
   regional days, part-day holidays (Christmas Eve and New Year's Eve evenings) and
   Philippine city holidays are left out; the Victorian AFL Grand Final Friday is an
   estimate.
