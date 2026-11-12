@@ -1,10 +1,10 @@
 # Cloudstaff.com rebuild, handover
 
-_Last updated: 2026-11-10._
+_Last updated: 2026-11-12._
 
 ## Summary
 
-A 35-page static marketing site (22 core pages plus 13 customer success story pages) for Cloudstaff, built from shared partials and
+A 36-page static marketing site (23 core pages plus 13 customer success story pages) for Cloudstaff, built from shared partials and
 deployed to GitHub Pages. It repurposes the CFO Kit, the live cloudstaff.com
 success stories, and cloudstaff.ai, optimised for a US audience and positioned
 as the market leader. Everything is token-driven on top of the Cloudstaff
@@ -88,6 +88,41 @@ Questions raised with Lee and still unanswered (take no action until he replies)
 - The "Louis Reid" avatar looks female.
 - Cloudstaff Q "see your IP and take it with you": is that backed by the contract?
 - Brochure statistics on the AI pages were not independently re-verified.
+
+## Public holiday planner (added 2026-11-12, draft, NOT in the menu)
+
+- Page `public-holidays.html` (partial `src/partials/public-holidays.html`, logic
+  `src/holidays.js`, styles `.hol-*` in `site.css`). Lee wants to refine it before
+  it goes in the navigation, so nothing links to it. Do not add it to
+  `header.html` or `footer.html` until he says so.
+- Styled after the coverage tool. The client picks: which holidays the team takes
+  off (theirs or the client's), the service country (Philippines, India, Colombia,
+  Kenya), their own country (USA, Australia, New Zealand, UK) and a state, region
+  or nation.
+- "Take my public holidays off" pairs each weekday local holiday with a weekday
+  client holiday. The pairing keeps both columns in date order and minimises the
+  total gap in days; a holiday on the same date in both places is shown as "no
+  swap needed". Holidays left over on either side are shown unpaired with a note
+  to agree treatment with the Account Manager, because Cloudstaff's policy for
+  those days has not been given. "Take their local holidays off" is a plain
+  date-ordered list. Weekend holidays are listed separately underneath.
+- **Data is held in the page**, in the JSON block `#hol-data` (Lee's instruction;
+  it may move to a database later). 2027 only. `"t": 1` marks a date that is not
+  final. Planner version is the `version` field (currently 1.0); bump it on change.
+- **Sources.** publicholidays.info was Lee's suggested source but its 2026 pages
+  had errors (Juneteenth missing from the USA, Black Saturday on a Sunday), so the
+  data was taken from primary sources instead: Philippines Proclamation No. 1427;
+  India DoPT memorandum of 16 July 2026 (the 17 gazetted holidays for Delhi
+  offices, used as the national proxy); Colombia computed from Ley 51 of 1983;
+  Kenya Public Holidays Act; USA OPM federal schedule; Australia Fair Work
+  Ombudsman 2027 list; UK GOV.UK; New Zealand computed from the Holidays Act rules
+  because Employment New Zealand had not published 2027.
+- **Known gaps to raise with Lee:** USA is federal holidays only (no state days);
+  Philippine Eid'l Fitr and Eid'l Adha are estimates until proclaimed; Indian
+  holidays vary by state; Kenya's 2027 election day is not included; Tasmanian
+  regional days, part-day holidays (Christmas Eve and New Year's Eve evenings) and
+  Philippine city holidays are left out; the Victorian AFL Grand Final Friday is an
+  estimate.
 
 ## Prototype is noindexed (important)
 

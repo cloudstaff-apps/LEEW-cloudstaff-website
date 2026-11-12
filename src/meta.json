@@ -231,6 +231,14 @@
       "description": "See exactly when Cloudstaff's International Services Centers are online for your working day. Cover your business hours, run work overnight, or keep critical functions moving 24/7."
     },
     {
+      "slug": "public-holidays",
+      "wp_template": "page-public-holidays",
+      "nav_label": "Public Holiday Planner",
+      "in_nav": false,
+      "title": "Public Holiday Planner: Match Your Team's Holidays to Yours | Cloudstaff",
+      "description": "Compare public holidays in the Philippines, India, Colombia and Kenya with your own, and see which days your Cloudstaff team works and which days it takes off."
+    },
+    {
       "slug": "international",
       "wp_template": "page-international",
       "nav_label": "International",
